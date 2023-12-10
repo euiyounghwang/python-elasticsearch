@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-source ./DevOps_Shell/read_config.yaml.sh
+source ./DevOps_Shell/read_config.sh
 
 # --
 # Call this function from './DevOps_Shell/read_config.yaml.sh' to get ES_HOST value in config.yaml file
