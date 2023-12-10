@@ -14,6 +14,6 @@ docker build \
 
 docker build \
   -f "$(dirname "$0")/Dockerfile" \
-  -t fn-elasticsearch-search-api:test \
+  -t fn-elasticsearch-api:test \
   --target test \
   "$(dirname "$0")/."
