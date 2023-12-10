@@ -1,5 +1,10 @@
 
-I will use this project as a basic api to build a Docker Instance when testing on k8s
+### Python-Elasticsearch
+
+I will use this project as a basic api for building and searching with Elasticsearch 
+- Build Docker for creating an index with sample metrics and searching with Elasticsearch
+- Also run local environment with this project
+- Build Docker Instance when pytest
 
 Install Poerty
 ```
