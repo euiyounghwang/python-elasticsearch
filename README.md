@@ -36,6 +36,33 @@ source .venv/bin/activate
 poetry install
 ```
 
+#### Run local environment
+- It will be validate elasticsearch cluster using wait_fo_es.sh when running ./service_start.sh script.
+```bash
+source .venv/bin/activate
+(.venv) ➜  python-elasticsearch git:(master) ✗ ./service_start.sh
+get_value_from_yaml ->  http://localhost:9209
+ElasticSearch is up
+INFO:     Will watch for changes in these directories: ['/Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch']
+WARNING:  "workers" flag is ignored when reloading is enabled.
+INFO:     Uvicorn running on http://0.0.0.0:8888 (Press CTRL+C to quit)
+INFO:     Started reloader process [17469] using StatReload
+[2023-12-09 20:36:18,420] [INFO] [injector] [read_config_yaml] {
+  "app": {
+    "es": {
+      "es_host": "http://localhost:9209",
+      "index": {
+        "alias": "metrics_search"
+      }
+    }
+  }
+}
+[2023-12-09 20:36:18,421] [INFO] [config] [__init__] @@self.hosts - http://localhost:9209
+INFO:     Started server process [17471]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+```
+
 ### Pytest
 ```bash
 (.venv) ➜  python-elasticsearch git:(master) ./pytest.sh 
