@@ -24,6 +24,8 @@ poetry init
 poetry add fastapi
 poetry add uvicorn
 poetry add pytz
+poetry add elasticsearch==7.9.0
+poetry add numpy
 ```
 
 #### Using Poetry Dependency for creating new environment
