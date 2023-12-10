@@ -2,9 +2,9 @@
 ### Python-Elasticsearch
 
 I will use this project as a basic api for building and searching with Elasticsearch 
-- Build Docker for creating an index with sample metrics and searching with Elasticsearch
-- Also run local environment with this project
-- Build Docker Instance for testing with pytest
+- Build docker service and test instance for creating an index with sample datasets and searching with Elasticsearch
+- Also run local environment with this project using `./service_start.sh` script
+- Build Docker Instance for testing with pytest using using `./docker-compose.yml` or different ways the following method like the step `Install Service and Test with Elasicsearch Cluster based on Docker`
 
 #### Install Poerty
 ```
@@ -36,7 +36,7 @@ source .venv/bin/activate
 poetry install
 ```
 
-#### Install Elasicsearch Cluster based on Docker
+#### Install Service and Test with Elasicsearch Cluster based on Docker
 - Single Node ES with Kibana based on 7.9.0 version
 ```bash
 docker run --name kibaba-run --network bridge -e "ELASTICSEARCH_URL=http://host.docker.internal:9209" -e "ES_JAVA_OPTS=-Xms1g -Xmx1g" -e "ELASTICSEARCH_HOSTS=http://host.docker.internal:9209" -p 5801:5601 docker.elastic.co/kibana/kibana:7.9.0
