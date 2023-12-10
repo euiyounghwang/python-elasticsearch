@@ -46,7 +46,7 @@ docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:930
 
 
 #### Run Local Environment
-- It will be validate elasticsearch cluster using wait_fo_es.sh when running ./service_start.sh script.
+- It will be validate elasticsearch cluster using wait_fo_es.sh when running `./service_start.sh` script.
 ```bash
 source .venv/bin/activate
 (.venv) ➜  python-elasticsearch git:(master) ✗ ./service_start.sh
