@@ -1,13 +1,7 @@
 #!/bin/bash
 set -e
+source ./DevOps_Shell/read_config.yaml.sh
 
-function get_value_from_yaml()
-{
-    #cat ./config.yaml | jq .app.es.es_host
-    ES_HOST=$(cat ./config.yaml | jq .app.es.es_host)
-    ES_HOST=$(sed -e 's/^"//' -e 's/"$//' <<< $ES_HOST)
-    echo 'get_value_from_yaml -> ' ${ES_HOST}
-}
 
 get_value_from_yaml
 export PYTHONDONTWRITEBYTECODE=1
