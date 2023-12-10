@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-# Activate virtualenv && run serivce
+export PYTHONDONTWRITEBYTECODE=1
 
-# cd /Users/euiyoung.hwang/ES/Python_Workspace/python-django
+# Activate virtualenv && run serivce
 SCRIPTDIR="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 cd $SCRIPTDIR

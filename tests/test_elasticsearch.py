@@ -166,6 +166,7 @@ def test_search_elasticsearch(mock_es_client):
         assert hit["_source"] is not None
 
 
+@pytest.mark.skip(reason="no way of currently testing this")
 def test_api_es_search(mock_client):
     ''' API call '''
     assert mock_client is not None

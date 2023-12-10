@@ -23,7 +23,7 @@ def test_CRUD_api(mock_client):
     }
     
     # Create Item
-    response = mock_client.post("/es/searcj", json=sample_payload)
+    response = mock_client.post("/es/search", json=sample_payload)
     assert response.status_code == 200
     # assert response.json() == {
     #     "message ": "OK - Successful Query executed",
