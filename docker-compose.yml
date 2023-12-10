@@ -19,6 +19,23 @@ services:
       - ES_HOST=http://host.docker.internal:9209
     networks:
       - bridge
+      
+  fn-elasticsearch-api-test:
+    image: fn-elasticsearch-api:test
+    container_name: fn-elasticsearch-api-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    ports:
+      - 8889:8889
+    volumes:
+      - ${PROJECTS_DIR}/python-elasticsearch:/app/FN-Basic-Services
+    restart: unless-stopped
+    environment:
+      - ES_HOST=http://host.docker.internal:9209
+    networks:
+      - bridge
 
 networks:
   bridge:

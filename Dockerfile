@@ -30,6 +30,15 @@ RUN /bin/bash -c 'source $POETRY_VENV/bin/activate && \
     poetry install --no-root'
 
 
+FROM --platform=linux/amd64 python:3.9.7 as test
+
+WORKDIR /app
+#COPY --from=indexing_environment $POETRY_VENV $POETRY_VENV
+COPY --from=environment /app .
+COPY . FN-Basic-Services
+
+ENTRYPOINT ["/app/FN-Basic-Services/docker-run-tests.sh"]
+
 
 FROM --platform=linux/amd64 python:3.9.7 as runtime
 
