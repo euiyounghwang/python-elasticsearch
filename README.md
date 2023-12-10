@@ -30,7 +30,7 @@ poetry add pytest
 poetry add python-dotenv
 ```
 
-#### Using Poetry Dependency for creating new environment
+#### Install this proejct to make an environment using Poetry Dependency
 ```bash
 source .venv/bin/activate
 poetry install
