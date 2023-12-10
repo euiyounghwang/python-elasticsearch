@@ -26,6 +26,8 @@ poetry add uvicorn
 poetry add pytz
 poetry add elasticsearch==7.9.0
 poetry add numpy
+poetry add pytest
+poetry add python-dotenv
 ```
 
 #### Using Poetry Dependency for creating new environment
