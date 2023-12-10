@@ -36,7 +36,7 @@ source .venv/bin/activate
 poetry install
 ```
 
-#### Run local environment
+#### Run Local Environment
 - It will be validate elasticsearch cluster using wait_fo_es.sh when running ./service_start.sh script.
 ```bash
 source .venv/bin/activate
