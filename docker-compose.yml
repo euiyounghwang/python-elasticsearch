@@ -1,0 +1,25 @@
+version: '3'
+#docker-compose -f ./docker-compose.yml up or docker-compose up
+name: python-elasticsearch-api
+services:
+  
+  fn-elasticsearch-api:
+    image: fn-elasticsearch-api:es
+    container_name: fn-elasticsearch-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    ports:
+      - 8888:8888
+    volumes:
+      - ${PROJECTS_DIR}/python-elasticsearch:/app/FN-Basic-Services
+    restart: unless-stopped
+    environment:
+      - ES_HOST=http://host.docker.internal:9209
+    networks:
+      - bridge
+
+networks:
+  bridge:
+    driver: bridge
