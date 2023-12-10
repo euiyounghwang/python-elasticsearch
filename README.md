@@ -36,3 +36,22 @@ source .venv/bin/activate
 poetry install
 ```
 
+### Pytest
+```bash
+(.venv) ➜  python-elasticsearch git:(master) ./pytest.sh 
+============================================= test session starts ==============================================
+platform darwin -- Python 3.9.7, pytest-7.4.3, pluggy-1.3.0 -- /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/tests
+configfile: pytest.ini
+plugins: cov-4.1.0, anyio-3.7.1
+collected 7 items                                                                                              
+
+tests/test_api.py::test_skip SKIPPED (no way of currently testing this)                                  [ 14%]
+tests/test_api.py::test_api PASSED                                                                       [ 28%]
+tests/test_api.py::test_CRUD_api PASSED                                                                  [ 42%]
+tests/test_elasticsearch.py::test_elasticsearch PASSED                                                   [ 57%]
+tests/test_elasticsearch.py::test_indics_analyzer_elasticsearch PASSED                                   [ 71%]
+tests/test_elasticsearch.py::test_search_elasticsearch SKIPPED (no way of currently testing this)        [ 85%]
+tests/test_elasticsearch.py::test_api_es_search SKIPPED (no way of currently testing this)               [100%]
+```
