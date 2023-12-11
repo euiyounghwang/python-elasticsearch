@@ -30,7 +30,7 @@ poetry add pytest
 poetry add python-dotenv
 ```
 
-#### Install this proejct to make an environment using Poetry Dependency
+#### Install this project to make an environment using Poetry Dependency
 ```bash
 source .venv/bin/activate
 poetry install (using --no-root option when building the docker on CircleCI or Docker env)
