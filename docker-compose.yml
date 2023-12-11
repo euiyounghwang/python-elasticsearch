@@ -229,7 +229,7 @@ services:
     volumes:
       - opensearch-data1:/usr/share/opensearch/data
     ports:
-      - 9200:9200
+      - 9250:9200
       - 9600:9600 # required for Performance Analyzer
     networks:
       - bridge
@@ -260,11 +260,11 @@ services:
     image: opensearchproject/opensearch-dashboards:latest
     container_name: opensearch-dashboards
     ports:
-      - 5601:5601
+      - 5901:5601
     expose:
-      - "5601"
+      - "5901"
     environment:
-      OPENSEARCH_HOSTS: '["https://opensearch-node1:9200","https://opensearch-node2:9200"]'
+      OPENSEARCH_HOSTS: '["https://opensearch-node1:9250","https://opensearch-node2:9250"]'
     networks:
       - bridge
           

@@ -47,9 +47,18 @@ docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:930
 
 #### Install OpenSearch based on Docker for testing
 - OpenSearch(<i>https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker</i>) is a scalable, flexible, and extensible open-source software suite for search, analytics, and observability applications licensed under Apache 2.0.
-- Build Single Node OpenSearch with Dashboard based on the recent version (You can test using `https://localhost:9250` or `curl https://localhost:9250 -ku 'admin:admin'`)
+- Build Single Node OpenSearch with Dashboard(`http://localhost:5901`) based on the recent version (You can test using `https://localhost:9250` or `curl https://localhost:9250 -ku 'admin:admin'`)
 ```bash
-docker run --name opensearch-es01 -p 9250:9200 -e "node.name=opensearch-es01" -e "discovery.type=single-node" opensearchproject/opensearch
+docker run --name opensearch-es01 --network bridge -p 9250:9200 -e "node.name=opensearch-es01" -e "discovery.type=single-node" opensearchproject/opensearch
+docker exec -it  opensearch-es01 /bin/bash -c /usr/share/opensearch/plugins/opensearch-security/tools/hash.sh
+# docker run --name opensearch-dashboard --network bridge -p 5901:5601 -e "opensearch_hosts='[\"https://host.docker.internal:9250\"]'" opensearchproject/opensearch-dashboards
+docker run --name opensearch-dashboard --network bridge -p 5901:5601 -v /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/custom-opensearch-dashboards.yml:/usr/share/opensearch-dashboards/config/opensearch_dashboards.yml opensearchproject/opensearch-dashboards
+```
+- Send requests to the server to verify that OpenSearch is up and running:
+```bash
+curl -XGET https://localhost:9250 -u 'admin:admin' --insecure
+curl -XGET https://localhost:9250/_cat/nodes?v -u 'admin:admin' --insecure
+curl -XGET https://localhost:9250/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
 #### Run Local Environment
