@@ -89,6 +89,6 @@ tests/test_api.py::test_api PASSED                                              
 tests/test_api.py::test_CRUD_api PASSED                                                                  [ 42%]
 tests/test_elasticsearch.py::test_elasticsearch PASSED                                                   [ 57%]
 tests/test_elasticsearch.py::test_indics_analyzer_elasticsearch PASSED                                   [ 71%]
-tests/test_elasticsearch.py::test_search_elasticsearch SKIPPED (no way of currently testing this)        [ 85%]
-tests/test_elasticsearch.py::test_api_es_search SKIPPED (no way of currently testing this)               [100%]
+tests/test_elasticsearch.py::test_search_elasticsearch PASSED                                            [ 85%]
+tests/test_elasticsearch.py::test_api_es_search PASSED                                                   [100%]
 ```

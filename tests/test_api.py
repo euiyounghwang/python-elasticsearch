@@ -17,9 +17,12 @@ def test_api(mock_client):
     
 def test_CRUD_api(mock_client):
     sample_payload = {
-        "title": "test_title",
-        "description": "test_decription",
-        "completed": "False"
+        "include_basic_aggs": True,
+        "pit_id": "",
+        "query_string": "performance",
+        "size": 20,
+        "sort_order": "DESC",
+        "start_date": "2021 01-01 00:00:00"
     }
     
     # Create Item

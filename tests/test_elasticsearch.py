@@ -45,17 +45,25 @@ def test_elasticsearch(mock_es_client):
         ic.put_alias(index, name)
 
     es.index(index="test_performance_metrics_v1", id=111, body={
-        "title": "Cryptocurrency Regulations Act 111",
-        "locality": "us",
-        "bill_type": "BILL",
-        "start_date" : "2023-01-01 00:00:00"
+        "title" :  "performance",
+        "elapsed_time": 0.3,
+        "sequence": 1,
+        "entity_type": "performance",
+        "env" :  "dev",
+        "concurrent_users" :  "20",
+        "search_index" :  "test_performance_metrics_v1",
+        "@timestamp" : "2023-01-01 00:00:00"
         }
     )
     es.index(index="test_performance_metrics_v1", id=222, body={
-            "title": "Cryptocurrency Regulations Act 222",
-            "locality": "us",
-            "bill_type": "BILL",
-            "start_date": "2023-01-01 00:00:01"
+        "title" :  "performance",
+        "elapsed_time": 0.1,
+        "sequence": 2,
+        "entity_type": "performance",
+        "env" :  "dev",
+        "concurrent_users" :  "20",
+        "search_index" :  "test_performance_metrics_v1",
+        "@timestamp" : "2023-01-01 00:00:01"
         }
     )
     
@@ -122,24 +130,20 @@ def test_indics_analyzer_elasticsearch(mock_es_client):
     }
 
 
-@pytest.mark.skip(reason="no way of currently testing this")
 def test_search_elasticsearch(mock_es_client):
     assert mock_es_client is not None
 
     es = mock_es_client
 
-    # print(response)
-    # assert response.status == 404
-
-    response = es.get(index="test_omnisearch_v1", id=222)
+    response = es.get(index="test_performance_metrics_v1", id=222)
     print(response)
     assert response is not None
-    assert '_source' in response and response['_source']['title'] == 'Cryptocurrency Regulations Act 222'
+    assert '_source' in response and response['_source']['title'] == 'performance'
 
     query = {
         "query": {
             "match": {
-                "title": "Cryptocurrency"
+                "title": "performance"
             }
         }
     }
@@ -148,15 +152,15 @@ def test_search_elasticsearch(mock_es_client):
     # query = {
     #     "query": {
     #         "query_string": {
-    #             "fields": ['title^3', 'field2'],
+    #             "fields": ['title^3'],
     #            "default_operator": "AND",
     #             "analyzer": "standard",
-    #             "query": "Cryptocurrency"
+    #             "query": "performance"
     #         }
     #     }
     # }
 
-    response = es.search(index="test_omnisearch_v1", body=query)
+    response = es.search(index="test_performance_metrics_v1", body=query)
     assert response is not None
     assert response['hits']['total']['value'] > 0
     # print(response)
@@ -166,7 +170,6 @@ def test_search_elasticsearch(mock_es_client):
         assert hit["_source"] is not None
 
 
-@pytest.mark.skip(reason="no way of currently testing this")
 def test_api_es_search(mock_client):
     ''' API call '''
     assert mock_client is not None
@@ -176,7 +179,7 @@ def test_api_es_search(mock_client):
     request_body = {
             "include_basic_aggs": True,
             "pit_id": "",
-            "query_string": "Cryptocurrency",
+            "query_string": "performance",
             "size": 20,
             "sort_order": "DESC",
             "start_date": "2021 01-01 00:00:00"
