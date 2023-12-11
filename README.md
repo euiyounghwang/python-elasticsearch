@@ -40,8 +40,6 @@ poetry install (using --no-root option when building the docker on CircleCI or D
 - Build Single Node ES with Kibana based on 7.10.0 version (You have to choose to build & create REST-API Service (`fn-elasticsearch-api`) and Pytest(`fn-elasticsearch-api-test`) instances using `./docker-compose.yml` for interacting with single ES cluster)
 ```bash
 docker run --name kibaba-run --network bridge -e "ELASTICSEARCH_URL=http://host.docker.internal:9209" -e "ES_JAVA_OPTS=-Xms1g -Xmx1g" -e "ELASTICSEARCH_HOSTS=http://host.docker.internal:9209" -p 5801:5601 docker.elastic.co/kibana/kibana:7.10.0
-```
-```bash
 docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:9300 -e "http.cors.enabled=true" -e "http.cors.allow-origin=\"*\"" -e "http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization" -e "http.cors.allow-credentials=true" -e "xpack.security.enabled=false" -e "discovery.type=single-node" -e "ES_JAVA_OPTS=-Xms2g -Xmx2g" docker.elastic.co/elasticsearch/elasticsearch:7.10.0
 ```
 - Build Multiple Nodes ES  based on 7.10.0 version with Kibana, REST-API Service & Pytest instances : Build & create instances using `./docker-compose.yml` or `./docker-build.sh` for building the docker image, `./docker-run.sh` for running the service and `./docker-tests.sh` for testing using pytest (Also you can build single cluster(`single_node`, `single_node_kibana`) without xpack option or multiple cluster with xpack : `docker-compose -f ./create-certs.yml run --rm create_certs` to create certs)
