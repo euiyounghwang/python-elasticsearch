@@ -46,8 +46,8 @@ docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:930
 
 
 #### Install OpenSearch based on Docker for testing
-- OpenSearch is a scalable, flexible, and extensible open-source software suite for search, analytics, and observability applications licensed under Apache 2.0.
-- Build Single Node OpenSearch with Dashboard based on the recent version
+- OpenSearch(<i>https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker</i>) is a scalable, flexible, and extensible open-source software suite for search, analytics, and observability applications licensed under Apache 2.0.
+- Build Single Node OpenSearch with Dashboard based on the recent version (You can test using `https://localhost:9250` or `curl https://localhost:9250 -ku 'admin:admin'`)
 ```bash
 docker run --name opensearch-es01 -p 9250:9200 -e "node.name=opensearch-es01" -e "discovery.type=single-node" opensearchproject/opensearch
 ```
