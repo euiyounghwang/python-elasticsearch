@@ -1,7 +1,7 @@
 
 ### Python-Elasticsearch
 
-I will use this project as a basic api for building and searching with Elasticsearch(In 7.10, Elasticsearch released the point-in-time API. As of 2021, starting with the version 7.11 release, it’s free under the Server Side Public License (SSPL) or Elastic License)
+I will use this project as a basic api for building and searching with Elasticsearch(`In 7.10, Elasticsearch released the point-in-time API`. As of 2021, starting with the version 7.11 release, it’s free under the Server Side Public License (SSPL) or Elastic License)
 - Build docker service and test instance for creating an index with sample datasets and searching with Elasticsearch
 - Also run local environment with this project using `./service_start.sh` script
 - Build Docker Instance for testing with pytest using using `./docker-compose.yml` or different ways the following method like the step `Install Service and Test with Elasicsearch Cluster based on Docker`
