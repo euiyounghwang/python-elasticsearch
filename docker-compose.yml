@@ -6,7 +6,9 @@ services:
   cerebro:
     image: lmenezes/cerebro:0.9.4
     ports:
-      - "9100:9000"
+      - "9009:9000"
+    volumes:
+      - ./monitoring/cerebro/application.conf://opt/cerebro/conf/application.conf
   
   # Single Cluster
   single_node:
