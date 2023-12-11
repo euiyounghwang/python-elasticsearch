@@ -78,6 +78,7 @@ INFO:     Application startup complete.
 
 
 ### Pytest
+- Go to virtual enviroment using `source .venv/bin/activate`
 - Run this command manually: `poetry run py.test -v --junitxml=test-reports/junit/pytest.xml --cov-report html --cov tests/` or `./pytest.sh`
 ```bash
 (.venv) ➜  python-elasticsearch git:(master) ./pytest.sh 
