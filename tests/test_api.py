@@ -15,7 +15,7 @@ def test_api(mock_client):
     assert response.json() == {"message": "Hello World"}
     
     
-def test_CRUD_api(mock_client):
+def test_rest_api(mock_client):
     sample_payload = {
         "include_basic_aggs": True,
         "pit_id": "",

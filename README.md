@@ -86,7 +86,7 @@ collected 7 items
 
 tests/test_api.py::test_skip SKIPPED (no way of currently testing this)                                  [ 14%]
 tests/test_api.py::test_api PASSED                                                                       [ 28%]
-tests/test_api.py::test_CRUD_api PASSED                                                                  [ 42%]
+tests/test_api.py::test_rest_api PASSED                                                                  [ 42%]
 tests/test_elasticsearch.py::test_elasticsearch PASSED                                                   [ 57%]
 tests/test_elasticsearch.py::test_indics_analyzer_elasticsearch PASSED                                   [ 71%]
 tests/test_elasticsearch.py::test_search_elasticsearch PASSED                                            [ 85%]
