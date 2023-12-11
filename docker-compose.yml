@@ -9,7 +9,7 @@ services:
       - "9100:9000"
   
   # Single Cluster
-  elasticsearch:
+  single_node:
     #image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
     build:
       context: ./Docker/elasticsearch
@@ -43,6 +43,17 @@ services:
     networks:
       - bridge
       
+  single_node_kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.0
+    depends_on: {"single_node": {"condition": "service_healthy"}}
+    restart: unless-stopped
+    ports:
+      - 5601:5601
+    environment:
+      SERVERNAME: localhost
+      ELASTICSEARCH_URL: http://single_node:9221
+      ELASTICSEARCH_HOSTS: http://single_node:9221
+          
   # docker-compose -f ./create-certs.yml run --rm create_certs
   # docker-compose up -d
   # Multiple Cluster
