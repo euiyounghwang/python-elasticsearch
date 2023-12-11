@@ -28,10 +28,10 @@ def test_CRUD_api(mock_client):
     # Create Item
     response = mock_client.post("/es/search", json=sample_payload)
     assert response.status_code == 200
-    # assert response.json() == {
-    #     "message ": "OK - Successful Query executed",
-    #     "uuid": response.json()['uuid']
-    # }
+    assert response.json()['total'] == {
+        "value": 2,
+        "relation": "eq"
+    }
     
     
     
