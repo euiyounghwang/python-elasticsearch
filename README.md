@@ -45,9 +45,6 @@ docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:930
 - Build Multiple Nodes ES  based on 7.10.0 version with Kibana, REST-API Service & Pytest instances : Build & create instances using `./docker-compose.yml` or `./docker-build.sh` for building the docker image, `./docker-run.sh` for running the service and `./docker-tests.sh` for testing using pytest (Also you can build single cluster without xpack option or multiple cluster with xpack : `docker-compose -f ./create-certs.yml run --rm create_certs` to create certs)
 
 
-#### Swagger for REST-API
-![Alt text](./screenshot/Swagger.png)
-
 #### Run Local Environment
 - It will be validate the status of elasticsearch cluster using `./wait_fo_es.sh` and `./DevOps_Shell/read_config.sh` for reading es host value in `./config.yaml` automatically when running `./service_start.sh` script.
 ```bash
@@ -74,6 +71,11 @@ INFO:     Started server process [17471]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 ```
+
+
+#### Swagger for REST-API
+![Alt text](./screenshot/Swagger.png)
+
 
 ### Pytest
 - Run this command manually: `poetry run py.test -v --junitxml=test-reports/junit/pytest.xml --cov-report html --cov tests/` or `./pytest.sh`
