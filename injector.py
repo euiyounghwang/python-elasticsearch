@@ -43,7 +43,7 @@ es_client = Elasticsearch(hosts=global_settings.get_Hosts(),
                           timeout=600
 )
 
-# SearchOmniHandlerInject = SearchOmniHandler(es_client, logger, doc['app'])
-# QueryBuilderInject = QueryBuilder(es_client, logger, doc['app'])
+SearchOmniHandlerInject = SearchOmniHandler(es_client, logger, doc['app'])
+QueryBuilderInject = QueryBuilder(es_client, logger, doc['app'])
 
 

@@ -19,6 +19,7 @@ class SearchOmniHandler(object):
             oas_query = {}
 
         if not oas_query.get('pit_id'):
+            self.logger.warn("Search but It's first time to call with pit")
             resp = self.es_client.open_point_in_time(index=self.OMNI_INDEX_ALIAS, keep_alive='1m')
             pit_id = resp['id']
             self.search_after = None

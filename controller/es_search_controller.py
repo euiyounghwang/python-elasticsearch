@@ -2,7 +2,7 @@
 from fastapi import APIRouter
 from repository.schemas import Search
 from injector import (logger, doc)
-# from injector import (logger, doc, SearchOmniHandlerInject, QueryBuilderInject, metrics_service)
+from injector import (logger, doc, SearchOmniHandlerInject, QueryBuilderInject)
 import json
 import datetime
 
@@ -26,7 +26,7 @@ async def Elasticsearch_Search(request: Search):
         
         EndTime = datetime.datetime.now()
 
-        # return await SearchOmniHandlerInject.search(QueryBuilderInject, oas_query=request_json)
+        return await SearchOmniHandlerInject.search(QueryBuilderInject, oas_query=request_json)
     
     finally:
         Delay_Time = str((EndTime - StartTime).seconds) + '.' + str((EndTime - StartTime).microseconds).zfill(6)[:2]

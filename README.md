@@ -1,7 +1,7 @@
 
 ### Python-Elasticsearch
 
-I will use this project as a basic api for building and searching with Elasticsearch 
+I will use this project as a basic api for building and searching with Elasticsearch(In 7.10, Elasticsearch released the point-in-time API. As of 2021, starting with the version 7.11 release, it’s free under the Server Side Public License (SSPL) or Elastic License)
 - Build docker service and test instance for creating an index with sample datasets and searching with Elasticsearch
 - Also run local environment with this project using `./service_start.sh` script
 - Build Docker Instance for testing with pytest using using `./docker-compose.yml` or different ways the following method like the step `Install Service and Test with Elasicsearch Cluster based on Docker`
@@ -24,7 +24,7 @@ poetry init
 poetry add fastapi
 poetry add uvicorn
 poetry add pytz
-poetry add elasticsearch==7.9.0
+poetry add elasticsearch==7.10
 poetry add numpy
 poetry add pytest
 poetry add python-dotenv
@@ -37,12 +37,12 @@ poetry install
 ```
 
 #### Install Service and Test with Elasicsearch Cluster based on Docker
-- Build Single Node ES with Kibana based on 7.9.0 version (You have to choose to build & create REST-API Service and Pytest instances using `./docker-compose.yml` for interacting with single ES cluster)
+- Build Single Node ES with Kibana based on 7.10.0 version (You have to choose to build & create REST-API Service and Pytest instances using `./docker-compose.yml` for interacting with single ES cluster)
 ```bash
-docker run --name kibaba-run --network bridge -e "ELASTICSEARCH_URL=http://host.docker.internal:9209" -e "ES_JAVA_OPTS=-Xms1g -Xmx1g" -e "ELASTICSEARCH_HOSTS=http://host.docker.internal:9209" -p 5801:5601 docker.elastic.co/kibana/kibana:7.9.0
-docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:9300 -e "http.cors.enabled=true" -e "http.cors.allow-origin=\"*\"" -e "http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization" -e "http.cors.allow-credentials=true" -e "xpack.security.enabled=false" -e "discovery.type=single-node" -e "ES_JAVA_OPTS=-Xms2g -Xmx2g" docker.elastic.co/elasticsearch/elasticsearch:7.9.0
+docker run --name kibaba-run --network bridge -e "ELASTICSEARCH_URL=http://host.docker.internal:9209" -e "ES_JAVA_OPTS=-Xms1g -Xmx1g" -e "ELASTICSEARCH_HOSTS=http://host.docker.internal:9209" -p 5801:5601 docker.elastic.co/kibana/kibana:7.10.0
+docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:9300 -e "http.cors.enabled=true" -e "http.cors.allow-origin=\"*\"" -e "http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization" -e "http.cors.allow-credentials=true" -e "xpack.security.enabled=false" -e "discovery.type=single-node" -e "ES_JAVA_OPTS=-Xms2g -Xmx2g" docker.elastic.co/elasticsearch/elasticsearch:7.10.0
 ```
-- Build Multiple Nodes ES  based on 7.9.0 version with Kibana, REST-API Service & Pytest instances : Build & create instances using `./docker-compose.yml` or `./docker-build.sh` for building the docker image, `./docker-run.sh` for running the service and `./docker-tests.sh` for testing using pytest (Also you can build single cluster without xpack option or multiple cluster with xpack : `docker-compose -f ./create-certs.yml run --rm create_certs` to create certs)
+- Build Multiple Nodes ES  based on 7.10.0 version with Kibana, REST-API Service & Pytest instances : Build & create instances using `./docker-compose.yml` or `./docker-build.sh` for building the docker image, `./docker-run.sh` for running the service and `./docker-tests.sh` for testing using pytest (Also you can build single cluster without xpack option or multiple cluster with xpack : `docker-compose -f ./create-certs.yml run --rm create_certs` to create certs)
 
 
 #### Run Local Environment
