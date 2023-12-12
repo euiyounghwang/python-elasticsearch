@@ -278,7 +278,7 @@ services:
       dockerfile: Dockerfile
       target: runtime
     ports:
-      - 8888:8888
+      - 8880:8888
     volumes:
       - ${PROJECTS_DIR}/python-elasticsearch:/app/FN-Basic-Services
     restart: unless-stopped
