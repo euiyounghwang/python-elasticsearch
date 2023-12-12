@@ -7,7 +7,7 @@ I will use this project as a basic api for building and searching with Elasticse
 - Build Docker Instance for testing with pytest using using `./docker-compose.yml` or different ways the following method like the step `Install Service and Test with Elasicsearch Cluster based on Docker`
 - Estimate the number of primary/replica(replica should be one by default) shards with resharding stratege by using 
 `'/cluster/sharding_predict'` with POST method against data size 
-- Also we can test Opensearch & Dashboard with Cerebro for monitoring after building the docker instance using single node or multiple nodes with `./docker-compose.yml`
+- Also we can test Opensearch & Dashboard with Cerebro tool for implementing & monitoring after building the docker instance using single node or multiple nodes with `./docker-compose.yml`
 
 
 #### Install Poerty
