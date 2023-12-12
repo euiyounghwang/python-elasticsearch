@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from config.log_config import create_log
-from controller import (es_search_controller)
+from controller import (es_search_controller,
+                        cluster_estimate_controller
+                       )
 
 logger = create_log()
 app = FastAPI()
@@ -44,3 +46,4 @@ async def root_with_param(id):
 
 # router
 app.include_router(es_search_controller.app, tags=["Search"], )
+app.include_router(cluster_estimate_controller.app, tags=["Cluster"], )
