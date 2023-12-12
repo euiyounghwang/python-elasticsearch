@@ -3,6 +3,7 @@ from fastapi import APIRouter
 from repository.schemas import Search
 from injector import (logger, doc)
 from injector import (logger, doc, SearchOmniHandlerInject, QueryBuilderInject)
+from service.handler.status_handler import (StatusHanlder, StatusException)
 import json
 import datetime
 
@@ -10,7 +11,10 @@ app = APIRouter(
     prefix="/es",
 )
 
-@app.post("/search", description="Search to ES", summary="Search to ES")
+@app.post("/search", 
+          status_code=StatusHanlder.HTTP_STATUS_200,
+          description="Search to ES", 
+          summary="Search to ES")
 async def Elasticsearch_Search(request: Search):
     ''' Search to Elasticsearch '''
     StartTime, EndTime, Delay_Time = 0, 0, 0
@@ -27,6 +31,10 @@ async def Elasticsearch_Search(request: Search):
         EndTime = datetime.datetime.now()
 
         return await SearchOmniHandlerInject.search(QueryBuilderInject, oas_query=request_json)
+    
+    except Exception as e:
+        logger.error(e)
+        return StatusException.raise_exception(e)
     
     finally:
         Delay_Time = str((EndTime - StartTime).seconds) + '.' + str((EndTime - StartTime).microseconds).zfill(6)[:2]

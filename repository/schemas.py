@@ -19,7 +19,7 @@ class Sort_Order(str, Enum):
 class Search(BaseModel):
     include_basic_aggs: bool = True
     pit_id: str = ""
-    query_string: str = "video"
+    query_string: str = "performance"
     size: int = 20
     # sort_order: str = "DESC"
     sort_order: Sort_Order = Sort_Order.desc
@@ -35,6 +35,15 @@ class Search(BaseModel):
             'start_date' : self.start_date,
         }
     
+    
+class Performance(BaseModel):
+    data_size: str = "600gb"
+    
+    def to_json(self):
+        return {
+            'data_size' :  self.data_size
+        }
+
     
 class MessageSchema(BaseModel):
     message: str
