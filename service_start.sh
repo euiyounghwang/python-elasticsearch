@@ -15,7 +15,7 @@ cd $SCRIPTDIR
 source .venv/bin/activate
 
 # --
-# Wating for ES
+# Waitng for ES
 ./wait_for_es.sh $ES_HOST
 
 uvicorn main:app --reload --host=0.0.0.0 --port=8888 --workers 4
