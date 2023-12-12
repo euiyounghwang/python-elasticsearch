@@ -90,7 +90,7 @@ INFO:     Application startup complete.
 
 
 #### Swagger for REST-API
-![Alt text](./screenshot/Swagger.png)
+![Alt text](./screenshot/Swagger_API.png)
 
 
 ### Pytest
