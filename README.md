@@ -6,7 +6,8 @@ I will use this project as a basic api for building and searching with Elasticse
 - Also run local environment with this project using `./service_start.sh` script
 - Build Docker Instance for testing with pytest using using `./docker-compose.yml` or different ways the following method like the step `Install Service and Test with Elasicsearch Cluster based on Docker`
 - Estimate the number of primary/replica(replica should be one by default) shards with resharding stratege by using 
-`'/cluster/sharding_predict'` with POST method against data size (`You will want to limit your maximum shard size to 30-80 GB if running a recent version of Elasticsearch. For instance, let’s assume you rotate indices monthly and expect around 600 GB of data per month. In this example, you would allocate 8 to 20 shards.`)
+`'/cluster/sharding_predict'` with POST method against data size 
+- [Sharding Example] You will want to limit your maximum shard size to 30-80 GB if running a recent version of Elasticsearch. For instance, let’s assume you rotate indices monthly and expect around 600 GB of data per month. In this example, you would allocate 8 to 20 shards
 
 
 #### Install Poerty
