@@ -10,6 +10,65 @@ services:
     volumes:
       - ./monitoring/cerebro/application.conf://opt/cerebro/conf/application.conf
   
+  alertmanager:
+    image: prom/alertmanager
+    container_name: alertmanager
+    privileged: true
+    volumes:
+      - ./monitoring/alertmanager/alertmanager.yml:/alertmanager.yml
+      - ./monitoring/alertmanager/slack.tmpl:/slack.tmpl
+    command:
+      - '--config.file=/alertmanager.yml'
+      - "--web.external-url=http://localhost:9093"
+    ports:
+      - 9093:9093
+      
+  # docker run --rm -d -p 9090:9090 -v ./prometheus.yml:/etc/prometheus/prometheus.yml ./prometheus:/prometheus    
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    restart: unless-stopped
+    ports:
+      - 9091:9090
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus:/prometheus
+      - ./monitoring/alertmanager/alert_rules.yml:/alertmanager/alert_rules.yml
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=2d # 90일보다 오래된 metrics는 삭제
+      - --storage.tsdb.retention.size=1GB # 10GB를 넘을 시 오래된 metrics 삭제
+      - --web.console.libraries=/usr/share/prometheus/console_libraries
+      - --web.console.templates=/usr/share/proemtheus/consoles
+      - --web.enable-admin-api
+    networks:
+      - bridge
+    
+  grafana:
+    container_name: grafana-local
+    environment:
+      - GF_INSTALL_PLUGINS=alexanderzobnin-zabbix-app
+      - GF_RENDERING_SERVER_URL=http://host.docker.internal:8088/render
+      - GF_RENDERING_CALLBACK_URL=http://host.docker.internal:3001/
+      - GF_LOG_FILTERS= rendering:debug
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000/tcp
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    networks:
+      - bridge
+      
+  renderer:
+    image: grafana/grafana-image-renderer
+    restart: always
+    ports:
+      - 8088:8081
+    networks:
+      - bridge
+      
   # Single Cluster
   single_node:
     #image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
