@@ -15,7 +15,7 @@ receivers:
       - send_resolved: true
         # username: 'prometheus-alert'
         channel: '#alert'
-        api_url: 'https://hooks.slack.com/services/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'
+        api_url: 'https://hooks.slack.com/services/XXXX'
         # title: |-
         #   # [{{ .Status | toUpper }}{{ if eq .Status "firing" }}:{{ .Alerts.Firing | len }}{{ end }}] {{ .CommonLabels.alertname }}
         #   {{ template "custom_title" . }}{{- "\n" -}}{{ template "custom_slack_message" . }}
