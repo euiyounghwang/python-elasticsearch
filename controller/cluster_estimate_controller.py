@@ -2,7 +2,11 @@
 from fastapi import APIRouter
 from repository.schemas import Search
 from injector import (logger, doc)
-# from injector import (logger, doc, SearchOmniHandlerInject, QueryBuilderInject)
+from injector import (logger, 
+                      doc, 
+                      SearchOmniHandlerInject, 
+                      QueryBuilderInject, 
+                      ClusterShardingInject)
 import json
 import datetime
 
@@ -26,7 +30,7 @@ async def Cluster_sharding_estimate(request: Search):
         
         EndTime = datetime.datetime.now()
 
-        # return await SearchOmniHandlerInject.search(QueryBuilderInject, oas_query=request_json)
+        return await ClusterShardingInject.sharding_predict(oas_query=request_json)
         return {'results' : 
             {
                 "the number of primary shards" : 1,

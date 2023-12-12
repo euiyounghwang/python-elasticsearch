@@ -2,6 +2,7 @@
 from config.log_config import create_log
 from config import config
 from service.handler.es_search_handler import (SearchOmniHandler)
+from service.handler.cluster_sharding import (ClusterShardingHandler)
 from service.handler.es_query_builder import (QueryBuilder)
 from elasticsearch import Elasticsearch
 from dotenv import load_dotenv
@@ -45,5 +46,6 @@ es_client = Elasticsearch(hosts=global_settings.get_Hosts(),
 
 SearchOmniHandlerInject = SearchOmniHandler(es_client, logger, doc['app'])
 QueryBuilderInject = QueryBuilder(es_client, logger, doc['app'])
+ClusterShardingInject = ClusterShardingHandler(es_client, logger)
 
 
