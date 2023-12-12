@@ -5,6 +5,9 @@ I will use this project as a basic api for building and searching with Elasticse
 - Build docker service and test instance for creating an index with sample datasets and searching with Elasticsearch
 - Also run local environment with this project using `./service_start.sh` script
 - Build Docker Instance for testing with pytest using using `./docker-compose.yml` or different ways the following method like the step `Install Service and Test with Elasicsearch Cluster based on Docker`
+- Provide the number of primary/replica(replica should be one by default) shards with resharding stratege by using 
+`'/cluster/sharding_predict'` with POST method
+
 
 #### Install Poerty
 ```
