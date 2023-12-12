@@ -298,7 +298,7 @@ services:
       - 8889:8889
     volumes:
       - ${PROJECTS_DIR}/python-elasticsearch:/app/FN-Basic-Services
-    restart: unless-stopped
+    # restart: unless-stopped
     environment:
       - ES_HOST=http://host.docker.internal:9209
     networks:
