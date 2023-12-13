@@ -11,7 +11,7 @@ I will use this project as a basic api for building and searching with Elasticse
 
 
 #### Install Poerty
-```
+```bash
 https://python-poetry.org/docs/?ref=dylancastillo.co#installing-with-the-official-installer
 ```
 
