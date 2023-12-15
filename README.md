@@ -49,9 +49,9 @@ docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:930
 - Build Multiple Nodes ES  based on 7.10.0 version with Kibana, REST-API Service & Pytest instances : Build & create instances using `./docker-compose.yml` or `./docker-build.sh` for building the docker image, `./docker-run.sh` for running the service and `./docker-tests.sh` for testing using pytest (Also you can build single cluster(`single_node`, `single_node_kibana`) without xpack option or multiple cluster with xpack : `docker-compose -f ./create-certs.yml run --rm create_certs` to create certs)
 
 
-#### Elasticsearh Diagnostics
-- The support diagnostic utility is a Java application that can interrogate a running Elasticsearch cluster or Logstash process to obtain data about the state of the cluster at that point in time. It is compatible with all versions of Elasticsearch (including alpha, beta and release candidates), and for Logstash versions greater than 5.0, and for Kibana v6.5+. The release version of the diagnostic is independent of the Elasticsearch, Kibana or Logstash version it is being run against. If it cannot match the targeted version it will attempt to run calls from the latest configured release. Linux, OSX, or Windows platforms are all supported, and it can be run as a standalone utility or from within a Docker container.
-- Diagnostics Guide <i>(https://olamideolajide.medium.com/how-to-collect-diagnostics-for-a-cloud-elasticsearch-cluster-4a20841a815a, https://github.com/elastic/support-diagnostics/releases/tag/8.0.3)</i>
+#### Elasticsearh Cluster Diagnostics (Support by Elasticsearch)
+- The support diagnostic utility is a Java application that can interrogate a running Elasticsearch cluster or Logstash process to obtain data about the state of the cluster at that point in time. It is compatible with all versions of Elasticsearch (including alpha, beta and release candidates), and for Logstash versions greater than 5.0, and for Kibana v6.5+. The release version of the diagnostic is independent of the Elasticsearch, Kibana or Logstash version it is being run against.
+- `Diagnostics Guide` <i>(https://olamideolajide.medium.com/how-to-collect-diagnostics-for-a-cloud-elasticsearch-cluster-4a20841a815a, https://github.com/elastic/support-diagnostics/releases/tag/8.0.3)</i>
 ```bash
 python-elasticsearch git:(master) ✗ ./support-diagnostics-8.0.3/diagnostics.sh --host localhost --port 9209
 Using /usr/bin/java as Java Runtime
