@@ -1,0 +1,36 @@
+{
+  "note" : "No shard was specified in the explain API request, so this response explains a randomly chosen unassigned shard. There may be other unassigned shards in this cluster which cannot be assigned for different reasons. It may not be possible to assign this shard until one of the other shards is assigned correctly. To explain the allocation of other shards (whether assigned or unassigned) you must specify the target shard in the request to this API.",
+  "index" : "elastic-index",
+  "shard" : 0,
+  "primary" : false,
+  "current_state" : "unassigned",
+  "unassigned_info" : {
+    "reason" : "CLUSTER_RECOVERED",
+    "at" : "2023-12-15T20:45:39.636Z",
+    "last_allocation_status" : "no_attempt"
+  },
+  "can_allocate" : "no",
+  "allocate_explanation" : "Elasticsearch isn't allowed to allocate this shard to any of the nodes in the cluster. Choose a node to which you expect this shard to be allocated, find this node in the node-by-node explanation, and address the reasons which prevent Elasticsearch from allocating this shard there.",
+  "node_allocation_decisions" : [
+    {
+      "node_id" : "BHahVpEATUK0vAjLDq3dzw",
+      "node_name" : "b3abf1a35c5e",
+      "transport_address" : "172.17.0.2:9300",
+      "node_attributes" : {
+        "ml.allocated_processors_double" : "8.0",
+        "ml.max_jvm_size" : "2147483648",
+        "ml.allocated_processors" : "8",
+        "ml.machine_memory" : "14647033856",
+        "xpack.installed" : "true"
+      },
+      "node_decision" : "no",
+      "deciders" : [
+        {
+          "decider" : "same_shard",
+          "decision" : "NO",
+          "explanation" : "a copy of this shard is already allocated to this node [[elastic-index][0], node[BHahVpEATUK0vAjLDq3dzw], [P], s[STARTED], a[id=ML-_vkaURPyhmlAlE0P54w], failed_attempts[0]]"
+        }
+      ]
+    }
+  ]
+}

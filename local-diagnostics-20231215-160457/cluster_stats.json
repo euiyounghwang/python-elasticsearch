@@ -1,0 +1,576 @@
+{
+  "_nodes" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "cluster_name" : "docker-cluster",
+  "cluster_uuid" : "jOgcAwsGR0OXuS-C-x-Ung",
+  "timestamp" : 1702677896917,
+  "status" : "yellow",
+  "indices" : {
+    "count" : 50,
+    "shards" : {
+      "total" : 50,
+      "primaries" : 50,
+      "replication" : 0.0,
+      "index" : {
+        "shards" : {
+          "min" : 1,
+          "max" : 1,
+          "avg" : 1.0
+        },
+        "primaries" : {
+          "min" : 1,
+          "max" : 1,
+          "avg" : 1.0
+        },
+        "replication" : {
+          "min" : 0.0,
+          "max" : 0.0,
+          "avg" : 0.0
+        }
+      }
+    },
+    "docs" : {
+      "count" : 309412,
+      "deleted" : 12458
+    },
+    "store" : {
+      "size" : "162.4mb",
+      "size_in_bytes" : 170353997,
+      "total_data_set_size" : "162.4mb",
+      "total_data_set_size_in_bytes" : 170353997,
+      "reserved" : "0b",
+      "reserved_in_bytes" : 0
+    },
+    "fielddata" : {
+      "memory_size" : "0b",
+      "memory_size_in_bytes" : 0,
+      "evictions" : 0,
+      "global_ordinals" : {
+        "build_time" : "0s",
+        "build_time_in_millis" : 0
+      }
+    },
+    "query_cache" : {
+      "memory_size" : "0b",
+      "memory_size_in_bytes" : 0,
+      "total_count" : 6,
+      "hit_count" : 0,
+      "miss_count" : 6,
+      "cache_size" : 0,
+      "cache_count" : 0,
+      "evictions" : 0
+    },
+    "completion" : {
+      "size" : "0b",
+      "size_in_bytes" : 0
+    },
+    "segments" : {
+      "count" : 214,
+      "memory" : "0b",
+      "memory_in_bytes" : 0,
+      "terms_memory" : "0b",
+      "terms_memory_in_bytes" : 0,
+      "stored_fields_memory" : "0b",
+      "stored_fields_memory_in_bytes" : 0,
+      "term_vectors_memory" : "0b",
+      "term_vectors_memory_in_bytes" : 0,
+      "norms_memory" : "0b",
+      "norms_memory_in_bytes" : 0,
+      "points_memory" : "0b",
+      "points_memory_in_bytes" : 0,
+      "doc_values_memory" : "0b",
+      "doc_values_memory_in_bytes" : 0,
+      "index_writer_memory" : "0b",
+      "index_writer_memory_in_bytes" : 0,
+      "version_map_memory" : "0b",
+      "version_map_memory_in_bytes" : 0,
+      "fixed_bit_set" : "1.9kb",
+      "fixed_bit_set_memory_in_bytes" : 2040,
+      "max_unsafe_auto_id_timestamp" : 1698855686177,
+      "file_sizes" : { }
+    },
+    "mappings" : {
+      "total_field_count" : 19957,
+      "total_deduplicated_field_count" : 14951,
+      "total_deduplicated_mapping_size" : "83.1kb",
+      "total_deduplicated_mapping_size_in_bytes" : 85109,
+      "field_types" : [
+        {
+          "name" : "alias",
+          "count" : 435,
+          "index_count" : 2,
+          "script_count" : 0
+        },
+        {
+          "name" : "binary",
+          "count" : 1,
+          "index_count" : 1,
+          "script_count" : 0
+        },
+        {
+          "name" : "boolean",
+          "count" : 234,
+          "index_count" : 26,
+          "script_count" : 0
+        },
+        {
+          "name" : "byte",
+          "count" : 1,
+          "index_count" : 1,
+          "script_count" : 0
+        },
+        {
+          "name" : "constant_keyword",
+          "count" : 9,
+          "index_count" : 3,
+          "script_count" : 0
+        },
+        {
+          "name" : "date",
+          "count" : 459,
+          "index_count" : 33,
+          "script_count" : 0
+        },
+        {
+          "name" : "date_range",
+          "count" : 6,
+          "index_count" : 6,
+          "script_count" : 0
+        },
+        {
+          "name" : "dense_vector",
+          "count" : 2,
+          "index_count" : 1,
+          "indexed_vector_count" : 2,
+          "indexed_vector_dim_min" : 3,
+          "indexed_vector_dim_max" : 768
+        },
+        {
+          "name" : "double",
+          "count" : 338,
+          "index_count" : 2,
+          "script_count" : 0
+        },
+        {
+          "name" : "flattened",
+          "count" : 52,
+          "index_count" : 8,
+          "script_count" : 0
+        },
+        {
+          "name" : "float",
+          "count" : 374,
+          "index_count" : 19,
+          "script_count" : 0
+        },
+        {
+          "name" : "geo_point",
+          "count" : 33,
+          "index_count" : 4,
+          "script_count" : 0
+        },
+        {
+          "name" : "half_float",
+          "count" : 56,
+          "index_count" : 12,
+          "script_count" : 0
+        },
+        {
+          "name" : "integer",
+          "count" : 181,
+          "index_count" : 11,
+          "script_count" : 0
+        },
+        {
+          "name" : "ip",
+          "count" : 76,
+          "index_count" : 6,
+          "script_count" : 0
+        },
+        {
+          "name" : "join",
+          "count" : 1,
+          "index_count" : 1,
+          "script_count" : 0
+        },
+        {
+          "name" : "keyword",
+          "count" : 6024,
+          "index_count" : 39,
+          "script_count" : 0
+        },
+        {
+          "name" : "long",
+          "count" : 5251,
+          "index_count" : 29,
+          "script_count" : 0
+        },
+        {
+          "name" : "match_only_text",
+          "count" : 322,
+          "index_count" : 4,
+          "script_count" : 0
+        },
+        {
+          "name" : "nested",
+          "count" : 86,
+          "index_count" : 16,
+          "script_count" : 0
+        },
+        {
+          "name" : "object",
+          "count" : 5595,
+          "index_count" : 30,
+          "script_count" : 0
+        },
+        {
+          "name" : "scaled_float",
+          "count" : 179,
+          "index_count" : 7,
+          "script_count" : 0
+        },
+        {
+          "name" : "text",
+          "count" : 149,
+          "index_count" : 29,
+          "script_count" : 0
+        },
+        {
+          "name" : "version",
+          "count" : 9,
+          "index_count" : 9,
+          "script_count" : 0
+        },
+        {
+          "name" : "wildcard",
+          "count" : 84,
+          "index_count" : 4,
+          "script_count" : 0
+        }
+      ],
+      "runtime_field_types" : [ ]
+    },
+    "analysis" : {
+      "char_filter_types" : [
+        {
+          "name" : "pattern_replace",
+          "count" : 1,
+          "index_count" : 1
+        }
+      ],
+      "tokenizer_types" : [
+        {
+          "name" : "edge_ngram",
+          "count" : 2,
+          "index_count" : 1
+        },
+        {
+          "name" : "ngram",
+          "count" : 1,
+          "index_count" : 1
+        }
+      ],
+      "filter_types" : [
+        {
+          "name" : "edge_ngram",
+          "count" : 1,
+          "index_count" : 1
+        },
+        {
+          "name" : "shingle",
+          "count" : 1,
+          "index_count" : 1
+        },
+        {
+          "name" : "stemmer",
+          "count" : 1,
+          "index_count" : 1
+        }
+      ],
+      "analyzer_types" : [
+        {
+          "name" : "custom",
+          "count" : 8,
+          "index_count" : 2
+        }
+      ],
+      "built_in_char_filters" : [ ],
+      "built_in_tokenizers" : [
+        {
+          "name" : "lowercase",
+          "count" : 1,
+          "index_count" : 1
+        },
+        {
+          "name" : "standard",
+          "count" : 6,
+          "index_count" : 1
+        }
+      ],
+      "built_in_filters" : [
+        {
+          "name" : "asciifolding",
+          "count" : 6,
+          "index_count" : 1
+        },
+        {
+          "name" : "kstem",
+          "count" : 4,
+          "index_count" : 1
+        },
+        {
+          "name" : "lowercase",
+          "count" : 7,
+          "index_count" : 2
+        },
+        {
+          "name" : "snowball",
+          "count" : 1,
+          "index_count" : 1
+        },
+        {
+          "name" : "stop",
+          "count" : 1,
+          "index_count" : 1
+        }
+      ],
+      "built_in_analyzers" : [
+        {
+          "name" : "autocomplete",
+          "count" : 1,
+          "index_count" : 1
+        },
+        {
+          "name" : "autocomplete_search",
+          "count" : 1,
+          "index_count" : 1
+        },
+        {
+          "name" : "english",
+          "count" : 1,
+          "index_count" : 1
+        },
+        {
+          "name" : "fn_leg_string_analyzer_v1",
+          "count" : 3,
+          "index_count" : 1
+        },
+        {
+          "name" : "fn_string_analyzer_v1",
+          "count" : 14,
+          "index_count" : 1
+        },
+        {
+          "name" : "standard",
+          "count" : 7,
+          "index_count" : 3
+        }
+      ]
+    },
+    "versions" : [
+      {
+        "version" : "8.8.0",
+        "index_count" : 50,
+        "primary_shard_count" : 50,
+        "total_primary_size" : "162.4mb",
+        "total_primary_bytes" : 170353997
+      }
+    ],
+    "search" : {
+      "total" : 0,
+      "queries" : { },
+      "sections" : { }
+    }
+  },
+  "nodes" : {
+    "count" : {
+      "total" : 1,
+      "coordinating_only" : 0,
+      "data" : 1,
+      "data_cold" : 1,
+      "data_content" : 1,
+      "data_frozen" : 1,
+      "data_hot" : 1,
+      "data_warm" : 1,
+      "index" : 0,
+      "ingest" : 1,
+      "master" : 1,
+      "ml" : 1,
+      "remote_cluster_client" : 1,
+      "search" : 0,
+      "transform" : 1,
+      "voting_only" : 0
+    },
+    "versions" : [
+      "8.8.0"
+    ],
+    "os" : {
+      "available_processors" : 8,
+      "allocated_processors" : 8,
+      "names" : [
+        {
+          "name" : "Linux",
+          "count" : 1
+        }
+      ],
+      "pretty_names" : [
+        {
+          "pretty_name" : "Ubuntu 20.04.6 LTS",
+          "count" : 1
+        }
+      ],
+      "architectures" : [
+        {
+          "arch" : "aarch64",
+          "count" : 1
+        }
+      ],
+      "mem" : {
+        "total" : "13.6gb",
+        "total_in_bytes" : 14647033856,
+        "adjusted_total" : "13.6gb",
+        "adjusted_total_in_bytes" : 14647033856,
+        "free" : "165.3mb",
+        "free_in_bytes" : 173432832,
+        "used" : "13.4gb",
+        "used_in_bytes" : 14473601024,
+        "free_percent" : 1,
+        "used_percent" : 99
+      }
+    },
+    "process" : {
+      "cpu" : {
+        "percent" : 9
+      },
+      "open_file_descriptors" : {
+        "min" : 600,
+        "max" : 600,
+        "avg" : 600
+      }
+    },
+    "jvm" : {
+      "max_uptime" : "1.3h",
+      "max_uptime_in_millis" : 4768029,
+      "versions" : [
+        {
+          "version" : "20.0.1",
+          "vm_name" : "OpenJDK 64-Bit Server VM",
+          "vm_version" : "20.0.1+9-29",
+          "vm_vendor" : "Oracle Corporation",
+          "bundled_jdk" : true,
+          "using_bundled_jdk" : true,
+          "count" : 1
+        }
+      ],
+      "mem" : {
+        "heap_used" : "962.6mb",
+        "heap_used_in_bytes" : 1009415320,
+        "heap_max" : "2gb",
+        "heap_max_in_bytes" : 2147483648
+      },
+      "threads" : 81
+    },
+    "fs" : {
+      "total" : "784.3gb",
+      "total_in_bytes" : 842226245632,
+      "free" : "683.4gb",
+      "free_in_bytes" : 733889478656,
+      "available" : "643.6gb",
+      "available_in_bytes" : 691072782336
+    },
+    "plugins" : [
+      {
+        "name" : "analysis-kuromoji",
+        "version" : "8.8.0",
+        "elasticsearch_version" : "8.8.0",
+        "java_version" : "17",
+        "description" : "The Japanese (kuromoji) Analysis plugin integrates Lucene kuromoji analysis module into elasticsearch.",
+        "classname" : "org.elasticsearch.plugin.analysis.kuromoji.AnalysisKuromojiPlugin",
+        "extended_plugins" : [ ],
+        "has_native_controller" : false,
+        "licensed" : false,
+        "is_official" : true
+      },
+      {
+        "name" : "analysis-nori",
+        "version" : "8.8.0",
+        "elasticsearch_version" : "8.8.0",
+        "java_version" : "17",
+        "description" : "The Korean (nori) Analysis plugin integrates Lucene nori analysis module into elasticsearch.",
+        "classname" : "org.elasticsearch.plugin.analysis.nori.AnalysisNoriPlugin",
+        "extended_plugins" : [ ],
+        "has_native_controller" : false,
+        "licensed" : false,
+        "is_official" : true
+      }
+    ],
+    "network_types" : {
+      "transport_types" : {
+        "netty4" : 1
+      },
+      "http_types" : {
+        "netty4" : 1
+      }
+    },
+    "discovery_types" : {
+      "single-node" : 1
+    },
+    "packaging_types" : [
+      {
+        "flavor" : "default",
+        "type" : "docker",
+        "count" : 1
+      }
+    ],
+    "ingest" : {
+      "number_of_pipelines" : 0,
+      "processor_stats" : { }
+    },
+    "indexing_pressure" : {
+      "memory" : {
+        "current" : {
+          "combined_coordinating_and_primary" : "0b",
+          "combined_coordinating_and_primary_in_bytes" : 0,
+          "coordinating" : "0b",
+          "coordinating_in_bytes" : 0,
+          "primary" : "0b",
+          "primary_in_bytes" : 0,
+          "replica" : "0b",
+          "replica_in_bytes" : 0,
+          "all" : "0b",
+          "all_in_bytes" : 0
+        },
+        "total" : {
+          "combined_coordinating_and_primary" : "0b",
+          "combined_coordinating_and_primary_in_bytes" : 0,
+          "coordinating" : "0b",
+          "coordinating_in_bytes" : 0,
+          "primary" : "0b",
+          "primary_in_bytes" : 0,
+          "replica" : "0b",
+          "replica_in_bytes" : 0,
+          "all" : "0b",
+          "all_in_bytes" : 0,
+          "coordinating_rejections" : 0,
+          "primary_rejections" : 0,
+          "replica_rejections" : 0
+        },
+        "limit" : "0b",
+        "limit_in_bytes" : 0
+      }
+    }
+  },
+  "snapshots" : {
+    "current_counts" : {
+      "snapshots" : 0,
+      "shard_snapshots" : 0,
+      "snapshot_deletions" : 0,
+      "concurrent_operations" : 0,
+      "cleanups" : 0
+    },
+    "repositories" : { }
+  }
+}

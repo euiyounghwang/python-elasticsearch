@@ -49,6 +49,34 @@ docker run --name es8-run --network bridge -p 9209:9200 -p 9114:9114 -p 9309:930
 - Build Multiple Nodes ES  based on 7.10.0 version with Kibana, REST-API Service & Pytest instances : Build & create instances using `./docker-compose.yml` or `./docker-build.sh` for building the docker image, `./docker-run.sh` for running the service and `./docker-tests.sh` for testing using pytest (Also you can build single cluster(`single_node`, `single_node_kibana`) without xpack option or multiple cluster with xpack : `docker-compose -f ./create-certs.yml run --rm create_certs` to create certs)
 
 
+#### Elasticsearh Diagnostics
+- The support diagnostic utility is a Java application that can interrogate a running Elasticsearch cluster or Logstash process to obtain data about the state of the cluster at that point in time. It is compatible with all versions of Elasticsearch (including alpha, beta and release candidates), and for Logstash versions greater than 5.0, and for Kibana v6.5+. The release version of the diagnostic is independent of the Elasticsearch, Kibana or Logstash version it is being run against. If it cannot match the targeted version it will attempt to run calls from the latest configured release. Linux, OSX, or Windows platforms are all supported, and it can be run as a standalone utility or from within a Docker container.
+- Diagnostics Guide <i>(https://olamideolajide.medium.com/how-to-collect-diagnostics-for-a-cloud-elasticsearch-cluster-4a20841a815a, https://github.com/elastic/support-diagnostics/releases/tag/8.0.3)</i>
+```bash
+python-elasticsearch git:(master) ✗ ./support-diagnostics-8.0.3/diagnostics.sh --host localhost --port 9209
+Using /usr/bin/java as Java Runtime
+Using -Xms256m -Xmx2000m  for options.
+Processing diagnosticInputs...
+
+Creating temp directory: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics
+Configuring log file.
+Checking for diagnostic version updates.
+Issue encountered while checking diagnostic version for updates.
+Failed to get current diagnostic version from Github.
+If Github is not accessible from this environemnt current supported version cannot be confirmed.
+Getting Elasticsearch Version.
+Checking the supplied hostname against the node information retrieved to verify location. This may take some time.
+...
+Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/watcher_stack.json
+Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/xpack.json
+Writing diagnostic manifest.
+Closing logger.
+Archiving diagnostic results.
+Archive: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics-20231215-160457.tar.gz was created
+Deleted directory: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics.
+```
+- Extract diagnotics files like `local-diagnostics-20231215-160457.tar` with folder
+
 #### Install OpenSearch based on Docker for testing
 - OpenSearch(<i>https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker</i>) is a scalable, flexible, and extensible open-source software suite for search, analytics, and observability applications licensed under Apache 2.0.
 - Build Single Node OpenSearch with Dashboard(`http://localhost:5901`) based on the recent version (You can test using `https://localhost:9250` or `curl https://localhost:9250 -ku 'admin:admin'`)

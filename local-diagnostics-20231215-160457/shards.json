@@ -1,0 +1,632 @@
+[
+  {
+    "index" : ".monitoring-es-7-2023.12.11",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "103256",
+    "store" : "45027222",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".kibana_8.8.0_001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "400",
+    "store" : "103267",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "elastic-index",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "112",
+    "store" : "4819331",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "elastic-index",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".monitoring-es-7-2023.12.15",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "14849",
+    "store" : "7567167",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_ngram_v1",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "1",
+    "store" : "4532",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-ilm-history-5-2023.10.16-000002",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "235",
+    "store" : "204890",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "recommendation_test",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "12",
+    "store" : "7201",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "recommendation_test",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".ds-metricbeat-8.8.0-2023.11.17-000087",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "247",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-metricbeat-8.8.0-2023.11.17-000087",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".internal.alerts-observability.logs.alerts-default-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".apm-agent-configuration",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-kibana-7-2023.12.07",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "1540",
+    "store" : "1243004",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_omnisearch_v1",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "2",
+    "store" : "6762",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_omnisearch_v1",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".internal.alerts-observability.apm.alerts-default-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".kibana_alerting_cases_8.8.0_001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "1",
+    "store" : "6951",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "search_indexing-db",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "2",
+    "store" : "4880",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "search_indexing-db",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".apm-source-map",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-ilm-history-5-2023.09.16-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "281",
+    "store" : "295589",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_performance_metrics_v1",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "2",
+    "store" : "7834",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".internal.alerts-observability.slo.alerts-default-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".async-search",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "259",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".internal.alerts-observability.uptime.alerts-default-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".kibana-event-log-8.8.0-000003",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "4",
+    "store" : "28084",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".kibana_ingest_8.8.0_001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".kibana_analytics_8.8.0_001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "2534",
+    "store" : "3718886",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-kibana-7-2023.12.08",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "806",
+    "store" : "689277",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-es-7-2023.12.12",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "57021",
+    "store" : "24151020",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-es-7-2023.12.10",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "51060",
+    "store" : "22565070",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-es-7-2023.12.09",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "2008",
+    "store" : "1187472",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".internal.alerts-observability.metrics.alerts-default-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-metricbeat-8.8.0-2023.09.21",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "768",
+    "store" : "1300856",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-metricbeat-8.8.0-2023.09.21",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".apm-custom-link",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".kibana_security_solution_8.8.0_001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "4",
+    "store" : "44250",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_service_realtime_metrics_v1",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "4",
+    "store" : "19008",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_service_realtime_metrics_v1",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".monitoring-kibana-7-2023.12.06",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "2010",
+    "store" : "1504625",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-.logs-deprecation.elasticsearch-default-2023.10.16-000002",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "66",
+    "store" : "69694",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-.logs-deprecation.elasticsearch-default-2023.11.15-000004",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "49",
+    "store" : "188348",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "my-index-01",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "1",
+    "store" : "4872",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "my-index-01",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : "test_omnisearch_v2",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "5000",
+    "store" : "22869100",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_omnisearch_v2",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".internal.alerts-security.alerts-default-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "search_indexing-db1",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "248",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "search_indexing-db1",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".kibana_task_manager_8.8.0_001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "22",
+    "store" : "36554",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".ds-ilm-history-5-2023.11.15-000003",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "46",
+    "store" : "64560",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-es-7-2023.12.06",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "32286",
+    "store" : "14965499",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".kibana-event-log-8.8.0-000002",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "3",
+    "store" : "21126",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "performance_metrics",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "200",
+    "store" : "84279",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "performance_metrics",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : ".kibana-event-log-8.8.0-000001",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "27",
+    "store" : "188212",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-es-7-2023.12.07",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "23507",
+    "store" : "11758575",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : ".monitoring-es-7-2023.12.08",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "11291",
+    "store" : "5576297",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_omnisearch_v3",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "2",
+    "store" : "16222",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_omnisearch_v3",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  },
+  {
+    "index" : "test_sample_v1",
+    "shard" : "0",
+    "prirep" : "p",
+    "state" : "STARTED",
+    "docs" : "0",
+    "store" : "247",
+    "ip" : "172.17.0.2",
+    "node" : "b3abf1a35c5e"
+  },
+  {
+    "index" : "test_sample_v1",
+    "shard" : "0",
+    "prirep" : "r",
+    "state" : "UNASSIGNED",
+    "docs" : null,
+    "store" : null,
+    "ip" : null,
+    "node" : null
+  }
+]

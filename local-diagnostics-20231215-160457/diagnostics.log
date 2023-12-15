@@ -1,0 +1,100 @@
+16:03:32.977 [main] DIAG  com.elastic.support.diagnostics.commands.CheckDiagnosticVersion - This is a test
+16:03:32.978 [main] INFO  com.elastic.support.diagnostics.commands.CheckDiagnosticVersion - Checking for diagnostic version updates.
+16:03:33.598 [main] DIAG  com.elastic.support.diagnostics.commands.CheckDiagnosticVersion - com.vdurmont.semver4j.SemverException: Invalid version (no major version): v8.5.0
+16:03:33.598 [main] INFO  com.elastic.support.diagnostics.commands.CheckDiagnosticVersion - Issue encountered while checking diagnostic version for updates.
+16:03:33.598 [main] INFO  com.elastic.support.diagnostics.commands.CheckDiagnosticVersion - Failed to get current diagnostic version from Github.
+16:03:33.598 [main] INFO  com.elastic.support.diagnostics.commands.CheckDiagnosticVersion - If Github is not accessible from this environemnt current supported version cannot be confirmed.
+16:03:33.599 [main] INFO  com.elastic.support.diagnostics.commands.CheckElasticsearchVersion - Getting Elasticsearch Version.
+16:03:34.050 [main] INFO  com.elastic.support.diagnostics.commands.CheckPlatformDetails - Checking the supplied hostname against the node information retrieved to verify location. This may take some time.
+16:04:54.835 [main] DIAG  com.elastic.support.diagnostics.commands.CheckPlatformDetails - Comparison did not result in an IP or Host match. [fe80:0:0:0:6b2:21f8:3a62:e45c%utun4, fdee:7bc1:2fcd:517:1cd0:428e:f604:bb6d%bridge100, 192.168.1.49, hwanguieongsmbp.localdomain, lo0, fe80:0:0:0:bcd0:74ff:fea1:de64%bridge100, fe80:0:0:0:78f3:7e1b:1328:6261%utun5, 0:0:0:0:0:0:0:1%lo0, fe80:0:0:0:0:0:0:1%lo0, fe80:0:0:0:b66b:2a97:b674:734e%utun0, fe80:0:0:0:98b7:daff:fef4:74bb%awdl0, utun5, utun4, utun3, utun2, fe80:0:0:0:ce81:b1c:bd2c:69e%utun3, utun1, utun0, ap1, fe80:0:0:0:bcd0:74ff:fe1a:a7e%ap1, en0, fe80:0:0:0:242:e835:571b:c20b%utun1, 192.168.67.1, hwanguieongsMBP.localdomain, llw0, bridge100, hwang-uiyeongs-macbook-pro.local, fe80:0:0:0:5fe5:2ab8:6823:1ff9%utun2, fe80:0:0:0:1493:b60c:a9da:a730%en0, fe80:0:0:0:98b7:daff:fef4:74bb%llw0, awdl0] [ProcessProfile{isHttp=true, isDocker=false, currentMaster=false, name='b3abf1a35c5e', id='BHahVpEATUK0vAjLDq3dzw', pid='65', jvmPid='', logDir='/usr/share/elasticsearch/logs', networkHost='0.0.0.0', host='172.17.0.2', ip='172.17.0.2', httpPublishAddr='172.17.0.2', httpPort=9200, os='linuxOS', boundAddresses=[0.0.0.0], javaPlatform=com.elastic.support.diagnostics.JavaPlatform@3e10dc6}]
+16:04:54.842 [main] INFO  com.elastic.support.diagnostics.commands.CheckPlatformDetails - Error: Could not find the target node.
+16:04:54.843 [main] DIAG  com.elastic.support.diagnostics.commands.CheckPlatformDetails - Error checking node metadata and deployment info.
+java.lang.RuntimeException: Could not find the target node.
+	at com.elastic.support.diagnostics.commands.CheckPlatformDetails.findTargetNode(CheckPlatformDetails.java:323) ~[support-diagnostics-8.0.3.jar:8.0.3]
+	at com.elastic.support.diagnostics.commands.CheckPlatformDetails.findLocalTargetNode(CheckPlatformDetails.java:288) ~[support-diagnostics-8.0.3.jar:8.0.3]
+	at com.elastic.support.diagnostics.commands.CheckPlatformDetails.execute(CheckPlatformDetails.java:149) [support-diagnostics-8.0.3.jar:8.0.3]
+	at com.elastic.support.diagnostics.chain.DiagnosticChainExec.runDiagnostic(DiagnosticChainExec.java:32) [support-diagnostics-8.0.3.jar:8.0.3]
+	at com.elastic.support.diagnostics.DiagnosticService.exec(DiagnosticService.java:61) [support-diagnostics-8.0.3.jar:8.0.3]
+	at com.elastic.support.diagnostics.DiagnosticApp.main(DiagnosticApp.java:42) [support-diagnostics-8.0.3.jar:8.0.3]
+16:04:54.930 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_aliases.txt
+16:04:54.979 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_allocation.txt
+16:04:55.700 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_count.txt
+16:04:55.713 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_fielddata.txt
+16:04:55.727 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_health.txt
+16:04:55.777 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_indices.txt
+16:04:55.785 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_master.txt
+16:04:55.794 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_nodeattrs.txt
+16:04:55.812 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_nodes.txt
+16:04:55.823 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_pending_tasks.txt
+16:04:55.838 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_recovery.txt
+16:04:55.844 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_repositories.txt
+16:04:55.866 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_segments.txt
+16:04:55.902 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_shards.txt
+16:04:55.913 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cat/cat_thread_pool.txt
+16:04:56.588 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/nodes_hot_threads.txt
+16:04:56.608 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/alias.json
+16:04:56.621 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/allocation.json
+16:04:56.654 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/allocation_explain.json
+16:04:56.664 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/allocation_explain_disk.json
+16:04:56.703 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/count.json
+16:04:56.728 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cluster_health.json
+16:04:56.735 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cluster_pending_tasks.json
+16:04:56.741 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cluster_settings.json
+16:04:56.780 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cluster_settings_defaults.json
+16:04:56.908 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cluster_state.json
+16:04:56.922 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/cluster_stats.json
+16:04:56.936 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/fielddata.json
+16:04:56.956 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/fielddata_stats.json
+16:04:56.981 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/indices_stats.json
+16:04:56.987 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/licenses.json
+16:04:57.021 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/mapping.json
+16:04:57.025 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/master.json
+16:04:57.032 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/nodes.json
+16:04:57.046 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/nodes_stats.json
+16:04:57.055 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/nodes_usage.json
+16:04:57.074 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - pipelines   /_ingest/pipeline/*?pretty&human  failed. Bypassing
+16:04:57.076 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - See archived diagnostics.log for more detail. Status: 404  Reason: Endpoint does not exist.
+16:04:57.080 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/plugins.json
+16:04:57.090 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/recovery.json
+16:04:57.096 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/remote_cluster_info.json
+16:04:57.104 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/segments.json
+16:04:57.110 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/settings.json
+16:04:57.123 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/shard_stores.json
+16:04:57.137 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/shards.json
+16:04:57.149 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/tasks.json
+16:04:57.160 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/templates.json
+16:04:57.163 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/version.json
+16:04:57.168 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ccr_autofollow_patterns.json
+16:04:57.173 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ccr_follower_info.json
+16:04:57.182 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - ccr_stats   /_ccr/stats?pretty  failed. Bypassing
+16:04:57.183 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - See archived diagnostics.log for more detail. Status: 403  Reason: Authorization failure or invalid license.
+16:04:57.195 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/enrich_policies.json
+16:04:57.201 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/enrich_stats.json
+16:04:57.214 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ilm_explain.json
+16:04:57.249 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ilm_policies.json
+16:04:57.255 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ilm_status.json
+16:04:57.269 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ml_anomaly_detectors.json
+16:04:57.282 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ml_datafeeds.json
+16:04:57.299 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ml_dataframe.json
+16:04:57.305 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ml_dataframe_stats.json
+16:04:57.309 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/ml_stats.json
+16:04:57.314 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/rollup_jobs.json
+16:04:57.367 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/rollup_caps.json
+16:04:57.383 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/rollup_index_caps.json
+16:04:57.390 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - security_priv   /_security/privilege?pretty  failed. Bypassing
+16:04:57.391 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - See archived diagnostics.log for more detail. Status: 405  Reason: Method Not Allowed
+16:04:57.398 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - security_roles   /_security/role?pretty  failed. Bypassing
+16:04:57.399 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - See archived diagnostics.log for more detail. Status: 405  Reason: Method Not Allowed
+16:04:57.403 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - security_role_mappings   /_security/role_mapping?pretty  failed. Bypassing
+16:04:57.404 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - See archived diagnostics.log for more detail. Status: 405  Reason: Method Not Allowed
+16:04:57.405 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - security_users   /_security/user?pretty  failed. Bypassing
+16:04:57.406 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - See archived diagnostics.log for more detail. Status: 405  Reason: Method Not Allowed
+16:04:57.408 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/slm_policies.json
+16:04:57.416 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/slm_stats.json
+16:04:57.427 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/transform.json
+16:04:57.438 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/transform_stats.json
+16:04:57.448 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/watcher_stats.json
+16:04:57.452 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/watcher_stack.json
+16:04:57.478 [main] INFO  com.elastic.support.diagnostics.commands.BaseQuery - Results written to: /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/local-diagnostics/commercial/xpack.json
+16:04:57.481 [main] INFO  com.elastic.support.diagnostics.commands.GenerateManifest - Writing diagnostic manifest.
+16:04:57.588 [main] INFO  com.elastic.support.BaseService - Closing logger.

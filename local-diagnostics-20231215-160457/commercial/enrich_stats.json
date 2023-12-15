@@ -1,0 +1,21 @@
+{
+  "executing_policies" : [ ],
+  "coordinator_stats" : [
+    {
+      "node_id" : "BHahVpEATUK0vAjLDq3dzw",
+      "queue_size" : 0,
+      "remote_requests_current" : 0,
+      "remote_requests_total" : 0,
+      "executed_searches_total" : 0
+    }
+  ],
+  "cache_stats" : [
+    {
+      "node_id" : "BHahVpEATUK0vAjLDq3dzw",
+      "count" : 0,
+      "hits" : 0,
+      "misses" : 0,
+      "evictions" : 0
+    }
+  ]
+}

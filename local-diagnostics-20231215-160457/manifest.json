@@ -1,0 +1,16 @@
+{
+  "diagnosticInputs" : "BaseInputs{outputDir='/Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch'},ElasticRestClientInputs: {host='localhost', port=9209, proxyHost='', proxyPort=8080, user='', isPassword=false, pkiKeystore='', isPkiPass=false, pkiKeystorePass='', proxyUser='', isProxyPass=false, isSsl=false, skipVerification=false, scheme='http'},DiagnosticInputs: {, diagType='local', remoteUser='null', keyfile='', isKeyFilePass=false', trustRemote=false', knownHostsFile='', sudo=false', remotePort=22}",
+  "diagVersion" : "8.0.3",
+  "Product Version" : {
+    "originalValue" : "8.8.0",
+    "value" : "8.8.0",
+    "major" : 8,
+    "minor" : 8,
+    "patch" : 0,
+    "suffixTokens" : [ ],
+    "build" : null,
+    "type" : "NPM",
+    "stable" : true
+  },
+  "collectionDate" : "2023-12-15T16:04:57.483-0600"
+}

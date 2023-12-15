@@ -1,0 +1,139 @@
+{
+  "indices" : {
+    ".ds-metricbeat-8.8.0-2023.09.21" : {
+      "index" : ".ds-metricbeat-8.8.0-2023.09.21",
+      "managed" : false
+    },
+    ".ds-metricbeat-8.8.0-2023.11.17-000087" : {
+      "index" : ".ds-metricbeat-8.8.0-2023.11.17-000087",
+      "managed" : true,
+      "policy" : "metricbeat",
+      "index_creation_date" : "2023-11-17T16:44:14.234Z",
+      "index_creation_date_millis" : 1700239454234,
+      "time_since_index_creation" : "28.22d",
+      "lifecycle_date" : "2023-11-17T16:44:14.234Z",
+      "lifecycle_date_millis" : 1700239454234,
+      "age" : "28.22d",
+      "phase" : "hot",
+      "phase_time" : "2023-11-17T16:44:14.549Z",
+      "phase_time_millis" : 1700239454549,
+      "action" : "rollover",
+      "action_time" : "2023-11-17T16:44:14.549Z",
+      "action_time_millis" : 1700239454549,
+      "step" : "check-rollover-ready",
+      "step_time" : "2023-11-17T16:44:14.549Z",
+      "step_time_millis" : 1700239454549,
+      "phase_execution" : {
+        "policy" : "metricbeat",
+        "phase_definition" : {
+          "min_age" : "0ms",
+          "actions" : {
+            "rollover" : {
+              "max_age" : "1d",
+              "max_primary_shard_size" : "500mb"
+            }
+          }
+        },
+        "version" : 4,
+        "modified_date" : "2023-09-20T20:43:40.987Z",
+        "modified_date_in_millis" : 1695242620987
+      }
+    },
+    ".monitoring-es-7-2023.12.06" : {
+      "index" : ".monitoring-es-7-2023.12.06",
+      "managed" : false
+    },
+    ".monitoring-es-7-2023.12.07" : {
+      "index" : ".monitoring-es-7-2023.12.07",
+      "managed" : false
+    },
+    ".monitoring-es-7-2023.12.08" : {
+      "index" : ".monitoring-es-7-2023.12.08",
+      "managed" : false
+    },
+    ".monitoring-es-7-2023.12.09" : {
+      "index" : ".monitoring-es-7-2023.12.09",
+      "managed" : false
+    },
+    ".monitoring-es-7-2023.12.10" : {
+      "index" : ".monitoring-es-7-2023.12.10",
+      "managed" : false
+    },
+    ".monitoring-es-7-2023.12.11" : {
+      "index" : ".monitoring-es-7-2023.12.11",
+      "managed" : false
+    },
+    ".monitoring-es-7-2023.12.12" : {
+      "index" : ".monitoring-es-7-2023.12.12",
+      "managed" : false
+    },
+    ".monitoring-es-7-2023.12.15" : {
+      "index" : ".monitoring-es-7-2023.12.15",
+      "managed" : false
+    },
+    ".monitoring-kibana-7-2023.12.06" : {
+      "index" : ".monitoring-kibana-7-2023.12.06",
+      "managed" : false
+    },
+    ".monitoring-kibana-7-2023.12.07" : {
+      "index" : ".monitoring-kibana-7-2023.12.07",
+      "managed" : false
+    },
+    ".monitoring-kibana-7-2023.12.08" : {
+      "index" : ".monitoring-kibana-7-2023.12.08",
+      "managed" : false
+    },
+    "elastic-index" : {
+      "index" : "elastic-index",
+      "managed" : false
+    },
+    "my-index-01" : {
+      "index" : "my-index-01",
+      "managed" : false
+    },
+    "performance_metrics" : {
+      "index" : "performance_metrics",
+      "managed" : false
+    },
+    "recommendation_test" : {
+      "index" : "recommendation_test",
+      "managed" : false
+    },
+    "search_indexing-db" : {
+      "index" : "search_indexing-db",
+      "managed" : false
+    },
+    "search_indexing-db1" : {
+      "index" : "search_indexing-db1",
+      "managed" : false
+    },
+    "test_ngram_v1" : {
+      "index" : "test_ngram_v1",
+      "managed" : false
+    },
+    "test_omnisearch_v1" : {
+      "index" : "test_omnisearch_v1",
+      "managed" : false
+    },
+    "test_omnisearch_v2" : {
+      "index" : "test_omnisearch_v2",
+      "managed" : false
+    },
+    "test_omnisearch_v3" : {
+      "index" : "test_omnisearch_v3",
+      "managed" : false
+    },
+    "test_performance_metrics_v1" : {
+      "index" : "test_performance_metrics_v1",
+      "managed" : false
+    },
+    "test_sample_v1" : {
+      "index" : "test_sample_v1",
+      "managed" : false
+    },
+    "test_service_realtime_metrics_v1" : {
+      "index" : "test_service_realtime_metrics_v1",
+      "managed" : false
+    }
+  }
+}

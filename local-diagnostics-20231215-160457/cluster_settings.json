@@ -1,0 +1,6 @@
+{
+  "persistent" : {
+    "xpack.monitoring.collection.enabled" : "true"
+  },
+  "transient" : { }
+}

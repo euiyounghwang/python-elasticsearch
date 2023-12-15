@@ -1,0 +1,64 @@
+index                                                         shard prirep state        docs   store ip         node
+.apm-agent-configuration                                      0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.apm-custom-link                                              0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.apm-source-map                                               0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.async-search                                                 0     p      STARTED         0    259b 172.17.0.2 b3abf1a35c5e
+.ds-.logs-deprecation.elasticsearch-default-2023.10.16-000002 0     p      STARTED        66    68kb 172.17.0.2 b3abf1a35c5e
+.ds-.logs-deprecation.elasticsearch-default-2023.11.15-000004 0     p      STARTED        49 183.9kb 172.17.0.2 b3abf1a35c5e
+.ds-ilm-history-5-2023.09.16-000001                           0     p      STARTED       281 288.6kb 172.17.0.2 b3abf1a35c5e
+.ds-ilm-history-5-2023.10.16-000002                           0     p      STARTED       235   200kb 172.17.0.2 b3abf1a35c5e
+.ds-ilm-history-5-2023.11.15-000003                           0     p      STARTED        46    63kb 172.17.0.2 b3abf1a35c5e
+.ds-metricbeat-8.8.0-2023.09.21                               0     p      STARTED       768   1.2mb 172.17.0.2 b3abf1a35c5e
+.ds-metricbeat-8.8.0-2023.09.21                               0     r      UNASSIGNED                           
+.ds-metricbeat-8.8.0-2023.11.17-000087                        0     p      STARTED         0    247b 172.17.0.2 b3abf1a35c5e
+.ds-metricbeat-8.8.0-2023.11.17-000087                        0     r      UNASSIGNED                           
+.internal.alerts-observability.apm.alerts-default-000001      0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.internal.alerts-observability.logs.alerts-default-000001     0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.internal.alerts-observability.metrics.alerts-default-000001  0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.internal.alerts-observability.slo.alerts-default-000001      0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.internal.alerts-observability.uptime.alerts-default-000001   0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.internal.alerts-security.alerts-default-000001               0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.kibana-event-log-8.8.0-000001                                0     p      STARTED        27 183.8kb 172.17.0.2 b3abf1a35c5e
+.kibana-event-log-8.8.0-000002                                0     p      STARTED         3  20.6kb 172.17.0.2 b3abf1a35c5e
+.kibana-event-log-8.8.0-000003                                0     p      STARTED         4  27.4kb 172.17.0.2 b3abf1a35c5e
+.kibana_8.8.0_001                                             0     p      STARTED       400 100.8kb 172.17.0.2 b3abf1a35c5e
+.kibana_alerting_cases_8.8.0_001                              0     p      STARTED         1   6.7kb 172.17.0.2 b3abf1a35c5e
+.kibana_analytics_8.8.0_001                                   0     p      STARTED      2534   3.5mb 172.17.0.2 b3abf1a35c5e
+.kibana_ingest_8.8.0_001                                      0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+.kibana_security_solution_8.8.0_001                           0     p      STARTED         4  43.2kb 172.17.0.2 b3abf1a35c5e
+.kibana_task_manager_8.8.0_001                                0     p      STARTED        22  35.6kb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.06                                   0     p      STARTED     32286  14.2mb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.07                                   0     p      STARTED     23507  11.2mb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.08                                   0     p      STARTED     11291   5.3mb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.09                                   0     p      STARTED      2008   1.1mb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.10                                   0     p      STARTED     51060  21.5mb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.11                                   0     p      STARTED    103256  42.9mb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.12                                   0     p      STARTED     57021    23mb 172.17.0.2 b3abf1a35c5e
+.monitoring-es-7-2023.12.15                                   0     p      STARTED     14849   7.2mb 172.17.0.2 b3abf1a35c5e
+.monitoring-kibana-7-2023.12.06                               0     p      STARTED      2010   1.4mb 172.17.0.2 b3abf1a35c5e
+.monitoring-kibana-7-2023.12.07                               0     p      STARTED      1540   1.1mb 172.17.0.2 b3abf1a35c5e
+.monitoring-kibana-7-2023.12.08                               0     p      STARTED       806 673.1kb 172.17.0.2 b3abf1a35c5e
+elastic-index                                                 0     p      STARTED       112   4.5mb 172.17.0.2 b3abf1a35c5e
+elastic-index                                                 0     r      UNASSIGNED                           
+my-index-01                                                   0     p      STARTED         1   4.7kb 172.17.0.2 b3abf1a35c5e
+my-index-01                                                   0     r      UNASSIGNED                           
+performance_metrics                                           0     p      STARTED       200  82.3kb 172.17.0.2 b3abf1a35c5e
+performance_metrics                                           0     r      UNASSIGNED                           
+recommendation_test                                           0     p      STARTED        12     7kb 172.17.0.2 b3abf1a35c5e
+recommendation_test                                           0     r      UNASSIGNED                           
+search_indexing-db                                            0     p      STARTED         2   4.7kb 172.17.0.2 b3abf1a35c5e
+search_indexing-db                                            0     r      UNASSIGNED                           
+search_indexing-db1                                           0     p      STARTED         0    248b 172.17.0.2 b3abf1a35c5e
+search_indexing-db1                                           0     r      UNASSIGNED                           
+test_ngram_v1                                                 0     p      STARTED         1   4.4kb 172.17.0.2 b3abf1a35c5e
+test_omnisearch_v1                                            0     p      STARTED         2   6.6kb 172.17.0.2 b3abf1a35c5e
+test_omnisearch_v1                                            0     r      UNASSIGNED                           
+test_omnisearch_v2                                            0     p      STARTED      5000  21.8mb 172.17.0.2 b3abf1a35c5e
+test_omnisearch_v2                                            0     r      UNASSIGNED                           
+test_omnisearch_v3                                            0     p      STARTED         2  15.8kb 172.17.0.2 b3abf1a35c5e
+test_omnisearch_v3                                            0     r      UNASSIGNED                           
+test_performance_metrics_v1                                   0     p      STARTED         2   7.6kb 172.17.0.2 b3abf1a35c5e
+test_sample_v1                                                0     p      STARTED         0    247b 172.17.0.2 b3abf1a35c5e
+test_sample_v1                                                0     r      UNASSIGNED                           
+test_service_realtime_metrics_v1                              0     p      STARTED         4  18.5kb 172.17.0.2 b3abf1a35c5e
+test_service_realtime_metrics_v1                              0     r      UNASSIGNED                           

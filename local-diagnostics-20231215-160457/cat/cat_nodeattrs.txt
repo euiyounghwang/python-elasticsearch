@@ -1,0 +1,6 @@
+node         id   pid host       ip         port attr                           value
+b3abf1a35c5e BHah 65  172.17.0.2 172.17.0.2 9300 ml.allocated_processors_double 8.0
+b3abf1a35c5e BHah 65  172.17.0.2 172.17.0.2 9300 ml.max_jvm_size                2147483648
+b3abf1a35c5e BHah 65  172.17.0.2 172.17.0.2 9300 ml.allocated_processors        8
+b3abf1a35c5e BHah 65  172.17.0.2 172.17.0.2 9300 ml.machine_memory              14647033856
+b3abf1a35c5e BHah 65  172.17.0.2 172.17.0.2 9300 xpack.installed                true

@@ -1,0 +1,48 @@
+{
+  "_nodes" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "cluster_name" : "docker-cluster",
+  "nodes" : {
+    "BHahVpEATUK0vAjLDq3dzw" : {
+      "timestamp" : 1702677897053,
+      "since" : 1702673138765,
+      "rest_actions" : {
+        "nodes_usage_action" : 1,
+        "cat_alias_action" : 1,
+        "nodes_info_action" : 2,
+        "get_mapping_action" : 1,
+        "cat_count_action" : 1,
+        "nodes_stats_action" : 2,
+        "nodes_hot_threads_action" : 1,
+        "cat_segments_action" : 1,
+        "cat_health_action" : 2,
+        "cat_fielddata_action" : 2,
+        "cluster_allocation_explain_action" : 2,
+        "get_license" : 1,
+        "cluster_health_action" : 1,
+        "count_action" : 1,
+        "main_action" : 2,
+        "cat_recovery_action" : 1,
+        "cat_shards_action" : 1,
+        "cluster_get_settings_action" : 2,
+        "pending_cluster_tasks_action" : 1,
+        "cat_repositories_action" : 1,
+        "cat_indices_action" : 1,
+        "cat_pending_cluster_tasks_action" : 1,
+        "indices_stats_action" : 1,
+        "cat_nodes_action" : 1,
+        "cluster_state_action" : 1,
+        "cluster_stats_action" : 1,
+        "get_aliases_action" : 1,
+        "cat_allocation_action" : 2,
+        "cat_master_action" : 2,
+        "cat_threadpool_action" : 1,
+        "cat_node_attrs_action" : 1
+      },
+      "aggregations" : { }
+    }
+  }
+}

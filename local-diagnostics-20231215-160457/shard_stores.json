@@ -1,0 +1,511 @@
+{
+  "indices" : {
+    "test_sample_v1" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "x_4JMSiSSOejeRhthfzpLQ",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "search_indexing-db" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "J49_WSNpQ-uob0KG9lC_KQ",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "test_service_realtime_metrics_v1" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "Mag7sTXHTcKNil6frthyvg",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    ".ds-metricbeat-8.8.0-2023.09.21" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "l8-sbQbUSjmAEjdgW8AOAg",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "recommendation_test" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "SjPJbtpiQIuSF0z6SqE0qg",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "elastic-index" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "ML-_vkaURPyhmlAlE0P54w",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "search_indexing-db1" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "_3xSSOacSte_BsyXwzoYzA",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "test_omnisearch_v3" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "XmFqsQuiRtWP_MavDAgP3g",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "test_omnisearch_v2" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "w_ZBpBpaS8OpR2R8RSjbpA",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "performance_metrics" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "UoTBESjkR6akT5QEues_kQ",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "test_omnisearch_v1" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "08YYLTouQI-mxuGhCvOufg",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    ".ds-metricbeat-8.8.0-2023.11.17-000087" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "Z1S2K_T7R8CUrAbzEGFgBA",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    },
+    "my-index-01" : {
+      "shards" : {
+        "0" : {
+          "stores" : [
+            {
+              "BHahVpEATUK0vAjLDq3dzw" : {
+                "name" : "b3abf1a35c5e",
+                "ephemeral_id" : "Cc9aieFSTaeBONeB5dmFUw",
+                "transport_address" : "172.17.0.2:9300",
+                "external_id" : "b3abf1a35c5e",
+                "attributes" : {
+                  "ml.allocated_processors_double" : "8.0",
+                  "ml.max_jvm_size" : "2147483648",
+                  "ml.allocated_processors" : "8",
+                  "ml.machine_memory" : "14647033856",
+                  "xpack.installed" : "true"
+                },
+                "roles" : [
+                  "data",
+                  "data_cold",
+                  "data_content",
+                  "data_frozen",
+                  "data_hot",
+                  "data_warm",
+                  "ingest",
+                  "master",
+                  "ml",
+                  "remote_cluster_client",
+                  "transform"
+                ],
+                "version" : "8.8.0"
+              },
+              "allocation_id" : "uqD86Tr9Tui_nECmvbnp2w",
+              "allocation" : "primary"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

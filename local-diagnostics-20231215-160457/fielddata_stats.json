@@ -1,0 +1,2849 @@
+{
+  "_nodes" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "cluster_name" : "docker-cluster",
+  "nodes" : {
+    "BHahVpEATUK0vAjLDq3dzw" : {
+      "timestamp" : 1702677896946,
+      "name" : "b3abf1a35c5e",
+      "transport_address" : "172.17.0.2:9300",
+      "host" : "172.17.0.2",
+      "ip" : "172.17.0.2:9300",
+      "roles" : [
+        "data",
+        "data_cold",
+        "data_content",
+        "data_frozen",
+        "data_hot",
+        "data_warm",
+        "ingest",
+        "master",
+        "ml",
+        "remote_cluster_client",
+        "transform"
+      ],
+      "attributes" : {
+        "ml.allocated_processors_double" : "8.0",
+        "ml.max_jvm_size" : "2147483648",
+        "ml.allocated_processors" : "8",
+        "ml.machine_memory" : "14647033856",
+        "xpack.installed" : "true"
+      },
+      "indices" : {
+        "fielddata" : {
+          "memory_size_in_bytes" : 0,
+          "evictions" : 0,
+          "fields" : { },
+          "global_ordinals" : {
+            "build_time_in_millis" : 0
+          }
+        },
+        "shards" : {
+          ".kibana_ingest_8.8.0_001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvpA==",
+                  "generation" : 107,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "BBmrw52lR92sg9W04ZTEhg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "pV4HxV7wRGChHRHCviMK2g",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 104,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673170142,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".ds-.logs-deprecation.elasticsearch-default-2023.10.16-000002" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvqQ==",
+                  "generation" : 111,
+                  "user_data" : {
+                    "min_retained_seq_no" : "66",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "65",
+                    "translog_uuid" : "ltMsuiCmQ7apU9BoTUuWLA",
+                    "max_unsafe_auto_id_timestamp" : "1698855686177",
+                    "history_uuid" : "BLXT-jY4Sj6ZcdyzAT02Mg",
+                    "max_seq_no" : "65"
+                  },
+                  "num_docs" : 66
+                },
+                "seq_no" : {
+                  "max_seq_no" : 65,
+                  "local_checkpoint" : 65,
+                  "global_checkpoint" : 65
+                },
+                "retention_leases" : {
+                  "primary_term" : 56,
+                  "version" : 110,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 66,
+                      "timestamp" : 1702673200975,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "performance_metrics" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvqA==",
+                  "generation" : 97,
+                  "user_data" : {
+                    "min_retained_seq_no" : "200",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "199",
+                    "translog_uuid" : "pCnvZYINT0aEOOVfVuhkdg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "wY3wFg4gSVy4MIdhbrEBPQ",
+                    "max_seq_no" : "199"
+                  },
+                  "num_docs" : 200
+                },
+                "seq_no" : {
+                  "max_seq_no" : 199,
+                  "local_checkpoint" : 199,
+                  "global_checkpoint" : 199
+                },
+                "retention_leases" : {
+                  "primary_term" : 91,
+                  "version" : 143,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 200,
+                      "timestamp" : 1702673201175,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana_security_solution_8.8.0_001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvjw==",
+                  "generation" : 147,
+                  "user_data" : {
+                    "min_retained_seq_no" : "4",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "3",
+                    "translog_uuid" : "VCRgOMQHQwGs2p_tR0GBxQ",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "NXP1nBRmQFm6xtsDalnIRw",
+                    "max_seq_no" : "3"
+                  },
+                  "num_docs" : 4
+                },
+                "seq_no" : {
+                  "max_seq_no" : 3,
+                  "local_checkpoint" : 3,
+                  "global_checkpoint" : 3
+                },
+                "retention_leases" : {
+                  "primary_term" : 104,
+                  "version" : 157,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 4,
+                      "timestamp" : 1702673200167,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-kibana-7-2023.12.08" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvlA==",
+                  "generation" : 73,
+                  "user_data" : {
+                    "min_retained_seq_no" : "806",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "805",
+                    "translog_uuid" : "t5uEep_2SQaLPJVA3f2CJw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "tsruT4uFQD-k0vQOZ4GIbA",
+                    "max_seq_no" : "805"
+                  },
+                  "num_docs" : 806
+                },
+                "seq_no" : {
+                  "max_seq_no" : 805,
+                  "local_checkpoint" : 805,
+                  "global_checkpoint" : 805
+                },
+                "retention_leases" : {
+                  "primary_term" : 6,
+                  "version" : 143,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 806,
+                      "timestamp" : 1702673200571,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.12" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvpQ==",
+                  "generation" : 292,
+                  "user_data" : {
+                    "min_retained_seq_no" : "172589",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "172588",
+                    "translog_uuid" : "sW5vw9cFTkadcrrR8iQrMg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "jMxbs1M6S2Kdozl27oQjKQ",
+                    "max_seq_no" : "172588"
+                  },
+                  "num_docs" : 57021
+                },
+                "seq_no" : {
+                  "max_seq_no" : 172588,
+                  "local_checkpoint" : 172588,
+                  "global_checkpoint" : 172588
+                },
+                "retention_leases" : {
+                  "primary_term" : 3,
+                  "version" : 626,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 172589,
+                      "timestamp" : 1702673200370,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana_8.8.0_001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvkg==",
+                  "generation" : 1779,
+                  "user_data" : {
+                    "min_retained_seq_no" : "17881",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "17880",
+                    "translog_uuid" : "OtjWP__fSr6GnOq0xl4cgQ",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "jDpIr4h3SnqaYcGih1VTUQ",
+                    "max_seq_no" : "17880"
+                  },
+                  "num_docs" : 400
+                },
+                "seq_no" : {
+                  "max_seq_no" : 17880,
+                  "local_checkpoint" : 17880,
+                  "global_checkpoint" : 17880
+                },
+                "retention_leases" : {
+                  "primary_term" : 104,
+                  "version" : 2356,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 17881,
+                      "timestamp" : 1702673200167,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.08" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvtw==",
+                  "generation" : 78,
+                  "user_data" : {
+                    "min_retained_seq_no" : "35994",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "35993",
+                    "translog_uuid" : "w1EtBDXyQpeNbgxOI6FgtQ",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "hzO_WMQ9Qb2uMI6tJf88kA",
+                    "max_seq_no" : "35993"
+                  },
+                  "num_docs" : 11291
+                },
+                "seq_no" : {
+                  "max_seq_no" : 35993,
+                  "local_checkpoint" : 35993,
+                  "global_checkpoint" : 35993
+                },
+                "retention_leases" : {
+                  "primary_term" : 8,
+                  "version" : 149,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 35994,
+                      "timestamp" : 1702673200774,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.09" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvuA==",
+                  "generation" : 22,
+                  "user_data" : {
+                    "min_retained_seq_no" : "6088",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "6087",
+                    "translog_uuid" : "GQL9PcTWSl62jwivqjelQw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "IrOklKJVSqC6MB3g0T-tQg",
+                    "max_seq_no" : "6087"
+                  },
+                  "num_docs" : 2008
+                },
+                "seq_no" : {
+                  "max_seq_no" : 6087,
+                  "local_checkpoint" : 6087,
+                  "global_checkpoint" : 6087
+                },
+                "retention_leases" : {
+                  "primary_term" : 5,
+                  "version" : 31,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 6088,
+                      "timestamp" : 1702673200571,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "test_omnisearch_v2" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvvA==",
+                  "generation" : 39,
+                  "user_data" : {
+                    "min_retained_seq_no" : "5000",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "4999",
+                    "translog_uuid" : "MP8B2nQRTLiWKI8eXuYrTw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "WifWBmg5SLibWMMoJoPqlA",
+                    "max_seq_no" : "4999"
+                  },
+                  "num_docs" : 5000
+                },
+                "seq_no" : {
+                  "max_seq_no" : 4999,
+                  "local_checkpoint" : 4999,
+                  "global_checkpoint" : 4999
+                },
+                "retention_leases" : {
+                  "primary_term" : 30,
+                  "version" : 49,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 5000,
+                      "timestamp" : 1702673200975,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "search_indexing-db1" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvvQ==",
+                  "generation" : 39,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "pn-S9M1SRUWGYvEH049_ug",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "4_jGP28MQaiz0F2r8KznEA",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 30,
+                  "version" : 48,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673170949,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".internal.alerts-observability.logs.alerts-default-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvsQ==",
+                  "generation" : 106,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "hs6lq4LhR3q1ftAowva8Hg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "Cb5SmUP8TBGTc1Nss0glRQ",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 100,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673171355,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".internal.alerts-observability.apm.alerts-default-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvqw==",
+                  "generation" : 106,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "DHsNrQWURWiR2-F3MVi8Xg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "akosBnyhRJOpNGLFRv4_RQ",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 100,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673171355,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "test_performance_metrics_v1" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvtA==",
+                  "generation" : 5,
+                  "user_data" : {
+                    "min_retained_seq_no" : "2",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "1",
+                    "translog_uuid" : "EXDKknoxTmeIjqHslSNkEA",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "ufSrhtnKSOafkHwdK1W6gg",
+                    "max_seq_no" : "1"
+                  },
+                  "num_docs" : 2
+                },
+                "seq_no" : {
+                  "max_seq_no" : 1,
+                  "local_checkpoint" : 1,
+                  "global_checkpoint" : 1
+                },
+                "retention_leases" : {
+                  "primary_term" : 2,
+                  "version" : 3,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 2,
+                      "timestamp" : 1702673200370,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.11" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvmg==",
+                  "generation" : 537,
+                  "user_data" : {
+                    "min_retained_seq_no" : "316485",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "316484",
+                    "translog_uuid" : "z-X6SrcmToW64T1VJ4qy0Q",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "Dgs_egtLSkSwgxCnMww1Qw",
+                    "max_seq_no" : "316484"
+                  },
+                  "num_docs" : 103256
+                },
+                "seq_no" : {
+                  "max_seq_no" : 316484,
+                  "local_checkpoint" : 316484,
+                  "global_checkpoint" : 316484
+                },
+                "retention_leases" : {
+                  "primary_term" : 4,
+                  "version" : 1174,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 316485,
+                      "timestamp" : 1702673200571,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "elastic-index" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvng==",
+                  "generation" : 79,
+                  "user_data" : {
+                    "min_retained_seq_no" : "112",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "111",
+                    "translog_uuid" : "zCc-Hn5iSpuFLLFJfmRK4A",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "dgdBe_BRR2eo2XKfInzW0g",
+                    "max_seq_no" : "111"
+                  },
+                  "num_docs" : 112
+                },
+                "seq_no" : {
+                  "max_seq_no" : 111,
+                  "local_checkpoint" : 111,
+                  "global_checkpoint" : 111
+                },
+                "retention_leases" : {
+                  "primary_term" : 69,
+                  "version" : 121,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 112,
+                      "timestamp" : 1702673201175,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".ds-ilm-history-5-2023.09.16-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvow==",
+                  "generation" : 180,
+                  "user_data" : {
+                    "min_retained_seq_no" : "281",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "280",
+                    "translog_uuid" : "OUq8gV2qSAGQB2bkdjNlpg",
+                    "max_unsafe_auto_id_timestamp" : "1696823104619",
+                    "history_uuid" : "Y30hDyUCQGe7CPPuw3v8KA",
+                    "max_seq_no" : "280"
+                  },
+                  "num_docs" : 281
+                },
+                "seq_no" : {
+                  "max_seq_no" : 280,
+                  "local_checkpoint" : 280,
+                  "global_checkpoint" : 280
+                },
+                "retention_leases" : {
+                  "primary_term" : 103,
+                  "version" : 188,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 281,
+                      "timestamp" : 1702673201377,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana-event-log-8.8.0-000002" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvuQ==",
+                  "generation" : 70,
+                  "user_data" : {
+                    "min_retained_seq_no" : "3",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "2",
+                    "translog_uuid" : "i2yQbJyfQ7KNiMON8vYYEg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "yk3YgYmXSke4TIogfJUyDQ",
+                    "max_seq_no" : "2"
+                  },
+                  "num_docs" : 3
+                },
+                "seq_no" : {
+                  "max_seq_no" : 2,
+                  "local_checkpoint" : 2,
+                  "global_checkpoint" : 2
+                },
+                "retention_leases" : {
+                  "primary_term" : 56,
+                  "version" : 96,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 3,
+                      "timestamp" : 1702673200975,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".async-search" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvkA==",
+                  "generation" : 312,
+                  "user_data" : {
+                    "min_retained_seq_no" : "11981",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "11980",
+                    "translog_uuid" : "gD9Hycx1RKS8IBfPTfNbvQ",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "w7MyvBnERIujjknV2w9ESg",
+                    "max_seq_no" : "11980"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : 11980,
+                  "local_checkpoint" : 11980,
+                  "global_checkpoint" : 11980
+                },
+                "retention_leases" : {
+                  "primary_term" : 100,
+                  "version" : 397,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 11981,
+                      "timestamp" : 1702673200370,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".ds-ilm-history-5-2023.11.15-000003" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvpw==",
+                  "generation" : 41,
+                  "user_data" : {
+                    "min_retained_seq_no" : "46",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "45",
+                    "translog_uuid" : "seW1QNr4QbqvRatjaZvKTA",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "zAbiBPX3Tzy3THYY2284Ug",
+                    "max_seq_no" : "45"
+                  },
+                  "num_docs" : 46
+                },
+                "seq_no" : {
+                  "max_seq_no" : 45,
+                  "local_checkpoint" : 45,
+                  "global_checkpoint" : 45
+                },
+                "retention_leases" : {
+                  "primary_term" : 24,
+                  "version" : 41,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 46,
+                      "timestamp" : 1702673200975,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "test_omnisearch_v1" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvrQ==",
+                  "generation" : 9,
+                  "user_data" : {
+                    "min_retained_seq_no" : "2",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "1",
+                    "translog_uuid" : "j191gFL-ScqMu97jEU-LUg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "IsVrBWlfSr2FcIROq-ESlA",
+                    "max_seq_no" : "1"
+                  },
+                  "num_docs" : 2
+                },
+                "seq_no" : {
+                  "max_seq_no" : 1,
+                  "local_checkpoint" : 1,
+                  "global_checkpoint" : 1
+                },
+                "retention_leases" : {
+                  "primary_term" : 4,
+                  "version" : 8,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 2,
+                      "timestamp" : 1702673200571,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana_task_manager_8.8.0_001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvrw==",
+                  "generation" : 5834,
+                  "user_data" : {
+                    "min_retained_seq_no" : "187151",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "187150",
+                    "translog_uuid" : "5akNTwN4RyWHCEQoelkg7Q",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "riPwM_wmR-CpkIAr75CWVw",
+                    "max_seq_no" : "187150"
+                  },
+                  "num_docs" : 22
+                },
+                "seq_no" : {
+                  "max_seq_no" : 187150,
+                  "local_checkpoint" : 187150,
+                  "global_checkpoint" : 187150
+                },
+                "retention_leases" : {
+                  "primary_term" : 104,
+                  "version" : 11719,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 187151,
+                      "timestamp" : 1702673200370,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.10" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvtg==",
+                  "generation" : 282,
+                  "user_data" : {
+                    "min_retained_seq_no" : "161257",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "161256",
+                    "translog_uuid" : "t3WW83pCR5ehvXvOJVJ8qw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "66KTPnNbRtaxVFfMSnQrWA",
+                    "max_seq_no" : "161256"
+                  },
+                  "num_docs" : 51060
+                },
+                "seq_no" : {
+                  "max_seq_no" : 161256,
+                  "local_checkpoint" : 161256,
+                  "global_checkpoint" : 161256
+                },
+                "retention_leases" : {
+                  "primary_term" : 5,
+                  "version" : 607,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 161257,
+                      "timestamp" : 1702673200571,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana-event-log-8.8.0-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvjg==",
+                  "generation" : 128,
+                  "user_data" : {
+                    "min_retained_seq_no" : "27",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "26",
+                    "translog_uuid" : "BKqJJlUDS2CGWysW920epQ",
+                    "max_unsafe_auto_id_timestamp" : "1694894645210",
+                    "history_uuid" : "KwVlQEFkTeWVp1Z8mk2AKQ",
+                    "max_seq_no" : "26"
+                  },
+                  "num_docs" : 27
+                },
+                "seq_no" : {
+                  "max_seq_no" : 26,
+                  "local_checkpoint" : 26,
+                  "global_checkpoint" : 26
+                },
+                "retention_leases" : {
+                  "primary_term" : 103,
+                  "version" : 168,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 27,
+                      "timestamp" : 1702673201377,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "test_service_realtime_metrics_v1" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvrg==",
+                  "generation" : 31,
+                  "user_data" : {
+                    "min_retained_seq_no" : "4",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "3",
+                    "translog_uuid" : "ko3ZsqMRShe5GDOa9boeLw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "E7BPgXmHRTC1pmpkHroogw",
+                    "max_seq_no" : "3"
+                  },
+                  "num_docs" : 4
+                },
+                "seq_no" : {
+                  "max_seq_no" : 3,
+                  "local_checkpoint" : 3,
+                  "global_checkpoint" : 3
+                },
+                "retention_leases" : {
+                  "primary_term" : 17,
+                  "version" : 24,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 4,
+                      "timestamp" : 1702673200774,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana_alerting_cases_8.8.0_001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvog==",
+                  "generation" : 132,
+                  "user_data" : {
+                    "min_retained_seq_no" : "25",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "24",
+                    "translog_uuid" : "tj36LcTWRtW5haKMYYhwcg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "Kb7TOWFNQYim79ddIzut3Q",
+                    "max_seq_no" : "24"
+                  },
+                  "num_docs" : 1
+                },
+                "seq_no" : {
+                  "max_seq_no" : 24,
+                  "local_checkpoint" : 24,
+                  "global_checkpoint" : 24
+                },
+                "retention_leases" : {
+                  "primary_term" : 104,
+                  "version" : 164,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 25,
+                      "timestamp" : 1702673200167,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".internal.alerts-observability.uptime.alerts-default-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvkw==",
+                  "generation" : 106,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "D8MlQq4MQi-AhGD_9W0SOQ",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "jhwCUI3kQJCk9TLvib87Bw",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 100,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673171355,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".internal.alerts-observability.metrics.alerts-default-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvnA==",
+                  "generation" : 106,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "G5VLD-_dSWu-TKlei5Bjww",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "Gwj_ZnDBSzKcpnIimvsUkw",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 100,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673171355,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".internal.alerts-security.alerts-default-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvlQ==",
+                  "generation" : 106,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "FTx-3r-4S5SWVgB6JwcIZg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "FQu6uVffSKS3iMnd0RQV7g",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 100,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673171152,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana-event-log-8.8.0-000003" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvmw==",
+                  "generation" : 33,
+                  "user_data" : {
+                    "min_retained_seq_no" : "4",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "3",
+                    "translog_uuid" : "HiuMQ5QwQNSRxfP2rdRKUA",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "kuzs3juKQrGw-RTHHGlXDQ",
+                    "max_seq_no" : "3"
+                  },
+                  "num_docs" : 4
+                },
+                "seq_no" : {
+                  "max_seq_no" : 3,
+                  "local_checkpoint" : 3,
+                  "global_checkpoint" : 3
+                },
+                "retention_leases" : {
+                  "primary_term" : 24,
+                  "version" : 37,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 4,
+                      "timestamp" : 1702673200975,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".apm-source-map" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvnQ==",
+                  "generation" : 107,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "hoA5FHxySzaaRiuvS9rERA",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "Bb27oJVbT76OycPWE1BW7g",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 103,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673171355,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "my-index-01" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvsA==",
+                  "generation" : 78,
+                  "user_data" : {
+                    "min_retained_seq_no" : "1",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "0",
+                    "translog_uuid" : "t2h9FMaCQ2q38AjNygGygQ",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "5ZMLQJneSSqY1dSmr6j-mA",
+                    "max_seq_no" : "0"
+                  },
+                  "num_docs" : 1
+                },
+                "seq_no" : {
+                  "max_seq_no" : 0,
+                  "local_checkpoint" : 0,
+                  "global_checkpoint" : 0
+                },
+                "retention_leases" : {
+                  "primary_term" : 71,
+                  "version" : 117,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 1,
+                      "timestamp" : 1702673201175,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".internal.alerts-observability.slo.alerts-default-000001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvug==",
+                  "generation" : 106,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "K5hFJbozSqSOk6WXdUQIRg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "kpnywHrOSvOIBkhU-mAYBg",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 100,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673171355,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-kibana-7-2023.12.06" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvlg==",
+                  "generation" : 165,
+                  "user_data" : {
+                    "min_retained_seq_no" : "2010",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "2009",
+                    "translog_uuid" : "jY0Fq-prRbKgbgcQR6L6uQ",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "zKl8Ei1CQliFQ0a7RDla4w",
+                    "max_seq_no" : "2009"
+                  },
+                  "num_docs" : 2010
+                },
+                "seq_no" : {
+                  "max_seq_no" : 2009,
+                  "local_checkpoint" : 2009,
+                  "global_checkpoint" : 2009
+                },
+                "retention_leases" : {
+                  "primary_term" : 9,
+                  "version" : 345,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 2010,
+                      "timestamp" : 1702673200774,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "recommendation_test" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvkQ==",
+                  "generation" : 75,
+                  "user_data" : {
+                    "min_retained_seq_no" : "12",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "11",
+                    "translog_uuid" : "JaGs-5OtRyCpR2hlfCP1LA",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "kCcmYLdGRbu7i2_DMelh5w",
+                    "max_seq_no" : "11"
+                  },
+                  "num_docs" : 12
+                },
+                "seq_no" : {
+                  "max_seq_no" : 11,
+                  "local_checkpoint" : 11,
+                  "global_checkpoint" : 11
+                },
+                "retention_leases" : {
+                  "primary_term" : 67,
+                  "version" : 113,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 12,
+                      "timestamp" : 1702673201175,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "search_indexing-db" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvtQ==",
+                  "generation" : 38,
+                  "user_data" : {
+                    "min_retained_seq_no" : "2",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "1",
+                    "translog_uuid" : "ywFemDnQTt-8w0mckc8buA",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "WSCfxibxSkWhuO2oeadCuQ",
+                    "max_seq_no" : "1"
+                  },
+                  "num_docs" : 2
+                },
+                "seq_no" : {
+                  "max_seq_no" : 1,
+                  "local_checkpoint" : 1,
+                  "global_checkpoint" : 1
+                },
+                "retention_leases" : {
+                  "primary_term" : 29,
+                  "version" : 47,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 2,
+                      "timestamp" : 1702673200975,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.06" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvqg==",
+                  "generation" : 170,
+                  "user_data" : {
+                    "min_retained_seq_no" : "97481",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "97480",
+                    "translog_uuid" : "GyXUt9wzSkavtdtXj2RgrA",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "B4aWouesQgKwBGY5XAcbFQ",
+                    "max_seq_no" : "97480"
+                  },
+                  "num_docs" : 32286
+                },
+                "seq_no" : {
+                  "max_seq_no" : 97480,
+                  "local_checkpoint" : 97480,
+                  "global_checkpoint" : 97480
+                },
+                "retention_leases" : {
+                  "primary_term" : 9,
+                  "version" : 345,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 97481,
+                      "timestamp" : 1702673200774,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".ds-metricbeat-8.8.0-2023.09.21" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvlw==",
+                  "generation" : 105,
+                  "user_data" : {
+                    "min_retained_seq_no" : "768",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "767",
+                    "translog_uuid" : "biPKQNodSlukZKoLc_HLIg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "8vO5ZaMmRa6tGz2INN71sA",
+                    "max_seq_no" : "767"
+                  },
+                  "num_docs" : 768
+                },
+                "seq_no" : {
+                  "max_seq_no" : 767,
+                  "local_checkpoint" : 767,
+                  "global_checkpoint" : 767
+                },
+                "retention_leases" : {
+                  "primary_term" : 94,
+                  "version" : 154,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 768,
+                      "timestamp" : 1702673201175,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".ds-ilm-history-5-2023.10.16-000002" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvsw==",
+                  "generation" : 137,
+                  "user_data" : {
+                    "min_retained_seq_no" : "235",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "234",
+                    "translog_uuid" : "YQ22GN0ISE-K5F5__oXuGw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "O3i1bAoTT0OxDS2YZwnnwQ",
+                    "max_seq_no" : "234"
+                  },
+                  "num_docs" : 235
+                },
+                "seq_no" : {
+                  "max_seq_no" : 234,
+                  "local_checkpoint" : 234,
+                  "global_checkpoint" : 234
+                },
+                "retention_leases" : {
+                  "primary_term" : 56,
+                  "version" : 125,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 235,
+                      "timestamp" : 1702673201175,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".apm-custom-link" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvsg==",
+                  "generation" : 107,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "yMdAL9I-Sq2MNzQ74Wgobw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "9oYiUvL9TgelhiHSl_6xdg",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 103,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673170343,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".ds-.logs-deprecation.elasticsearch-default-2023.11.15-000004" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvvg==",
+                  "generation" : 61,
+                  "user_data" : {
+                    "min_retained_seq_no" : "47",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "48",
+                    "translog_uuid" : "bKiDZ2wGS_KdFuTPvGERKw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "A5XqrZyUTaWq0eKuEYbxjg",
+                    "max_seq_no" : "48"
+                  },
+                  "num_docs" : 49
+                },
+                "seq_no" : {
+                  "max_seq_no" : 48,
+                  "local_checkpoint" : 48,
+                  "global_checkpoint" : 48
+                },
+                "retention_leases" : {
+                  "primary_term" : 24,
+                  "version" : 48,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 49,
+                      "timestamp" : 1702673170949,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".kibana_analytics_8.8.0_001" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvrA==",
+                  "generation" : 338,
+                  "user_data" : {
+                    "min_retained_seq_no" : "27236",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "27235",
+                    "translog_uuid" : "7JubxvT0ReOAiMXVSUWvng",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "mU7RWrpbS4C4SH8Ls8ApbQ",
+                    "max_seq_no" : "27235"
+                  },
+                  "num_docs" : 2534
+                },
+                "seq_no" : {
+                  "max_seq_no" : 27235,
+                  "local_checkpoint" : 27235,
+                  "global_checkpoint" : 27235
+                },
+                "retention_leases" : {
+                  "primary_term" : 104,
+                  "version" : 506,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 27236,
+                      "timestamp" : 1702673200370,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.07" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvmQ==",
+                  "generation" : 133,
+                  "user_data" : {
+                    "min_retained_seq_no" : "72046",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "72045",
+                    "translog_uuid" : "RazY8wM1SQKIVQ4pPKXZ1Q",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "Wvffo-ZOTgishdG0PiqvwQ",
+                    "max_seq_no" : "72045"
+                  },
+                  "num_docs" : 23507
+                },
+                "seq_no" : {
+                  "max_seq_no" : 72045,
+                  "local_checkpoint" : 72045,
+                  "global_checkpoint" : 72045
+                },
+                "retention_leases" : {
+                  "primary_term" : 9,
+                  "version" : 266,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 72046,
+                      "timestamp" : 1702673200774,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".apm-agent-configuration" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvoA==",
+                  "generation" : 107,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "KveUWy0gSNOtOvzdWlEyBg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "NETwbmlcSHiO1BhOSr2pbQ",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 103,
+                  "version" : 155,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673170343,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "test_sample_v1" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvoQ==",
+                  "generation" : 9,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "shuAG4d9S0e8_aZFmAkBIw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "mq4qkCFIQ22gFs1PNVSOng",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 4,
+                  "version" : 7,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673170543,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-es-7-2023.12.15" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTByEw==",
+                  "generation" : 74,
+                  "user_data" : {
+                    "min_retained_seq_no" : "43708",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "44365",
+                    "translog_uuid" : "OJBwAxxITU6X_3gwWgFCKg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "F5pzyWeJRcGWnHrRmIFugg",
+                    "max_seq_no" : "44365"
+                  },
+                  "num_docs" : 14756
+                },
+                "seq_no" : {
+                  "max_seq_no" : 44647,
+                  "local_checkpoint" : 44647,
+                  "global_checkpoint" : 44647
+                },
+                "retention_leases" : {
+                  "primary_term" : 1,
+                  "version" : 159,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 44554,
+                      "timestamp" : 1702677890247,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "test_ngram_v1" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvuw==",
+                  "generation" : 5,
+                  "user_data" : {
+                    "min_retained_seq_no" : "1",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "0",
+                    "translog_uuid" : "nBjM7HfIQqeNXR6Z0TNFyw",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "_rpSEC_2SBOWD3XfJOqrBg",
+                    "max_seq_no" : "0"
+                  },
+                  "num_docs" : 1
+                },
+                "seq_no" : {
+                  "max_seq_no" : 0,
+                  "local_checkpoint" : 0,
+                  "global_checkpoint" : 0
+                },
+                "retention_leases" : {
+                  "primary_term" : 2,
+                  "version" : 3,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 1,
+                      "timestamp" : 1702673200370,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          "test_omnisearch_v3" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvnw==",
+                  "generation" : 45,
+                  "user_data" : {
+                    "min_retained_seq_no" : "4",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "3",
+                    "translog_uuid" : "qeBhapQKS1W_Ifj2sOFn_A",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "qaFm9pgBTxWeFuRV5D01Tg",
+                    "max_seq_no" : "3"
+                  },
+                  "num_docs" : 2
+                },
+                "seq_no" : {
+                  "max_seq_no" : 3,
+                  "local_checkpoint" : 3,
+                  "global_checkpoint" : 3
+                },
+                "retention_leases" : {
+                  "primary_term" : 35,
+                  "version" : 58,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 4,
+                      "timestamp" : 1702673200975,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".monitoring-kibana-7-2023.12.07" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvmA==",
+                  "generation" : 128,
+                  "user_data" : {
+                    "min_retained_seq_no" : "1540",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "1539",
+                    "translog_uuid" : "afr14ljoRRWm7EUwZf1E4w",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "nqOxJWneT0-gM9-M5Jv2fQ",
+                    "max_seq_no" : "1539"
+                  },
+                  "num_docs" : 1540
+                },
+                "seq_no" : {
+                  "max_seq_no" : 1539,
+                  "local_checkpoint" : 1539,
+                  "global_checkpoint" : 1539
+                },
+                "retention_leases" : {
+                  "primary_term" : 9,
+                  "version" : 266,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 1540,
+                      "timestamp" : 1702673200774,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ],
+          ".ds-metricbeat-8.8.0-2023.11.17-000087" : [
+            {
+              "0" : {
+                "routing" : {
+                  "state" : "STARTED",
+                  "primary" : true,
+                  "node" : "BHahVpEATUK0vAjLDq3dzw",
+                  "relocating_node" : null
+                },
+                "fielddata" : {
+                  "memory_size_in_bytes" : 0,
+                  "evictions" : 0,
+                  "fields" : { },
+                  "global_ordinals" : {
+                    "build_time_in_millis" : 0
+                  }
+                },
+                "commit" : {
+                  "id" : "wo273HWZSNfjWjwGvTBvpg==",
+                  "generation" : 31,
+                  "user_data" : {
+                    "min_retained_seq_no" : "0",
+                    "es_version" : "8.8.0",
+                    "local_checkpoint" : "-1",
+                    "translog_uuid" : "v5ljjR_NTzCxn0pavV0TDg",
+                    "max_unsafe_auto_id_timestamp" : "-1",
+                    "history_uuid" : "PETFRCtASNqvYx3m5uf_Dg",
+                    "max_seq_no" : "-1"
+                  },
+                  "num_docs" : 0
+                },
+                "seq_no" : {
+                  "max_seq_no" : -1,
+                  "local_checkpoint" : -1,
+                  "global_checkpoint" : -1
+                },
+                "retention_leases" : {
+                  "primary_term" : 22,
+                  "version" : 32,
+                  "leases" : [
+                    {
+                      "id" : "peer_recovery/BHahVpEATUK0vAjLDq3dzw",
+                      "retaining_seq_no" : 0,
+                      "timestamp" : 1702673170949,
+                      "source" : "peer recovery"
+                    }
+                  ]
+                },
+                "shard_path" : {
+                  "state_path" : "/usr/share/elasticsearch/data",
+                  "data_path" : "/usr/share/elasticsearch/data",
+                  "is_custom_data_path" : false
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

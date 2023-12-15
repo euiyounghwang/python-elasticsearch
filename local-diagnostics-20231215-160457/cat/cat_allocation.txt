@@ -1,0 +1,3 @@
+shards disk.indices disk.used disk.avail disk.total disk.percent host       ip         node
+    50      162.4mb   140.7gb    643.6gb    784.3gb           17 172.17.0.2 172.17.0.2 b3abf1a35c5e
+    13                                                                                 UNASSIGNED

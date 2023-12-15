@@ -1,0 +1,1138 @@
+{
+  "my-index-01" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-10-07T02:58:05.338Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "my-index-01",
+        "creation_date" : "1696647485338",
+        "number_of_replicas" : "1",
+        "uuid" : "rBIjoUtRSyqc3t8EK4KV3g",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".ds-metricbeat-8.8.0-2023.11.17-000087" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-11-17T16:44:14.234Z",
+        "mapping" : {
+          "total_fields" : {
+            "limit" : "10000"
+          }
+        },
+        "refresh_interval" : "5s",
+        "hidden" : "true",
+        "provided_name" : ".ds-metricbeat-8.8.0-2023.11.17-000087",
+        "query" : {
+          "default_field" : [
+            "message",
+            "tags",
+            "agent.ephemeral_id",
+            "agent.id",
+            "agent.name",
+            "agent.type",
+            "agent.version",
+            "as.organization.name",
+            "client.address",
+            "client.as.organization.name",
+            "client.domain",
+            "client.geo.city_name",
+            "client.geo.continent_name",
+            "client.geo.country_iso_code",
+            "client.geo.country_name",
+            "client.geo.name",
+            "client.geo.region_iso_code",
+            "client.geo.region_name",
+            "client.mac",
+            "client.registered_domain",
+            "client.top_level_domain",
+            "client.user.domain",
+            "client.user.email",
+            "client.user.full_name",
+            "client.user.group.domain",
+            "client.user.group.id",
+            "client.user.group.name",
+            "client.user.hash",
+            "client.user.id",
+            "client.user.name",
+            "cloud.account.id",
+            "cloud.availability_zone",
+            "cloud.instance.id",
+            "cloud.instance.name",
+            "cloud.machine.type",
+            "cloud.provider",
+            "cloud.region",
+            "container.id",
+            "container.image.name",
+            "container.image.tag",
+            "container.name",
+            "container.runtime",
+            "destination.address",
+            "destination.as.organization.name",
+            "destination.domain",
+            "destination.geo.city_name",
+            "destination.geo.continent_name",
+            "destination.geo.country_iso_code",
+            "destination.geo.country_name",
+            "destination.geo.name",
+            "destination.geo.region_iso_code",
+            "destination.geo.region_name",
+            "destination.mac",
+            "destination.registered_domain",
+            "destination.top_level_domain",
+            "destination.user.domain",
+            "destination.user.email",
+            "destination.user.full_name",
+            "destination.user.group.domain",
+            "destination.user.group.id",
+            "destination.user.group.name",
+            "destination.user.hash",
+            "destination.user.id",
+            "destination.user.name",
+            "dns.answers.class",
+            "dns.answers.data",
+            "dns.answers.name",
+            "dns.answers.type",
+            "dns.header_flags",
+            "dns.id",
+            "dns.op_code",
+            "dns.question.class",
+            "dns.question.name",
+            "dns.question.registered_domain",
+            "dns.question.subdomain",
+            "dns.question.top_level_domain",
+            "dns.question.type",
+            "dns.response_code",
+            "dns.type",
+            "ecs.version",
+            "error.code",
+            "error.id",
+            "error.message",
+            "error.stack_trace",
+            "error.type",
+            "event.action",
+            "event.category",
+            "event.code",
+            "event.dataset",
+            "event.hash",
+            "event.id",
+            "event.kind",
+            "event.module",
+            "event.outcome",
+            "event.provider",
+            "event.timezone",
+            "event.type",
+            "file.device",
+            "file.directory",
+            "file.extension",
+            "file.gid",
+            "file.group",
+            "file.hash.md5",
+            "file.hash.sha1",
+            "file.hash.sha256",
+            "file.hash.sha512",
+            "file.inode",
+            "file.mode",
+            "file.name",
+            "file.owner",
+            "file.path",
+            "file.target_path",
+            "file.type",
+            "file.uid",
+            "geo.city_name",
+            "geo.continent_name",
+            "geo.country_iso_code",
+            "geo.country_name",
+            "geo.name",
+            "geo.region_iso_code",
+            "geo.region_name",
+            "group.domain",
+            "group.id",
+            "group.name",
+            "hash.md5",
+            "hash.sha1",
+            "hash.sha256",
+            "hash.sha512",
+            "host.architecture",
+            "host.geo.city_name",
+            "host.geo.continent_name",
+            "host.geo.country_iso_code",
+            "host.geo.country_name",
+            "host.geo.name",
+            "host.geo.region_iso_code",
+            "host.geo.region_name",
+            "host.hostname",
+            "host.id",
+            "host.mac",
+            "host.name",
+            "host.os.family",
+            "host.os.full",
+            "host.os.kernel",
+            "host.os.name",
+            "host.os.platform",
+            "host.os.version",
+            "host.type",
+            "http.request.body.content",
+            "http.request.method",
+            "http.request.referrer",
+            "http.response.body.content",
+            "http.version",
+            "log.level",
+            "log.logger",
+            "log.origin.file.name",
+            "log.origin.function",
+            "log.syslog.facility.name",
+            "log.syslog.severity.name",
+            "network.application",
+            "network.community_id",
+            "network.direction",
+            "network.iana_number",
+            "network.name",
+            "network.protocol",
+            "network.transport",
+            "network.type",
+            "observer.geo.city_name",
+            "observer.geo.continent_name",
+            "observer.geo.country_iso_code",
+            "observer.geo.country_name",
+            "observer.geo.name",
+            "observer.geo.region_iso_code",
+            "observer.geo.region_name",
+            "observer.hostname",
+            "observer.mac",
+            "observer.name",
+            "observer.os.family",
+            "observer.os.full",
+            "observer.os.kernel",
+            "observer.os.name",
+            "observer.os.platform",
+            "observer.os.version",
+            "observer.product",
+            "observer.serial_number",
+            "observer.type",
+            "observer.vendor",
+            "observer.version",
+            "organization.id",
+            "organization.name",
+            "os.family",
+            "os.full",
+            "os.kernel",
+            "os.name",
+            "os.platform",
+            "os.version",
+            "package.architecture",
+            "package.checksum",
+            "package.description",
+            "package.install_scope",
+            "package.license",
+            "package.name",
+            "package.path",
+            "package.version",
+            "process.args",
+            "process.executable",
+            "process.hash.md5",
+            "process.hash.sha1",
+            "process.hash.sha256",
+            "process.hash.sha512",
+            "process.name",
+            "process.thread.name",
+            "process.title",
+            "process.working_directory",
+            "server.address",
+            "server.as.organization.name",
+            "server.domain",
+            "server.geo.city_name",
+            "server.geo.continent_name",
+            "server.geo.country_iso_code",
+            "server.geo.country_name",
+            "server.geo.name",
+            "server.geo.region_iso_code",
+            "server.geo.region_name",
+            "server.mac",
+            "server.registered_domain",
+            "server.top_level_domain",
+            "server.user.domain",
+            "server.user.email",
+            "server.user.full_name",
+            "server.user.group.domain",
+            "server.user.group.id",
+            "server.user.group.name",
+            "server.user.hash",
+            "server.user.id",
+            "server.user.name",
+            "service.ephemeral_id",
+            "service.id",
+            "service.name",
+            "service.node.name",
+            "service.state",
+            "service.type",
+            "service.version",
+            "source.address",
+            "source.as.organization.name",
+            "source.domain",
+            "source.geo.city_name",
+            "source.geo.continent_name",
+            "source.geo.country_iso_code",
+            "source.geo.country_name",
+            "source.geo.name",
+            "source.geo.region_iso_code",
+            "source.geo.region_name",
+            "source.mac",
+            "source.registered_domain",
+            "source.top_level_domain",
+            "source.user.domain",
+            "source.user.email",
+            "source.user.full_name",
+            "source.user.group.domain",
+            "source.user.group.id",
+            "source.user.group.name",
+            "source.user.hash",
+            "source.user.id",
+            "source.user.name",
+            "threat.framework",
+            "threat.tactic.id",
+            "threat.tactic.name",
+            "threat.tactic.reference",
+            "threat.technique.id",
+            "threat.technique.name",
+            "threat.technique.reference",
+            "trace.id",
+            "transaction.id",
+            "url.domain",
+            "url.extension",
+            "url.fragment",
+            "url.full",
+            "url.original",
+            "url.password",
+            "url.path",
+            "url.query",
+            "url.registered_domain",
+            "url.scheme",
+            "url.top_level_domain",
+            "url.username",
+            "user.domain",
+            "user.email",
+            "user.full_name",
+            "user.group.domain",
+            "user.group.id",
+            "user.group.name",
+            "user.hash",
+            "user.id",
+            "user.name",
+            "user_agent.device.name",
+            "user_agent.name",
+            "user_agent.original.text",
+            "user_agent.original",
+            "user_agent.os.family",
+            "user_agent.os.full",
+            "user_agent.os.kernel",
+            "user_agent.os.name",
+            "user_agent.os.platform",
+            "user_agent.os.version",
+            "user_agent.version",
+            "cloud.image.id",
+            "host.os.build",
+            "host.os.codename",
+            "kubernetes.pod.name",
+            "kubernetes.pod.uid",
+            "kubernetes.namespace",
+            "kubernetes.node.name",
+            "kubernetes.node.hostname",
+            "kubernetes.replicaset.name",
+            "kubernetes.deployment.name",
+            "kubernetes.statefulset.name",
+            "kubernetes.container.name",
+            "process.owner.id",
+            "process.owner.name.text",
+            "process.owner.name",
+            "jolokia.agent.version",
+            "jolokia.agent.id",
+            "jolokia.server.product",
+            "jolokia.server.version",
+            "jolokia.server.vendor",
+            "jolokia.url",
+            "fields.*"
+          ]
+        },
+        "creation_date" : "1700239454234",
+        "number_of_replicas" : "1",
+        "uuid" : "jpFDhyiwS9yI2N0yiFq-Tw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        },
+        "lifecycle" : {
+          "name" : "metricbeat"
+        },
+        "codec" : "best_compression",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_hot"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "max_docvalue_fields_search" : "200"
+      }
+    }
+  },
+  "test_ngram_v1" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-12-12T21:49:51.447Z",
+        "max_ngram_diff" : "20",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "test_ngram_v1",
+        "creation_date" : "1702417791447",
+        "analysis" : {
+          "analyzer" : {
+            "autocomplete" : {
+              "filter" : [
+                "lowercase",
+                "stop",
+                "snowball"
+              ],
+              "type" : "custom",
+              "tokenizer" : "autocomplete"
+            },
+            "autocomplete_search" : {
+              "tokenizer" : "lowercase"
+            }
+          },
+          "tokenizer" : {
+            "autocomplete_whitespace" : {
+              "token_chars" : [
+                "letter",
+                "whitespace"
+              ],
+              "min_gram" : "2",
+              "type" : "edge_ngram",
+              "max_gram" : "20"
+            },
+            "autocomplete" : {
+              "token_chars" : [
+                "letter",
+                "digit"
+              ],
+              "min_gram" : "2",
+              "type" : "edge_ngram",
+              "max_gram" : "20"
+            },
+            "ngram_tokenizer" : {
+              "token_chars" : [
+                "letter",
+                "digit",
+                "punctuation"
+              ],
+              "min_gram" : "2",
+              "type" : "ngram",
+              "max_gram" : "20"
+            }
+          }
+        },
+        "number_of_replicas" : "0",
+        "uuid" : "UxVdNjtGRpG7p5-vhIuWZA",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".ds-metricbeat-8.8.0-2023.09.21" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-09-21T23:02:20.672Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : ".ds-metricbeat-8.8.0-2023.09.21",
+        "creation_date" : "1695337340672",
+        "number_of_replicas" : "1",
+        "uuid" : "dwLLwlTCS8eaAiqo257yuw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "test_service_realtime_metrics_v1" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-11-24T00:16:53.776Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "test_service_realtime_metrics_v1",
+        "creation_date" : "1700785013776",
+        "number_of_replicas" : "1",
+        "uuid" : "RebvDPJcS8yiG9Jfn0T6cQ",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "recommendation_test" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-10-09T03:59:27.546Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "recommendation_test",
+        "creation_date" : "1696823967546",
+        "number_of_replicas" : "1",
+        "uuid" : "NRa_87x9Tt6a1NjhqU6-FQ",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.15" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-15T20:45:50.016Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.15",
+        "format" : "7",
+        "creation_date" : "1702673150016",
+        "number_of_replicas" : "0",
+        "uuid" : "zM2_sOZ6TFy9L10DFGU5jw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "test_performance_metrics_v1" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-12-12T21:49:51.655Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "test_performance_metrics_v1",
+        "creation_date" : "1702417791655",
+        "number_of_replicas" : "0",
+        "uuid" : "SiUYVEhFSgy6cVixEERNFg",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.12" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-12T00:00:03.550Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.12",
+        "format" : "7",
+        "creation_date" : "1702339203550",
+        "number_of_replicas" : "0",
+        "uuid" : "EYdn0T6qRwK8XhE6Ieg2kg",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.11" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-11T00:00:08.271Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.11",
+        "format" : "7",
+        "creation_date" : "1702252808271",
+        "number_of_replicas" : "0",
+        "uuid" : "eqUQmXKsSAGH1QpDQwFHaw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "performance_metrics" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-09-23T00:05:40.706Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "performance_metrics",
+        "creation_date" : "1695427540706",
+        "number_of_replicas" : "1",
+        "uuid" : "DCQ6ocQSQm-m03fDMLCVCA",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.10" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-10T00:00:08.409Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.10",
+        "format" : "7",
+        "creation_date" : "1702166408409",
+        "number_of_replicas" : "0",
+        "uuid" : "3nO6Ki5_TzWznOAjGcuY8w",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "search_indexing-db1" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-11-07T03:57:44.609Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "search_indexing-db1",
+        "creation_date" : "1699329464609",
+        "number_of_replicas" : "1",
+        "uuid" : "q62FJFYLTIW5tRIjchSjRA",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "elastic-index" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-10-08T22:51:48.228Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "elastic-index",
+        "creation_date" : "1696805508228",
+        "number_of_replicas" : "1",
+        "uuid" : "MUEpKV0zSleayq3rcLXpXA",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "search_indexing-db" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-11-08T05:00:26.460Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "search_indexing-db",
+        "creation_date" : "1699419626460",
+        "number_of_replicas" : "1",
+        "uuid" : "RdUHnbKHRNuxc1X2A9se7Q",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "test_sample_v1" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-12-10T21:38:52.491Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "test_sample_v1",
+        "creation_date" : "1702244332491",
+        "number_of_replicas" : "1",
+        "uuid" : "I05Y3fAdQ2mfbpYdNqdHYA",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-kibana-7-2023.12.06" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-06T20:51:53.222Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-kibana-7-2023.12.06",
+        "format" : "7",
+        "creation_date" : "1701895913222",
+        "number_of_replicas" : "0",
+        "uuid" : "7WuQw4oWTFe5b2dk-O-wfw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-kibana-7-2023.12.07" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-07T00:00:06.868Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-kibana-7-2023.12.07",
+        "format" : "7",
+        "creation_date" : "1701907206868",
+        "number_of_replicas" : "0",
+        "uuid" : "RuCGHsMmRJC0YzxHby2YAg",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-kibana-7-2023.12.08" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-08T20:43:30.864Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-kibana-7-2023.12.08",
+        "format" : "7",
+        "creation_date" : "1702068210864",
+        "number_of_replicas" : "0",
+        "uuid" : "V6AagMGlSjCWhUvicRWWFw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "test_omnisearch_v1" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-12-10T21:38:52.369Z",
+        "mapping" : {
+          "total_fields" : {
+            "limit" : "3000"
+          },
+          "ignore_malformed" : "true"
+        },
+        "refresh_interval" : "10s",
+        "provided_name" : "test_omnisearch_v1",
+        "max_result_window" : "50000",
+        "creation_date" : "1702244332369",
+        "unassigned" : {
+          "node_left" : {
+            "delayed_timeout" : "5m"
+          }
+        },
+        "analysis" : {
+          "filter" : {
+            "filter_shingle" : {
+              "max_shingle_size" : "2",
+              "min_shingle_size" : "2",
+              "output_unigrams" : "true",
+              "type" : "shingle"
+            },
+            "autocomplete_filter" : {
+              "type" : "edge_ngram",
+              "min_gram" : "1",
+              "max_gram" : "20"
+            },
+            "possessive" : {
+              "name" : "possessive_english",
+              "type" : "stemmer"
+            }
+          },
+          "char_filter" : {
+            "alphanum_char_filter" : {
+              "pattern" : "([^A-Z0-9a-z\\s])",
+              "type" : "pattern_replace",
+              "replacement" : ""
+            }
+          },
+          "normalizer" : {
+            "fn_string_sorting_normalizer" : {
+              "filter" : [
+                "lowercase",
+                "asciifolding"
+              ],
+              "type" : "custom",
+              "char_filter" : [
+                "alphanum_char_filter"
+              ]
+            }
+          },
+          "analyzer" : {
+            "fn_query_string_analyzer_v1" : {
+              "filter" : [
+                "lowercase",
+                "kstem",
+                "filter_shingle",
+                "possessive",
+                "asciifolding"
+              ],
+              "type" : "custom",
+              "tokenizer" : "standard"
+            },
+            "fn_string_analyzer_v1" : {
+              "filter" : [
+                "lowercase",
+                "kstem",
+                "filter_shingle",
+                "possessive",
+                "asciifolding"
+              ],
+              "type" : "custom",
+              "tokenizer" : "standard"
+            },
+            "fn_leg_string_analyzer_v1" : {
+              "filter" : [
+                "lowercase",
+                "kstem",
+                "possessive",
+                "asciifolding",
+                "filter_shingle"
+              ],
+              "type" : "custom",
+              "tokenizer" : "standard"
+            },
+            "fn_string_analyzer_v1_english" : {
+              "filter" : [
+                "lowercase",
+                "kstem",
+                "possessive",
+                "asciifolding",
+                "filter_shingle"
+              ],
+              "type" : "custom",
+              "tokenizer" : "standard"
+            },
+            "fn_name_analyzer_v1_ascii" : {
+              "filter" : [
+                "lowercase",
+                "asciifolding",
+                "filter_shingle"
+              ],
+              "type" : "custom",
+              "tokenizer" : "standard"
+            },
+            "fn_standard_autocomplete" : {
+              "filter" : [
+                "lowercase",
+                "asciifolding",
+                "autocomplete_filter"
+              ],
+              "type" : "custom",
+              "tokenizer" : "standard"
+            }
+          }
+        },
+        "number_of_replicas" : "1",
+        "uuid" : "zlNaX-weQymfZE-vuYE9hg",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        },
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1"
+      }
+    }
+  },
+  "test_omnisearch_v2" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-11-07T03:43:18.953Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "test_omnisearch_v2",
+        "creation_date" : "1699328598953",
+        "number_of_replicas" : "1",
+        "uuid" : "EC7gChNcQ667aYCembOOvw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.09" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-09T23:48:28.586Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.09",
+        "format" : "7",
+        "creation_date" : "1702165708586",
+        "number_of_replicas" : "0",
+        "uuid" : "_FIABFcXR16NmNYXEYtHXw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  "test_omnisearch_v3" : {
+    "settings" : {
+      "index" : {
+        "creation_date_string" : "2023-11-02T23:35:36.652Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "provided_name" : "test_omnisearch_v3",
+        "creation_date" : "1698968136652",
+        "number_of_replicas" : "1",
+        "uuid" : "mz9Ql-l2R3-vFQa7C72rZw",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.08" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-08T20:39:26.748Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.08",
+        "format" : "7",
+        "creation_date" : "1702067966748",
+        "number_of_replicas" : "0",
+        "uuid" : "DWFfjCvrRuOWlIbtSSv4Ow",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.07" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-07T00:00:07.002Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.07",
+        "format" : "7",
+        "creation_date" : "1701907207002",
+        "number_of_replicas" : "0",
+        "uuid" : "jPgc4Lj_TV2c7jpqHg5IBg",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  },
+  ".monitoring-es-7-2023.12.06" : {
+    "settings" : {
+      "index" : {
+        "codec" : "best_compression",
+        "creation_date_string" : "2023-12-06T20:51:53.041Z",
+        "routing" : {
+          "allocation" : {
+            "include" : {
+              "_tier_preference" : "data_content"
+            }
+          }
+        },
+        "number_of_shards" : "1",
+        "auto_expand_replicas" : "0-1",
+        "provided_name" : ".monitoring-es-7-2023.12.06",
+        "format" : "7",
+        "creation_date" : "1701895913041",
+        "number_of_replicas" : "0",
+        "uuid" : "fGetqTM3Qu-R0YLdBp1u7g",
+        "version" : {
+          "created_string" : "8.8.0",
+          "created" : "8080099"
+        }
+      }
+    }
+  }
+}

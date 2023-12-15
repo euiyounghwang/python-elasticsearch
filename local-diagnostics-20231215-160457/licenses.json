@@ -1,0 +1,14 @@
+{
+  "license" : {
+    "status" : "active",
+    "uid" : "94da966b-a7ce-4e71-9aee-5c4adf64d91d",
+    "type" : "basic",
+    "issue_date" : "2023-09-16T20:01:31.593Z",
+    "issue_date_in_millis" : 1694894491593,
+    "max_nodes" : 1000,
+    "max_resource_units" : null,
+    "issued_to" : "docker-cluster",
+    "issuer" : "elasticsearch",
+    "start_date_in_millis" : -1
+  }
+}

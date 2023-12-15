@@ -1,0 +1,5 @@
+Method Not Allowed
+{
+  "error" : "Incorrect HTTP method for uri [/_security/privilege?pretty] and method [GET], allowed: [POST]",
+  "status" : 405
+}

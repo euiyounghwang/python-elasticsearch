@@ -1,0 +1,126 @@
+::: {b3abf1a35c5e}{BHahVpEATUK0vAjLDq3dzw}{Cc9aieFSTaeBONeB5dmFUw}{b3abf1a35c5e}{172.17.0.2}{172.17.0.2:9300}{cdfhilmrstw}{8.8.0}{ml.allocated_processors_double=8.0, ml.max_jvm_size=2147483648, ml.allocated_processors=8, ml.machine_memory=14647033856, xpack.installed=true}
+   Hot threads at 2023-12-15T22:04:55.922Z, interval=500ms, busiestThreads=10000, ignoreIdleThreads=true:
+   
+    0.0% [cpu=0.0%, other=0.0%] (81.7micros out of 500ms) cpu usage by thread 'ticker-schedule-trigger-engine'
+     10/10 snapshots sharing following 3 elements
+       java.base@20.0.1/java.lang.Thread.sleep0(Native Method)
+       java.base@20.0.1/java.lang.Thread.sleep(Thread.java:484)
+       org.elasticsearch.xpack.watcher.trigger.schedule.engine.TickerScheduleTriggerEngine$Ticker.run(TickerScheduleTriggerEngine.java:195)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'Thread-1'
+     10/10 snapshots sharing following 9 elements
+       java.base@20.0.1/java.io.FileInputStream.readBytes(Native Method)
+       java.base@20.0.1/java.io.FileInputStream.read(FileInputStream.java:293)
+       java.base@20.0.1/java.io.BufferedInputStream.fill(BufferedInputStream.java:258)
+       java.base@20.0.1/java.io.BufferedInputStream.implRead(BufferedInputStream.java:292)
+       java.base@20.0.1/java.io.BufferedInputStream.read(BufferedInputStream.java:279)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Elasticsearch.lambda$startCliMonitorThread$0(Elasticsearch.java:348)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Elasticsearch$$Lambda$6654/0x000000080205f728.run(Unknown Source)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'elasticsearch[file-watcher[/usr/share/elasticsearch/config/operator/settings.json]]'
+     10/10 snapshots sharing following 13 elements
+       java.base@20.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+       java.base@20.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+       java.base@20.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+       java.base@20.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+       java.base@20.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+       java.base@20.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+       java.base@20.0.1/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+       java.base@20.0.1/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+       java.base@20.0.1/sun.nio.fs.AbstractWatchService.take(AbstractWatchService.java:118)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.common.file.AbstractFileWatchingService.watcherThread(AbstractFileWatchingService.java:257)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.common.file.AbstractFileWatchingService$$Lambda$6627/0x00000008020534a0.run(Unknown Source)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'FileSystemWatchService'
+     10/10 snapshots sharing following 4 elements
+       java.base@20.0.1/sun.nio.fs.LinuxWatchService.poll(Native Method)
+       java.base@20.0.1/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:309)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'elasticsearch[keepAlive/8.8.0]'
+     10/10 snapshots sharing following 9 elements
+       java.base@20.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+       java.base@20.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:221)
+       java.base@20.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:754)
+       java.base@20.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1099)
+       java.base@20.0.1/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:230)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Elasticsearch.lambda$new$2(Elasticsearch.java:430)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Elasticsearch$$Lambda$5759/0x0000000801ee60c0.run(Unknown Source)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'Connection evictor'
+     10/10 snapshots sharing following 5 elements
+       java.base@20.0.1/java.lang.Thread.sleep0(Native Method)
+       java.base@20.0.1/java.lang.Thread.sleep(Thread.java:484)
+       org.apache.httpcomponents.httpclient@4.5.13/org.apache.http.impl.client.IdleConnectionEvictor$1.run(IdleConnectionEvictor.java:66)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'ml-cpp-log-tail-thread'
+     10/10 snapshots sharing following 7 elements
+       java.base@20.0.1/java.io.FileInputStream.readBytes(Native Method)
+       java.base@20.0.1/java.io.FileInputStream.read(FileInputStream.java:269)
+       org.elasticsearch.ml@8.8.0/org.elasticsearch.xpack.ml.process.logging.CppLogMessageHandler.tailStream(CppLogMessageHandler.java:107)
+       org.elasticsearch.ml@8.8.0/org.elasticsearch.xpack.ml.process.NativeController.lambda$tailLogsInThread$0(NativeController.java:97)
+       org.elasticsearch.ml@8.8.0/org.elasticsearch.xpack.ml.process.NativeController$$Lambda$3864/0x0000000801992c78.run(Unknown Source)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'x-pack-ml-controller-stderr-pump'
+     10/10 snapshots sharing following 18 elements
+       java.base@20.0.1/java.io.FileInputStream.readBytes(Native Method)
+       java.base@20.0.1/java.io.FileInputStream.read(FileInputStream.java:293)
+       java.base@20.0.1/java.io.BufferedInputStream.read1(BufferedInputStream.java:311)
+       java.base@20.0.1/java.io.BufferedInputStream.implRead(BufferedInputStream.java:386)
+       java.base@20.0.1/java.io.BufferedInputStream.read(BufferedInputStream.java:371)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:333)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:376)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:219)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:173)
+       java.base@20.0.1/java.io.InputStreamReader.read(InputStreamReader.java:189)
+       java.base@20.0.1/java.io.BufferedReader.fill(BufferedReader.java:161)
+       java.base@20.0.1/java.io.BufferedReader.implReadLine(BufferedReader.java:371)
+       java.base@20.0.1/java.io.BufferedReader.readLine(BufferedReader.java:348)
+       java.base@20.0.1/java.io.BufferedReader.readLine(BufferedReader.java:437)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Spawner.lambda$startPumpThread$3(Spawner.java:108)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Spawner$$Lambda$230/0x0000000801148f10.run(Unknown Source)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'x-pack-ml-controller-stdout-pump'
+     10/10 snapshots sharing following 18 elements
+       java.base@20.0.1/java.io.FileInputStream.readBytes(Native Method)
+       java.base@20.0.1/java.io.FileInputStream.read(FileInputStream.java:293)
+       java.base@20.0.1/java.io.BufferedInputStream.read1(BufferedInputStream.java:311)
+       java.base@20.0.1/java.io.BufferedInputStream.implRead(BufferedInputStream.java:386)
+       java.base@20.0.1/java.io.BufferedInputStream.read(BufferedInputStream.java:371)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:333)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:376)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:219)
+       java.base@20.0.1/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:173)
+       java.base@20.0.1/java.io.InputStreamReader.read(InputStreamReader.java:189)
+       java.base@20.0.1/java.io.BufferedReader.fill(BufferedReader.java:161)
+       java.base@20.0.1/java.io.BufferedReader.implReadLine(BufferedReader.java:371)
+       java.base@20.0.1/java.io.BufferedReader.readLine(BufferedReader.java:348)
+       java.base@20.0.1/java.io.BufferedReader.readLine(BufferedReader.java:437)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Spawner.lambda$startPumpThread$3(Spawner.java:108)
+       app/org.elasticsearch.server@8.8.0/org.elasticsearch.bootstrap.Spawner$$Lambda$230/0x0000000801148f10.run(Unknown Source)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+   
+    0.0% [cpu=0.0%, other=0.0%] (0s out of 500ms) cpu usage by thread 'process reaper (pid 93)'
+     10/10 snapshots sharing following 7 elements
+       java.base@20.0.1/java.lang.ProcessHandleImpl.waitForProcessExit0(Native Method)
+       java.base@20.0.1/java.lang.ProcessHandleImpl$1.run(ProcessHandleImpl.java:163)
+       java.base@20.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+       java.base@20.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+       java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+       java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+       java.base@20.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+

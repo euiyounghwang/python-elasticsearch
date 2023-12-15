@@ -1,0 +1,101 @@
+{
+  "nodes" : {
+    "BHahVpEATUK0vAjLDq3dzw" : {
+      "name" : "b3abf1a35c5e",
+      "transport_address" : "172.17.0.2:9300",
+      "host" : "172.17.0.2",
+      "ip" : "172.17.0.2:9300",
+      "roles" : [
+        "data",
+        "data_cold",
+        "data_content",
+        "data_frozen",
+        "data_hot",
+        "data_warm",
+        "ingest",
+        "master",
+        "ml",
+        "remote_cluster_client",
+        "transform"
+      ],
+      "attributes" : {
+        "ml.allocated_processors_double" : "8.0",
+        "ml.max_jvm_size" : "2147483648",
+        "ml.allocated_processors" : "8",
+        "ml.machine_memory" : "14647033856",
+        "xpack.installed" : "true"
+      },
+      "tasks" : {
+        "BHahVpEATUK0vAjLDq3dzw:129" : {
+          "node" : "BHahVpEATUK0vAjLDq3dzw",
+          "id" : 129,
+          "type" : "persistent",
+          "action" : "health-node[c]",
+          "status" : {
+            "state" : "STARTED"
+          },
+          "description" : "id=health-node",
+          "start_time" : "2023-12-15T20:45:40.385Z",
+          "start_time_in_millis" : 1702673140385,
+          "running_time" : "1.3h",
+          "running_time_in_nanos" : 4756842384088,
+          "cancellable" : true,
+          "cancelled" : false,
+          "parent_task_id" : "cluster:207",
+          "headers" : { }
+        },
+        "BHahVpEATUK0vAjLDq3dzw:55594" : {
+          "node" : "BHahVpEATUK0vAjLDq3dzw",
+          "id" : 55594,
+          "type" : "transport",
+          "action" : "cluster:monitor/tasks/lists",
+          "description" : "",
+          "start_time" : "2023-12-15T22:04:57.142Z",
+          "start_time_in_millis" : 1702677897142,
+          "running_time" : "2.2ms",
+          "running_time_in_nanos" : 2242958,
+          "cancellable" : false,
+          "headers" : { }
+        },
+        "BHahVpEATUK0vAjLDq3dzw:130" : {
+          "node" : "BHahVpEATUK0vAjLDq3dzw",
+          "id" : 130,
+          "type" : "persistent",
+          "action" : "geoip-downloader[c]",
+          "status" : {
+            "successful_downloads" : 0,
+            "failed_downloads" : 0,
+            "total_download_time" : 0,
+            "databases_count" : 0,
+            "skipped_updates" : 0,
+            "expired_databases" : 0
+          },
+          "description" : "id=geoip-downloader",
+          "start_time" : "2023-12-15T20:45:40.386Z",
+          "start_time_in_millis" : 1702673140386,
+          "running_time" : "1.3h",
+          "running_time_in_nanos" : 4756842067004,
+          "cancellable" : true,
+          "cancelled" : false,
+          "parent_task_id" : "cluster:208",
+          "headers" : { }
+        },
+        "BHahVpEATUK0vAjLDq3dzw:55595" : {
+          "node" : "BHahVpEATUK0vAjLDq3dzw",
+          "id" : 55595,
+          "type" : "direct",
+          "action" : "cluster:monitor/tasks/lists[n]",
+          "description" : "",
+          "start_time" : "2023-12-15T22:04:57.142Z",
+          "start_time_in_millis" : 1702677897142,
+          "running_time" : "2.1ms",
+          "running_time_in_nanos" : 2179916,
+          "cancellable" : true,
+          "cancelled" : false,
+          "parent_task_id" : "BHahVpEATUK0vAjLDq3dzw:55594",
+          "headers" : { }
+        }
+      }
+    }
+  }
+}

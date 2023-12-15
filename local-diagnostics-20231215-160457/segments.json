@@ -1,0 +1,1932 @@
+{
+  "_shards" : {
+    "total" : 39,
+    "successful" : 26,
+    "failed" : 0
+  },
+  "indices" : {
+    "my-index-01" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 1,
+            "num_search_segments" : 1,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 1,
+                "deleted_docs" : 0,
+                "size" : "4.4kb",
+                "size_in_bytes" : 4541,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".ds-metricbeat-8.8.0-2023.11.17-000087" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 0,
+            "num_search_segments" : 0,
+            "segments" : { }
+          }
+        ]
+      }
+    },
+    "test_ngram_v1" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 1,
+            "num_search_segments" : 1,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 1,
+                "deleted_docs" : 0,
+                "size" : "4.1kb",
+                "size_in_bytes" : 4202,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".ds-metricbeat-8.8.0-2023.09.21" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 2,
+            "num_search_segments" : 2,
+            "segments" : {
+              "_1g" : {
+                "generation" : 52,
+                "num_docs" : 235,
+                "deleted_docs" : 0,
+                "size" : "471.5kb",
+                "size_in_bytes" : 482879,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_1p" : {
+                "generation" : 61,
+                "num_docs" : 533,
+                "deleted_docs" : 0,
+                "size" : "798.3kb",
+                "size_in_bytes" : 817556,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "test_service_realtime_metrics_v1" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 4,
+            "num_search_segments" : 4,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 1,
+                "deleted_docs" : 0,
+                "size" : "4.5kb",
+                "size_in_bytes" : 4608,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_1" : {
+                "generation" : 1,
+                "num_docs" : 1,
+                "deleted_docs" : 0,
+                "size" : "4.5kb",
+                "size_in_bytes" : 4608,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_2" : {
+                "generation" : 2,
+                "num_docs" : 1,
+                "deleted_docs" : 0,
+                "size" : "4.5kb",
+                "size_in_bytes" : 4608,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_3" : {
+                "generation" : 3,
+                "num_docs" : 1,
+                "deleted_docs" : 0,
+                "size" : "4.5kb",
+                "size_in_bytes" : 4608,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "recommendation_test" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 1,
+            "num_search_segments" : 1,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 12,
+                "deleted_docs" : 0,
+                "size" : "6.7kb",
+                "size_in_bytes" : 6867,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.15" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 7,
+            "num_search_segments" : 8,
+            "segments" : {
+              "_2a" : {
+                "generation" : 82,
+                "num_docs" : 11841,
+                "deleted_docs" : 126,
+                "size" : "4.7mb",
+                "size_in_bytes" : 5019674,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2k" : {
+                "generation" : 92,
+                "num_docs" : 1829,
+                "deleted_docs" : 63,
+                "size" : "996.4kb",
+                "size_in_bytes" : 1020387,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2l" : {
+                "generation" : 93,
+                "num_docs" : 186,
+                "deleted_docs" : 378,
+                "size" : "221.8kb",
+                "size_in_bytes" : 227220,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2m" : {
+                "generation" : 94,
+                "num_docs" : 217,
+                "deleted_docs" : 441,
+                "size" : "244.2kb",
+                "size_in_bytes" : 250137,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2n" : {
+                "generation" : 95,
+                "num_docs" : 186,
+                "deleted_docs" : 378,
+                "size" : "221.7kb",
+                "size_in_bytes" : 227117,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2o" : {
+                "generation" : 96,
+                "num_docs" : 217,
+                "deleted_docs" : 441,
+                "size" : "244.2kb",
+                "size_in_bytes" : 250085,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2p" : {
+                "generation" : 97,
+                "num_docs" : 217,
+                "deleted_docs" : 441,
+                "size" : "244.1kb",
+                "size_in_bytes" : 249985,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2q" : {
+                "generation" : 98,
+                "num_docs" : 156,
+                "deleted_docs" : 126,
+                "size" : "161.8kb",
+                "size_in_bytes" : 165694,
+                "committed" : false,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "test_performance_metrics_v1" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 1,
+            "num_search_segments" : 1,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 2,
+                "deleted_docs" : 0,
+                "size" : "7.3kb",
+                "size_in_bytes" : 7504,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.12" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 5,
+            "num_search_segments" : 5,
+            "segments" : {
+              "_96" : {
+                "generation" : 330,
+                "num_docs" : 54589,
+                "deleted_docs" : 62,
+                "size" : "21.4mb",
+                "size_in_bytes" : 22519763,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_9f" : {
+                "generation" : 339,
+                "num_docs" : 210,
+                "deleted_docs" : 434,
+                "size" : "243.1kb",
+                "size_in_bytes" : 248946,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_9g" : {
+                "generation" : 340,
+                "num_docs" : 1920,
+                "deleted_docs" : 0,
+                "size" : "1012.2kb",
+                "size_in_bytes" : 1036547,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_9h" : {
+                "generation" : 341,
+                "num_docs" : 210,
+                "deleted_docs" : 434,
+                "size" : "243.3kb",
+                "size_in_bytes" : 249144,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_9i" : {
+                "generation" : 342,
+                "num_docs" : 92,
+                "deleted_docs" : 0,
+                "size" : "93.5kb",
+                "size_in_bytes" : 95769,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.11" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 11,
+            "num_search_segments" : 11,
+            "segments" : {
+              "_c2" : {
+                "generation" : 434,
+                "num_docs" : 72194,
+                "deleted_docs" : 183,
+                "size" : "28.7mb",
+                "size_in_bytes" : 30166811,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_fn" : {
+                "generation" : 563,
+                "num_docs" : 22475,
+                "deleted_docs" : 61,
+                "size" : "8.9mb",
+                "size_in_bytes" : 9339797,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_g7" : {
+                "generation" : 583,
+                "num_docs" : 3625,
+                "deleted_docs" : 183,
+                "size" : "1.8mb",
+                "size_in_bytes" : 1981088,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gs" : {
+                "generation" : 604,
+                "num_docs" : 3683,
+                "deleted_docs" : 61,
+                "size" : "1.8mb",
+                "size_in_bytes" : 1980407,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gt" : {
+                "generation" : 605,
+                "num_docs" : 203,
+                "deleted_docs" : 427,
+                "size" : "236.6kb",
+                "size_in_bytes" : 242333,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gu" : {
+                "generation" : 606,
+                "num_docs" : 174,
+                "deleted_docs" : 366,
+                "size" : "216.3kb",
+                "size_in_bytes" : 221574,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gv" : {
+                "generation" : 607,
+                "num_docs" : 203,
+                "deleted_docs" : 427,
+                "size" : "236.5kb",
+                "size_in_bytes" : 242183,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gw" : {
+                "generation" : 608,
+                "num_docs" : 203,
+                "deleted_docs" : 427,
+                "size" : "236.6kb",
+                "size_in_bytes" : 242324,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gx" : {
+                "generation" : 609,
+                "num_docs" : 174,
+                "deleted_docs" : 366,
+                "size" : "216.5kb",
+                "size_in_bytes" : 221757,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gy" : {
+                "generation" : 610,
+                "num_docs" : 203,
+                "deleted_docs" : 427,
+                "size" : "236.8kb",
+                "size_in_bytes" : 242495,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_gz" : {
+                "generation" : 611,
+                "num_docs" : 119,
+                "deleted_docs" : 61,
+                "size" : "141.2kb",
+                "size_in_bytes" : 144648,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.10" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 11,
+            "num_search_segments" : 11,
+            "segments" : {
+              "_6x" : {
+                "generation" : 249,
+                "num_docs" : 38006,
+                "deleted_docs" : 124,
+                "size" : "14.4mb",
+                "size_in_bytes" : 15175211,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8j" : {
+                "generation" : 307,
+                "num_docs" : 9772,
+                "deleted_docs" : 186,
+                "size" : "4.3mb",
+                "size_in_bytes" : 4534746,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8t" : {
+                "generation" : 317,
+                "num_docs" : 1708,
+                "deleted_docs" : 62,
+                "size" : "957.5kb",
+                "size_in_bytes" : 980545,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8u" : {
+                "generation" : 318,
+                "num_docs" : 196,
+                "deleted_docs" : 434,
+                "size" : "233.8kb",
+                "size_in_bytes" : 239468,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8v" : {
+                "generation" : 319,
+                "num_docs" : 196,
+                "deleted_docs" : 434,
+                "size" : "233.8kb",
+                "size_in_bytes" : 239429,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8w" : {
+                "generation" : 320,
+                "num_docs" : 168,
+                "deleted_docs" : 372,
+                "size" : "212.7kb",
+                "size_in_bytes" : 217808,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8x" : {
+                "generation" : 321,
+                "num_docs" : 196,
+                "deleted_docs" : 434,
+                "size" : "233.7kb",
+                "size_in_bytes" : 239410,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8y" : {
+                "generation" : 322,
+                "num_docs" : 196,
+                "deleted_docs" : 434,
+                "size" : "233.7kb",
+                "size_in_bytes" : 239400,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_8z" : {
+                "generation" : 323,
+                "num_docs" : 196,
+                "deleted_docs" : 434,
+                "size" : "233.8kb",
+                "size_in_bytes" : 239474,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_90" : {
+                "generation" : 324,
+                "num_docs" : 196,
+                "deleted_docs" : 434,
+                "size" : "234.1kb",
+                "size_in_bytes" : 239727,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_91" : {
+                "generation" : 325,
+                "num_docs" : 230,
+                "deleted_docs" : 310,
+                "size" : "212.9kb",
+                "size_in_bytes" : 218047,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "performance_metrics" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 11,
+            "num_search_segments" : 11,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.4kb",
+                "size_in_bytes" : 7606,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_1" : {
+                "generation" : 1,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.4kb",
+                "size_in_bytes" : 7590,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_2" : {
+                "generation" : 2,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.4kb",
+                "size_in_bytes" : 7590,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_3" : {
+                "generation" : 3,
+                "num_docs" : 7,
+                "deleted_docs" : 0,
+                "size" : "7kb",
+                "size_in_bytes" : 7246,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_4" : {
+                "generation" : 4,
+                "num_docs" : 13,
+                "deleted_docs" : 0,
+                "size" : "7.4kb",
+                "size_in_bytes" : 7598,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_5" : {
+                "generation" : 5,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.4kb",
+                "size_in_bytes" : 7614,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_6" : {
+                "generation" : 6,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.3kb",
+                "size_in_bytes" : 7558,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_7" : {
+                "generation" : 7,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.4kb",
+                "size_in_bytes" : 7582,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_8" : {
+                "generation" : 8,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.3kb",
+                "size_in_bytes" : 7574,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_9" : {
+                "generation" : 9,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.3kb",
+                "size_in_bytes" : 7574,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_a" : {
+                "generation" : 10,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "7.4kb",
+                "size_in_bytes" : 7590,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "search_indexing-db1" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 0,
+            "num_search_segments" : 0,
+            "segments" : { }
+          }
+        ]
+      }
+    },
+    "elastic-index" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 10,
+            "num_search_segments" : 10,
+            "segments" : {
+              "_9" : {
+                "generation" : 9,
+                "num_docs" : 20,
+                "deleted_docs" : 0,
+                "size" : "837.6kb",
+                "size_in_bytes" : 857775,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_b" : {
+                "generation" : 11,
+                "num_docs" : 48,
+                "deleted_docs" : 0,
+                "size" : "1.9mb",
+                "size_in_bytes" : 2006375,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_c" : {
+                "generation" : 12,
+                "num_docs" : 4,
+                "deleted_docs" : 0,
+                "size" : "176.4kb",
+                "size_in_bytes" : 180679,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_d" : {
+                "generation" : 13,
+                "num_docs" : 4,
+                "deleted_docs" : 0,
+                "size" : "165kb",
+                "size_in_bytes" : 169038,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_e" : {
+                "generation" : 14,
+                "num_docs" : 8,
+                "deleted_docs" : 0,
+                "size" : "338.9kb",
+                "size_in_bytes" : 347073,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_f" : {
+                "generation" : 15,
+                "num_docs" : 4,
+                "deleted_docs" : 0,
+                "size" : "182.4kb",
+                "size_in_bytes" : 186816,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_g" : {
+                "generation" : 16,
+                "num_docs" : 4,
+                "deleted_docs" : 0,
+                "size" : "179.4kb",
+                "size_in_bytes" : 183737,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_h" : {
+                "generation" : 17,
+                "num_docs" : 4,
+                "deleted_docs" : 0,
+                "size" : "179.2kb",
+                "size_in_bytes" : 183534,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_i" : {
+                "generation" : 18,
+                "num_docs" : 4,
+                "deleted_docs" : 0,
+                "size" : "183.4kb",
+                "size_in_bytes" : 187833,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_j" : {
+                "generation" : 19,
+                "num_docs" : 12,
+                "deleted_docs" : 0,
+                "size" : "503.3kb",
+                "size_in_bytes" : 515396,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "search_indexing-db" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 1,
+            "num_search_segments" : 1,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 2,
+                "deleted_docs" : 0,
+                "size" : "4.4kb",
+                "size_in_bytes" : 4549,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-kibana-7-2023.12.06" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 4,
+            "num_search_segments" : 4,
+            "segments" : {
+              "_3n" : {
+                "generation" : 131,
+                "num_docs" : 1492,
+                "deleted_docs" : 0,
+                "size" : "1mb",
+                "size_in_bytes" : 1071567,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_4r" : {
+                "generation" : 171,
+                "num_docs" : 500,
+                "deleted_docs" : 0,
+                "size" : "376.8kb",
+                "size_in_bytes" : 385906,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_4s" : {
+                "generation" : 172,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.8kb",
+                "size_in_bytes" : 26495,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_4t" : {
+                "generation" : 173,
+                "num_docs" : 4,
+                "deleted_docs" : 0,
+                "size" : "19.5kb",
+                "size_in_bytes" : 20066,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "test_sample_v1" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 0,
+            "num_search_segments" : 0,
+            "segments" : { }
+          }
+        ]
+      }
+    },
+    ".monitoring-kibana-7-2023.12.07" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 9,
+            "num_search_segments" : 9,
+            "segments" : {
+              "_33" : {
+                "generation" : 111,
+                "num_docs" : 706,
+                "deleted_docs" : 0,
+                "size" : "506.5kb",
+                "size_in_bytes" : 518667,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3d" : {
+                "generation" : 121,
+                "num_docs" : 746,
+                "deleted_docs" : 0,
+                "size" : "531.8kb",
+                "size_in_bytes" : 544600,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3e" : {
+                "generation" : 122,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.8kb",
+                "size_in_bytes" : 26453,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3f" : {
+                "generation" : 123,
+                "num_docs" : 12,
+                "deleted_docs" : 0,
+                "size" : "24.7kb",
+                "size_in_bytes" : 25357,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3g" : {
+                "generation" : 124,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.7kb",
+                "size_in_bytes" : 26359,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3h" : {
+                "generation" : 125,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.7kb",
+                "size_in_bytes" : 26329,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3i" : {
+                "generation" : 126,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.7kb",
+                "size_in_bytes" : 26359,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3j" : {
+                "generation" : 127,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.6kb",
+                "size_in_bytes" : 26288,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_3k" : {
+                "generation" : 128,
+                "num_docs" : 6,
+                "deleted_docs" : 0,
+                "size" : "21kb",
+                "size_in_bytes" : 21586,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-kibana-7-2023.12.08" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 5,
+            "num_search_segments" : 5,
+            "segments" : {
+              "_1p" : {
+                "generation" : 61,
+                "num_docs" : 362,
+                "deleted_docs" : 0,
+                "size" : "279.2kb",
+                "size_in_bytes" : 285951,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_1z" : {
+                "generation" : 71,
+                "num_docs" : 408,
+                "deleted_docs" : 0,
+                "size" : "319.1kb",
+                "size_in_bytes" : 326770,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_20" : {
+                "generation" : 72,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.7kb",
+                "size_in_bytes" : 26398,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_21" : {
+                "generation" : 73,
+                "num_docs" : 14,
+                "deleted_docs" : 0,
+                "size" : "25.8kb",
+                "size_in_bytes" : 26444,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_22" : {
+                "generation" : 74,
+                "num_docs" : 8,
+                "deleted_docs" : 0,
+                "size" : "22.5kb",
+                "size_in_bytes" : 23044,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "test_omnisearch_v1" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 1,
+            "num_search_segments" : 1,
+            "segments" : {
+              "_0" : {
+                "generation" : 0,
+                "num_docs" : 2,
+                "deleted_docs" : 0,
+                "size" : "6.2kb",
+                "size_in_bytes" : 6432,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "test_omnisearch_v2" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 3,
+            "num_search_segments" : 3,
+            "segments" : {
+              "_5" : {
+                "generation" : 5,
+                "num_docs" : 426,
+                "deleted_docs" : 0,
+                "size" : "1.9mb",
+                "size_in_bytes" : 2086308,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_7" : {
+                "generation" : 7,
+                "num_docs" : 436,
+                "deleted_docs" : 0,
+                "size" : "1.9mb",
+                "size_in_bytes" : 2080953,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_c" : {
+                "generation" : 12,
+                "num_docs" : 4138,
+                "deleted_docs" : 0,
+                "size" : "17.8mb",
+                "size_in_bytes" : 18701335,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "test_omnisearch_v3" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 2,
+            "num_search_segments" : 2,
+            "segments" : {
+              "_2" : {
+                "generation" : 2,
+                "num_docs" : 1,
+                "deleted_docs" : 0,
+                "size" : "6.5kb",
+                "size_in_bytes" : 6656,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              },
+              "_3" : {
+                "generation" : 3,
+                "num_docs" : 1,
+                "deleted_docs" : 1,
+                "size" : "8.8kb",
+                "size_in_bytes" : 9099,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_SPEED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.09" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 2,
+            "num_search_segments" : 2,
+            "segments" : {
+              "_h" : {
+                "generation" : 17,
+                "num_docs" : 1354,
+                "deleted_docs" : 120,
+                "size" : "781.8kb",
+                "size_in_bytes" : 800586,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_n" : {
+                "generation" : 23,
+                "num_docs" : 654,
+                "deleted_docs" : 0,
+                "size" : "377.3kb",
+                "size_in_bytes" : 386411,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.08" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 2,
+            "num_search_segments" : 2,
+            "segments" : {
+              "_2p" : {
+                "generation" : 97,
+                "num_docs" : 11206,
+                "deleted_docs" : 118,
+                "size" : "5.2mb",
+                "size_in_bytes" : 5482572,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_2q" : {
+                "generation" : 98,
+                "num_docs" : 85,
+                "deleted_docs" : 0,
+                "size" : "91kb",
+                "size_in_bytes" : 93241,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.07" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 6,
+            "num_search_segments" : 6,
+            "segments" : {
+              "_2x" : {
+                "generation" : 105,
+                "num_docs" : 17282,
+                "deleted_docs" : 171,
+                "size" : "7.2mb",
+                "size_in_bytes" : 7646709,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_40" : {
+                "generation" : 144,
+                "num_docs" : 5640,
+                "deleted_docs" : 57,
+                "size" : "3.1mb",
+                "size_in_bytes" : 3305574,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_41" : {
+                "generation" : 145,
+                "num_docs" : 144,
+                "deleted_docs" : 342,
+                "size" : "203.5kb",
+                "size_in_bytes" : 208410,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_42" : {
+                "generation" : 146,
+                "num_docs" : 168,
+                "deleted_docs" : 399,
+                "size" : "224.7kb",
+                "size_in_bytes" : 230174,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_43" : {
+                "generation" : 147,
+                "num_docs" : 144,
+                "deleted_docs" : 342,
+                "size" : "203.4kb",
+                "size_in_bytes" : 208376,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_44" : {
+                "generation" : 148,
+                "num_docs" : 129,
+                "deleted_docs" : 114,
+                "size" : "154.5kb",
+                "size_in_bytes" : 158230,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    ".monitoring-es-7-2023.12.06" : {
+      "shards" : {
+        "0" : [
+          {
+            "routing" : {
+              "state" : "STARTED",
+              "primary" : true,
+              "node" : "BHahVpEATUK0vAjLDq3dzw"
+            },
+            "num_committed_segments" : 5,
+            "num_search_segments" : 5,
+            "segments" : {
+              "_4i" : {
+                "generation" : 162,
+                "num_docs" : 26141,
+                "deleted_docs" : 130,
+                "size" : "10.7mb",
+                "size_in_bytes" : 11288926,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_52" : {
+                "generation" : 182,
+                "num_docs" : 3936,
+                "deleted_docs" : 130,
+                "size" : "2mb",
+                "size_in_bytes" : 2170442,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_5c" : {
+                "generation" : 192,
+                "num_docs" : 1888,
+                "deleted_docs" : 65,
+                "size" : "1mb",
+                "size_in_bytes" : 1116556,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_5d" : {
+                "generation" : 193,
+                "num_docs" : 192,
+                "deleted_docs" : 390,
+                "size" : "233kb",
+                "size_in_bytes" : 238677,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              },
+              "_5e" : {
+                "generation" : 194,
+                "num_docs" : 129,
+                "deleted_docs" : 65,
+                "size" : "146.4kb",
+                "size_in_bytes" : 149936,
+                "committed" : true,
+                "search" : true,
+                "version" : "9.6.0",
+                "compound" : true,
+                "attributes" : {
+                  "Lucene90StoredFieldsFormat.mode" : "BEST_COMPRESSION"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

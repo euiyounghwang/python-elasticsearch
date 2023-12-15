@@ -1,0 +1,5 @@
+Method Not Allowed
+{
+  "error" : "Incorrect HTTP method for uri [/_security/role?pretty] and method [GET], allowed: [POST]",
+  "status" : 405
+}
