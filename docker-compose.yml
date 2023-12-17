@@ -78,9 +78,9 @@ services:
     container_name: es-docker-node
     environment:
       - node.name=es01
-      - node.master=true
-      - node.data=true
-      # - node.roles=master
+       - node.master=true
+       - node.data=true
+      #- node.roles=master
       - cluster.name=es-docker-a-cluster
       - discovery.seed_hosts=es01
       - cluster.initial_master_nodes=es01
@@ -94,7 +94,11 @@ services:
       - xpack.security.enabled=false    
       # - bootstrap.system_call_filter=false
       - reindex.remote.whitelist=${NODE_WHITE_LIST}
-    
+    healthcheck:
+      test: curl -s http://localhost:9200 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+      interval: 30s
+      timeout: 10s
+      retries: 5
     ulimits:
       memlock:
         soft: -1
