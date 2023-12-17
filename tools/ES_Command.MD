@@ -1,16 +1,19 @@
 
 #### Elasticsearch Command
 ```bash
-curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex -d `{
+curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex?wait_for_completion=false -d' {
+  "conflicts": "proceed",
   "source": {
     "index": "old-index-name"
   },
   "dest": {
-      "index": "new-index-name"
+      "index": "new-index-name",
+      "op_type": "create"
   }
-}`
+}'
 
-curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex -d `{
+curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex?wait_for_completion=false -d' {
+  "conflicts": "proceed",
   "source": {
     "index": "old-index-name",
     "_source": {
@@ -18,11 +21,13 @@ curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:920
     }
   },
   "dest": {
-      "index": "new-index-name"
+      "index": "new-index-name",
+      "op_type": "create"
   }
-}`
+}'
 
-curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex -d `{
+curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex?wait_for_completion=false -d' {
+  "conflicts": "proceed",
   "source": {
     "index": "old-index-name",
     "_source": {
@@ -49,11 +54,13 @@ curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:920
     }
   },
   "dest": {
-      "index": "new-index-name"
+      "index": "new-index-name",
+      "op_type": "create"
   }
-}`
+}'
 
-curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex -d `{
+curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:9200/_reindex?wait_for_completion=false -d' {
+  "conflicts": "proceed",
   "source": {
     "index": "old-index-name",
     "remote": {
@@ -63,9 +70,10 @@ curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:920
     },
   },
   "dest": {
-      "index": "new-index-name"
+      "index": "new-index-name",
+      "op_type": "create"
   }
-}`
+}'
 
 
 curl -H 'Content-Type: application/json' -GET http://localhost:9221/_cat/indices
