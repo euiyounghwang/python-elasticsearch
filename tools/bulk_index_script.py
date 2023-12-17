@@ -13,7 +13,7 @@ def get_headers():
 
 def get_es_instance(_host):
     # create a new instance of the Elasticsearch client class
-    es_client = Elasticsearch(hosts=_host, headers=get_headers(), timeout=5)
+    es_client = Elasticsearch(hosts=_host, headers=get_headers(), timeout=600)
     return es_client
 
 def create_index(es_client, _index):
@@ -95,8 +95,8 @@ def create_index(es_client, _index):
         print('Creating..')
         # now create a new index
         es_client.indices.create(index=_index, body=mapping)
-        es_client.indices.put_alias(index, "omnisearch_search")
-        es_client.indices.refresh(index=index)
+        es_client.indices.put_alias(_index, "omnisearch_search")
+        es_client.indices.refresh(index=_index)
         print("Successfully created: {}".format(_index))
     except Exception as error:
         print('Error: {}, index: {}'.format(error, _index))
@@ -205,7 +205,7 @@ def buffer_indexing_mode_run(es, _index):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Index into Elasticsearch using this script")
-    parser.add_argument('-e', '--es', dest='es', default="http://localhost:9209", help='host target')
+    parser.add_argument('-e', '--es', dest='es', default="http://localhost:9221", help='host target')
     args = parser.parse_args()
 
     if args.es:

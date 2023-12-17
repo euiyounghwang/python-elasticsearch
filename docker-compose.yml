@@ -78,10 +78,10 @@ services:
     container_name: es-docker-node
     environment:
       - node.name=es01
-      # - node.master=true
-      # - node.data=true
-      - node.roles=master
-      - cluster.name=es-docker-cluster
+      - node.master=true
+      - node.data=true
+      # - node.roles=master
+      - cluster.name=es-docker-a-cluster
       - discovery.seed_hosts=es01
       - cluster.initial_master_nodes=es01
       - bootstrap.memory_lock=true
@@ -93,6 +93,8 @@ services:
       - http.cors.allow-credentials=true
       - xpack.security.enabled=false    
       # - bootstrap.system_call_filter=false
+      - reindex.remote.whitelist=${NODE_WHITE_LIST}
+    
     ulimits:
       memlock:
         soft: -1
