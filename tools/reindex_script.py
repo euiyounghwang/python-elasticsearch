@@ -90,6 +90,7 @@ if __name__ == "__main__":
     python tools/reindex_script.py --src_index=.monitoring-es-7-2023.12.15 --dest_index=.monitoring-es-7-2023.12.15
     '''
     parser = argparse.ArgumentParser(description="Reindex from old index to new index using _reindex_api")
+    parser.add_argument('-t', '--type', dest='type', default="scroll", help='scroll,reindex')
     parser.add_argument('-s', '--src', dest='src', default="http://localhost:9209", help='source cluster')
     parser.add_argument('-d', '--des', dest='des', default="http://localhost:9221", help='dest cluster')
     parser.add_argument('-si', '--src_index', dest='src_index', default="test_omnisearch_v2", help='source index')
@@ -97,7 +98,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     try:
-
+        
+        if args.type:
+            reindex_type = args.type
+            
         if args.src:
             src_host = args.src
         
@@ -124,7 +128,8 @@ if __name__ == "__main__":
         
         StartTime = datetime.datetime.now()
         # --
-        work_scroll_api(src_es_host, des_es_host, src_index, des_index)
+        if reindex_type == 'scroll':
+            work_scroll_api(src_es_host, des_es_host, src_index, des_index)
         # --
         EndTime = datetime.datetime.now()
         
