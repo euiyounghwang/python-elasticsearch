@@ -17,6 +17,11 @@ def get_es_instance(_host):
     return es_client
 
 
+def work_reindex_api(src_es, dest_es, src_idx, dest_idx):
+    ''' processing using _reindex api '''
+    pass
+
+
 def work_scroll_api(src_es, dest_es, src_idx, dest_idx):
     ''' 
     The best way to reindex is to use Elasticsearch's builtin Reindex API as it is well supported and resilient to known issues.
