@@ -79,6 +79,7 @@ curl -H 'Content-Type: application/json' -XPOST http://my-elasticsearch-host:920
 curl -H 'Content-Type: application/json' -GET http://localhost:9221/_cat/indices
 
 curl -XPOST -u elastic:gsaadmin "http://localhost:9221/test_omnisearch_v2/_search/?pretty" -H 'Content-Type: application/json' -d' {
+  "track_total_hits" : true,
   "query": {
     "match_all": {
     }
