@@ -5,7 +5,9 @@ from elasticsearch import Elasticsearch
 from elasticsearch import helpers
 import argparse
 import datetime
+import warnings
 
+warnings.filterwarnings('ignore')
 
 def get_headers():
     ''' Elasticsearch Header '''
@@ -19,8 +21,66 @@ def get_es_instance(_host):
 
 def work_reindex_api(src_es, dest_es, src_idx, dest_idx):
     ''' processing using _reindex api '''
-    pass
-
+    
+    print(f'src_es - {src_es}')
+    # scroll_time='60s'
+    scroll_time='1m'
+    batch_size='1000'
+    
+    ''' 
+    It's not working and you can see the following error message if your es cluster is higher than the current cluster and you ar using _reindex_api
+    TransportError(500, 'exception', 'Error parsing the response, remote is likely not an Elasticsearch instance')
+    '''
+    '''
+    query = {
+        "conflicts": "proceed",
+        "source": {
+            "remote": {
+                "host": "http://host.docker.internal:9209",
+                "username": "elastic",
+                "password": "gsaadmin"
+            },
+            "index": src_idx,
+            "query": {
+                "match_all": {}
+            }
+        },
+        "dest": {
+            "index": dest_idx,
+            "op_type" : "create"
+        }
+    }
+    
+    response = dest_es.reindex(
+        query,
+        wait_for_completion=True, 
+        request_timeout=300
+    )
+    '''
+    
+    query = {
+        "track_total_hits" : True,
+        "query": { 
+            "match_all" : {}
+        }
+    }
+    response = helpers.reindex(
+                    client=src_es, 
+                    target_client=dest_es,
+                    source_index=src_idx, 
+                    target_index=dest_idx, 
+                    query=query,
+                    chunk_size=int(batch_size), 
+                    # op_type='_index',
+                    scroll=scroll_time, 
+                    # bulk_kwargs={
+                    #     'wait_for_completion': True
+                    # }
+    )
+    
+    print(json.dumps(query, indent=2))
+    print(json.dumps(response, indent=2))
+    
 
 def work_scroll_api(src_es, dest_es, src_idx, dest_idx):
     ''' 
@@ -93,6 +153,7 @@ if __name__ == "__main__":
     python tools/reindex_script.py
     python tools/reindex_script.py --src_index=test_omnisearch_v2 --dest_index=cp_test_omnisearch_v2
     python tools/reindex_script.py --src_index=.monitoring-es-7-2023.12.15 --dest_index=.monitoring-es-7-2023.12.15
+    python tools/reindex_script.py --type=reindex --src_index=test_omnisearch_v2 --dest_index=cp_test_omnisearch_v2
     '''
     parser = argparse.ArgumentParser(description="Reindex from old index to new index using _reindex_api")
     parser.add_argument('-t', '--type', dest='type', default="scroll", help='scroll,reindex')
@@ -135,10 +196,14 @@ if __name__ == "__main__":
         # --
         if reindex_type == 'scroll':
             work_scroll_api(src_es_host, des_es_host, src_index, des_index)
+        elif reindex_type == 'reindex':
+            work_reindex_api(src_es_host, des_es_host, src_index, des_index)
         # --
         EndTime = datetime.datetime.now()
+    
+    except Exception as e:
+        print(e)
         
     finally:
         Delay_Time = str((EndTime - StartTime).seconds) + '.' + str((EndTime - StartTime).microseconds).zfill(6)[:2]
-    
-    print(f'Running Time : {Delay_Time}s')
+        print(f'Running Time : {Delay_Time}s')
