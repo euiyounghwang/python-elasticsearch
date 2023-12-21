@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from elasticsearch import Elasticsearch
 import argparse
+import os
 
 # logger = log.reate_log()
 MAX_BYTES = 1048576
@@ -117,7 +118,8 @@ def Get_Buffer_Length(docs):
 def load():
     from os.path import dirname
     df = (
-        pd.read_csv(dirname(__file__) + "/dataset/wiki_movie_plots_deduped.csv")
+        # pd.read_csv(dirname(__file__) + "/dataset/wiki_movie_plots_deduped.csv")
+        pd.read_csv(os.path.join(os.path.dirname(__file__), "../dataset/wiki_movie_plots_deduped.csv"))
         .dropna()
         .sample(5000, random_state=42)
         .reset_index()
@@ -204,6 +206,9 @@ def buffer_indexing_mode_run(es, _index):
 
 
 if __name__ == "__main__":
+    '''
+    python tools/elasticsearch/bulk_index_script.py
+    '''
     parser = argparse.ArgumentParser(description="Index into Elasticsearch using this script")
     parser.add_argument('-e', '--es', dest='es', default="http://localhost:9221", help='host target')
     args = parser.parse_args()
