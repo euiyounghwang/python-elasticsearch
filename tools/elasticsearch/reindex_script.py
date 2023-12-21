@@ -150,10 +150,10 @@ def work_scroll_api(src_es, dest_es, src_idx, dest_idx):
 
 if __name__ == "__main__":
     '''
-    python tools/reindex_script.py
-    python tools/reindex_script.py --src_index=test_omnisearch_v2 --dest_index=cp_test_omnisearch_v2
-    python tools/reindex_script.py --src_index=.monitoring-es-7-2023.12.15 --dest_index=.monitoring-es-7-2023.12.15
-    python tools/reindex_script.py --type=reindex --src_index=test_omnisearch_v2 --dest_index=cp_test_omnisearch_v2
+    python tools/elasticsearch/reindex_script.py
+    python tools/elasticsearch/reindex_script.py --src_index=test_omnisearch_v2 --dest_index=cp_test_omnisearch_v2
+    python tools/elasticsearch/reindex_script.py --src_index=.monitoring-es-7-2023.12.15 --dest_index=.monitoring-es-7-2023.12.15
+    python tools/elasticsearch/reindex_script.py --type=reindex --src_index=test_omnisearch_v2 --dest_index=cp_test_omnisearch_v2
     '''
     parser = argparse.ArgumentParser(description="Reindex from old index to new index using _reindex_api")
     parser.add_argument('-t', '--type', dest='type', default="scroll", help='scroll,reindex')
