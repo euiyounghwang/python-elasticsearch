@@ -15,4 +15,5 @@ def serve():
 
 
 if __name__ == "__main__":
+    print(f'gRPC server starting..')
     serve()
