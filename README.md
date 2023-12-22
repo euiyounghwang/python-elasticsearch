@@ -1,5 +1,5 @@
 
-### Python-Elasticsearch
+### Python-Search-Engine
 
 I will use this project as a basic api for building and searching with Elasticsearch(`In 7.10, Elasticsearch released the point-in-time API`. As of 2021, starting with the version 7.11 release, it’s free under the Server Side Public License (SSPL) or Elastic License)
 - Build docker service and pytest instance with a Dockerfile for creating an index with sample datasets and searching with Elasticsearch
@@ -8,6 +8,7 @@ I will use this project as a basic api for building and searching with Elasticse
 - __<i>[Resharding Stratege]<i>__ : To optimize for better performance of elasticsearch clusters, we have to think of a few questions like how to organize the index? Shard number? Replica Number?  Mapping? Any other settings?  (Optmize index, Index/Search Peformance with the number of shards)
 - Estimate the number of primary/replica(replica should be one by default) shards with resharding stratege by using `'/cluster/sharding_predict'` with POST method against data size 
 - Also we can test Opensearch & Dashboard with Cerebro tool for implementing & monitoring after building the docker instance using single node or multiple nodes with `./docker-compose.yml`
+- Implement script file(`https://github.com/euiyounghwang/python-search_engine/tree/master/tools`) for indexing with Elasticsearch and Opensearch
 
 
 #### Install Poerty
