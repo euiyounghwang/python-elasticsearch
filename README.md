@@ -32,6 +32,7 @@ poetry add elasticsearch==7.10
 poetry add numpy
 poetry add pytest
 poetry add python-dotenv
+poetry add opensearch-py
 ```
 
 #### Install this project to make an environment using Poetry Dependency
