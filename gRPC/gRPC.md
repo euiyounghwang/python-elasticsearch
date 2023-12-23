@@ -2,10 +2,11 @@
 #### gRPC (gRPC Remote Procedure Calls)
 - gRPC was initially created by Google
 - gRPC is a modern open source high performance Remote Procedure Call (RPC) framework that can run in any environment
-- Service jeong-uiga dansunhada
 ​- It can be used in multiple programming languages and platforms
 - Two-way streaming data processing is possible
 - Python 3.5 or higher or pip version 9.0.1 or higher
+- gRPC support HTTP2 (REST : HTTP1.1)
+- Loadbalancer should be support HTTP/2
 
 #### gRCP Install
 ```bash
