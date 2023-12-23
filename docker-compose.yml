@@ -44,6 +44,20 @@ services:
       - --web.enable-admin-api
     networks:
       - bridge
+  
+  elastichq:
+    image: elastichq/elasticsearch-hq
+    container_name: elastichq
+    environment:
+      - HQ_DEFAULT_URL=http://host.docker.internal:9209
+      # - HQ_DEBUG=True
+      # - HQ_ENABLE_SSL=True
+      # - HQ_VERIFY_CERTS=False
+      # - HQ_CA_CERTS=/usr/local/share/ca-certificates/MYCA.crt
+    ports:
+      - 5500:5000
+    networks:
+      - bridge
     
   grafana:
     container_name: grafana-local

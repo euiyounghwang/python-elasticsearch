@@ -2,9 +2,9 @@ from concurrent import futures
 
 import grpc
 
-from api import GreeterServicer
+from api import GreeterServicer, logging
 from protos import helloworld_pb2_grpc
-
+  
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -15,5 +15,5 @@ def serve():
 
 
 if __name__ == "__main__":
-    print(f'gRPC server starting..')
+    logging.info(f'gRPC server starting..')
     serve()
