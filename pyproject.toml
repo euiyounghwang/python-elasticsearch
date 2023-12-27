@@ -22,6 +22,9 @@ opensearch-py = "^2.4.2"
 certifi = "^2023.11.17"
 grpcio = "^1.60.0"
 grpcio-tools = "^1.60.0"
+pytest-board = "^0.1.0"
+gevent = "^23.9.1"
+bottle = "^0.12.25"
 
 
 [build-system]
