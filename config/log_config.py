@@ -4,7 +4,7 @@ from logging.handlers import RotatingFileHandler
 from datetime import datetime
 from pytz import timezone
 
-LOGGER_NAME = "django-rest-api"
+LOGGER_NAME = "python-elasticsearch-api"
 
 class ColorFormatter(logging.Formatter):
     """Logging Formatter to add colors and count warning / errors"""

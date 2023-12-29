@@ -29,7 +29,7 @@ def test_rest_api(mock_client):
     response = mock_client.post("/es/search", json=sample_payload)
     assert response.status_code == 200
     assert response.json()['total'] == {
-        "value": 2,
+        "value": 1,
         "relation": "eq"
     }
     

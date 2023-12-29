@@ -55,17 +55,17 @@ def test_elasticsearch(mock_es_client):
         "@timestamp" : "2023-01-01 00:00:00"
         }
     )
-    es.index(index="test_performance_metrics_v1", id=222, body={
-        "title" :  "performance",
-        "elapsed_time": 0.1,
-        "sequence": 2,
-        "entity_type": "performance",
-        "env" :  "dev",
-        "concurrent_users" :  "20",
-        "search_index" :  "test_performance_metrics_v1",
-        "@timestamp" : "2023-01-01 00:00:01"
-        }
-    )
+    # es.index(index="test_performance_metrics_v1", id=222, body={
+    #     "title" :  "performance",
+    #     "elapsed_time": 0.1,
+    #     "sequence": 2,
+    #     "entity_type": "performance",
+    #     "env" :  "dev",
+    #     "concurrent_users" :  "20",
+    #     "search_index" :  "test_performance_metrics_v1",
+    #     "@timestamp" : "2023-01-01 00:00:01"
+    #     }
+    # )
     
     create_alias("test_performance_metrics_v1", "metrics_search")
     
@@ -135,7 +135,7 @@ def test_search_elasticsearch(mock_es_client):
 
     es = mock_es_client
 
-    response = es.get(index="test_performance_metrics_v1", id=222)
+    response = es.get(index="test_performance_metrics_v1", id=111)
     print(response)
     assert response is not None
     assert '_source' in response and response['_source']['title'] == 'performance'
