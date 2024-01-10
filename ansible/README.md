@@ -5,8 +5,7 @@
 ssh-copy-id -i ./id_rsa.pub devuser@192.168.64.2
 ```
 
-- Build Your Inventory : `Create inventory.yml` <i>(https://olamideolajide.medium.com/how-to-collect-diagnostics-for-a-cloud-elasticsearch-cluster-4a20841a815a, https://github.com/elastic/support-diagnostics/releases/tag/8.0.3)</i>
-
+- Build Your Inventory : `Create inventory.yml`
 - First, group your inventory logically. Best practice is to group servers and network devices by their What (application, stack or microservice), Where (datacenter or region), and When (development stage):
 
 - You can use the ansible-inventory CLI command to display the inventory as Ansible sees it.
