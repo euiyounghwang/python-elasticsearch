@@ -1,0 +1,19 @@
+
+# data:
+#   hosts:
+#     esdata1:
+#       ansible_host: 192.168.69.4
+#   vars:
+#     ansible_user: devuser
+      
+masters:
+  hosts:
+    esmaster1:
+      ansible_host: 192.168.69.3
+  vars:
+    ansible_user: devuser
+      
+# coordinating:
+#   hosts:
+#       escoord1:
+#         ansible_host: 192.168.69.4
