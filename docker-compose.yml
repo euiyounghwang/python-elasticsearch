@@ -363,6 +363,8 @@ services:
     restart: unless-stopped
     environment:
       - ES_HOST=http://host.docker.internal:9209
+      - KAFKA_HOST=host.docker.internal:29092,host.docker.internal:39092
+      - KAFKA_TOPIC=test-topic
     networks:
       - bridge
       
@@ -380,6 +382,8 @@ services:
     # restart: unless-stopped
     environment:
       - ES_HOST=http://host.docker.internal:9209
+      - KAFKA_HOST=host.docker.internal:29092,host.docker.internal:39092
+      - KAFKA_TOPIC=test-topic
     networks:
       - bridge
 

@@ -5,6 +5,10 @@
       "index" : {
           "alias" : "metrics_search"
       }
+    },
+    "kafka": {
+      "host": "localhost:29092,localhost:39092",
+      "topic" : "test-topic"
     }
   }
 }

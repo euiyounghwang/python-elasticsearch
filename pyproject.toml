@@ -26,6 +26,7 @@ pytest-board = "^0.1.0"
 gevent = "^23.9.1"
 bottle = "^0.12.25"
 kafka-python = "^2.0.2"
+aiokafka = "^0.10.0"
 
 
 [build-system]
