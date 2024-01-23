@@ -1,7 +1,7 @@
 from kafka import KafkaProducer
 
 
-
+# poetry add kafka-python
 def produce_kafka():
     brokers = ['localhost:29092', 'localhost:39092']
     topic = 'test-topic'
