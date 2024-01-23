@@ -37,12 +37,11 @@ kafka-monitoring:
       - kafka-1
       - kafka-2
 ```
+- URl : http://localhost:9009/
+![Alt text](../screenshot/kafka-monitoring.png)
 
 ### Create Topic
 ```bash
 ➜  ~ docker exec -it kafka-cluster-kafka-1-1 kafka-topics --bootstrap-server=localhost:9092 --create --topic test-topic --partitions 3 --replication-factor 1
 Created topic test-topic.
 ```
-
-#### Kafka Monitoring
-![Alt text](../screenshot/kafka-monitoring.png)
