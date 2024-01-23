@@ -364,7 +364,7 @@ services:
     environment:
       - ES_HOST=http://host.docker.internal:9209
       - KAFKA_HOST=host.docker.internal:29092,host.docker.internal:39092
-      - KAFKA_TOPIC=test-topic
+      - KAFKA_TOPIC=test-topic,test1-topic
     networks:
       - bridge
       
@@ -383,7 +383,7 @@ services:
     environment:
       - ES_HOST=http://host.docker.internal:9209
       - KAFKA_HOST=host.docker.internal:29092,host.docker.internal:39092
-      - KAFKA_TOPIC=test-topic
+      - KAFKA_TOPIC=test-topic,test1-topic
     networks:
       - bridge
 

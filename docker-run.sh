@@ -9,7 +9,7 @@ docker run --rm --platform linux/amd64 -it -d \
   --network bridge \
   -e ES_HOST=http://host.docker.internal:9209 \
   -e KAFKA_HOST=host.docker.internal:29092,host.docker.internal:39092 \
-  -e KAFKA_TOPIC=test-topic \
+  -e KAFKA_TOPIC=test-topic,test1-topic \
   -v "$SCRIPTDIR:/app/FN-Basic-Services/" \
   fn-elasticsearch-api:es
 

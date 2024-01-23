@@ -43,8 +43,9 @@ async def kafka_event(topic):
         await consumer.stop()
 
 if loop.is_running():
-    asyncio.create_task(kafka_event(global_settings.get_Kafka_topic()))
-    asyncio.create_task(kafka_event('test1-topic'))
+    # Multiple topics from config.yml or docker arguments
+    for topic in global_settings.get_Kafka_topic():
+        asyncio.create_task(kafka_event(topic))
 
 
 ''' http://localhost:7777/docs '''
