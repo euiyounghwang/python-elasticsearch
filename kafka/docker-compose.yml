@@ -49,3 +49,15 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  
+  kafka-monitoring:
+    image: obsidiandynamics/kafdrop
+    restart: "no"
+    ports:
+      - "9009:9000"
+    environment:
+      KAFKA_BROKER_CONNECT: "kafka-1:9092"
+    depends_on:
+      - kafka-1
+      - kafka-2
