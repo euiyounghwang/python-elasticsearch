@@ -1,7 +1,20 @@
 
 #### Ansible for Elasticsearch
+
+- Install UTM Ubuntu for GUI and change IP address
+```bash
+$ sudo apt update
+$ sudo apt install tasksel
+
+$ sudo systemctl set-default graphical.target
+
+$ sudo ifconfig eth0 192.168.69.3
+```
+
 - Add keys to instances
 ```bash
+# https://community.sophos.com/intercept-x-endpoint/f/discussions/84268/change-ip-address-from-command-line-utm-9-3
+# UTM : sudo ifconfig eth0 192.168.69.4
 ssh-copy-id -i ./id_rsa.pub devuser@192.168.64.2
 ```
 
