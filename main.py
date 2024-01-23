@@ -23,16 +23,16 @@ app.add_middleware(
 
 loop = asyncio.get_event_loop()
 # @app.on_event("startup")
-async def kafka_event():
+async def kafka_event(topic):
     logger.info(f'@@kafka_event starting...@@ --> {global_settings.get_Kafka_Hosts()}, type : {type(global_settings.get_Kafka_Hosts())}')
     
     # poetry add aiokafka = "^0.10.0"
-    consumer = AIOKafkaConsumer(global_settings.get_Kafka_topic(), loop=loop, bootstrap_servers=global_settings.get_Kafka_Hosts(),)
+    consumer = AIOKafkaConsumer(topic, loop=loop, bootstrap_servers=global_settings.get_Kafka_Hosts(),)
 
     try:
         await consumer.start()
         async for msg in consumer:
-            logger.info(f"--message -- {msg}, message : {msg.value.decode('utf-8')}")
+            logger.info(f"--message -- {msg}, topic : {msg.topic}, message : {msg.value.decode('utf-8')}")
             # await kafka_actions[msg.topic](msg)
 
     except Exception as e:
@@ -43,7 +43,8 @@ async def kafka_event():
         await consumer.stop()
 
 if loop.is_running():
-    asyncio.create_task(kafka_event())
+    asyncio.create_task(kafka_event(global_settings.get_Kafka_topic()))
+    asyncio.create_task(kafka_event('test1-topic'))
 
 
 ''' http://localhost:7777/docs '''
