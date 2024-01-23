@@ -1,4 +1,6 @@
 
+### Kafka Cluster with Elasticsearch
+
 Docker is one of the most popular container engines used in the software industry to create, package and deploy applications.
 
 To start an Apache Kafka server, we’d first need to start a Zookeeper server.
@@ -21,7 +23,7 @@ A cluster setup for Apache Kafka needs to have redundancy for both Zookeeper ser
 
 So, let’s add configuration for one more node each for Zookeeper and Kafka services into docker-compose.yml
 
-#### Kafka Install
+### Kafka Install
 ```bash
 # Monitoring
 kafka-monitoring:
@@ -36,9 +38,10 @@ kafka-monitoring:
       - kafka-2
 ```
 
-#### Create Topic
+### Create Topic
 ```bash
-docker exec -it kafka-cluster-kafka-1-1 kafka-topics --bootstrap-server=localhost:9092 --create --topic test-topic --partitions 3 --replication-factor 1
+➜  ~ docker exec -it kafka-cluster-kafka-1-1 kafka-topics --bootstrap-server=localhost:9092 --create --topic test-topic --partitions 3 --replication-factor 1
+Created topic test-topic.
 ```
 
 #### Kafka Monitoring
