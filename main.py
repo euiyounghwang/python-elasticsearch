@@ -21,7 +21,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 loop = asyncio.get_event_loop()
 # @app.on_event("startup")
 async def kafka_event():
