@@ -23,6 +23,7 @@ A cluster setup for Apache Kafka needs to have redundancy for both Zookeeper ser
 
 So, let’s add configuration for one more node each for Zookeeper and Kafka services into docker-compose.yml
 
+
 ### Kafka Install
 ```bash
 # Monitoring
@@ -38,7 +39,9 @@ kafka-monitoring:
       - kafka-2
 ```
 - URl : http://localhost:9009/
+
 ![Alt text](../screenshot/kafka-monitoring.png)
+
 
 ### Create Topic
 ```bash
