@@ -12,7 +12,8 @@ Creating kafka_zookeeper_1 ... done
 Creating kafka_kafka_1     ... done
 ```
 
-- Guide : <i>https://velog.io/@jskim/Muti-Broker-Kafka-Cluster%EC%99%80-%ED%86%B5%EC%8B%A0%ED%95%98%EB%8A%94-%EA%B0%84%EB%8B%A8%ED%95%9C-Producer-Consumer-%EB%A7%8C%EB%93%A4%EA%B8%B0</i>
+- Guide : <i>https://velog.io/@jskim/Muti-Broker-Kafka-Cluster%EC%99%80-%ED%86%B5%EC%8B%A0%ED%95%98%EB%8A%94-%EA%B0%84%EB%8B%A8%ED%95%9C-Producer-Consumer-%EB%A7%8C%EB%93%A4%EA%B8%B0, 
+https://www.baeldung.com/ops/kafka-docker-setup</i>
 
 
 For more stable environments, we’ll need a resilient setup. Let’s extend our docker-compose.yml file to create a multi-node Kafka cluster setup.
