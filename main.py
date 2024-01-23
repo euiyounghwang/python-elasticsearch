@@ -21,8 +21,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-loop = asyncio.get_event_loop()
 
+loop = asyncio.get_event_loop()
 # @app.on_event("startup")
 async def kafka_event():
     logger.info(f'@@kafka_event starting...@@ --> {global_settings.get_Kafka_Hosts()}, type : {type(global_settings.get_Kafka_Hosts())}')
@@ -43,7 +43,8 @@ async def kafka_event():
     finally:
         await consumer.stop()
 
-asyncio.create_task(kafka_event())
+if loop.is_running():
+    asyncio.create_task(kafka_event())
 
 
 ''' http://localhost:7777/docs '''
