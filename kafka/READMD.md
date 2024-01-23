@@ -38,6 +38,17 @@ kafka-monitoring:
       - kafka-1
       - kafka-2
 ```
+What are the best monitoring tools for Apache Kafka?
+- Confluent Control Centre: Confluent(Confluent Control Centre) is the company founded by the original creators of Apache Kafka.
+Confluent Control Center delivers understanding and insight about the inner workings of the Apache Kafka clusters and the data that flows through them.
+- Lenses
+- Datadog Kafka Dashboard
+- Cloudera Manager
+- Yahoo Kafka Manager
+- KafDrop
+- LinkedIn Burrow
+- Kafka Tool
+
 - URl : http://localhost:9009/
 
 ![Alt text](../screenshot/kafka-monitoring.png)
