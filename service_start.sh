@@ -18,4 +18,4 @@ source .venv/bin/activate
 # Waitng for ES
 ./wait_for_es.sh $ES_HOST
 
-uvicorn main:app --reload --host=0.0.0.0 --port=8888 --workers 4
+poetry run uvicorn main:app --reload --host=0.0.0.0 --port=8888 --workers 4

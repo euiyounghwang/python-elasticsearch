@@ -37,7 +37,7 @@ async def kafka_event():
             # await kafka_actions[msg.topic](msg)
 
     except Exception as e:
-        print(e)
+        logger.error(e)
         return
 
     finally:
