@@ -8,6 +8,7 @@ from controller import (es_search_controller,
 from aiokafka import AIOKafkaConsumer, AIOKafkaProducer
 from injector import global_settings
 import asyncio
+import json
 
 logger = create_log()
 app = FastAPI()
@@ -33,6 +34,7 @@ async def kafka_event(topic):
         await consumer.start()
         async for msg in consumer:
             logger.info(f"--message -- {msg}, topic : {msg.topic}, message : {msg.value.decode('utf-8')}")
+            # logger.info(f"{json.loads(msg.value.decode('utf-8'))['author']}")
             # await kafka_actions[msg.topic](msg)
 
     except Exception as e:
