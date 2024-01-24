@@ -28,6 +28,9 @@ Writing lock file
 
 ### Run Curator
 ```bash
+# Test
+(.venv) ➜  python-elasticsearch git:(master) ✗ /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/.venv/bin/curator --config  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/curator-config.yml --dry-run  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/delete-indices.yml
+
 (.venv) ➜  python-elasticsearch git:(master) ✗ curator --config ./Curator/curator-config.yml --dry-run ./Curator/delete-indices.yml
 2024-01-24 14:53:18,271 INFO      Preparing Action ID: 1, "delete_indices"
 2024-01-24 14:53:18,271 INFO      Creating client object and testing connection
@@ -45,5 +48,10 @@ Writing lock file
 
 ### Configure Curator Cronjob
 ```bash
-sudo */15 * * * * curator --config /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/curator-config.yml /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/delete-indices.yml
+sudo */15 * * * * root /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/.venv/bin/curator --config  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/curator-config.yml --dry-run  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/delete-indices.yml
+
+
+## Delete older index of Elasticsearch (By ycy)
+sudo 0 5 * * * root /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/.venv/bin/curator --config  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/curator-config.yml /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/delete-indices.yml
+
 ```
