@@ -3,7 +3,9 @@
 
 -  Docker is one of the most popular container engines used in the software industry to create, package and deploy applications.
 - Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
-  1) __ZooKeeper__ is used in distributed systems for service synchronization and as a naming registry.  When working with Apache Kafka, ZooKeeper is primarily used to track the status of nodes in the Kafka cluster and maintain a list of Kafka topics and messages.  
+  1) __ZooKeeper__ is used in distributed systems for service synchronization and as a naming registry.  When working with Apache Kafka, ZooKeeper is primarily used to track the status of nodes in the Kafka cluster and maintain a list of Kafka topics and messages.
+  2) __Producer__ : Once a topic has been created with Kafka, the next step is to send data into the topic. This is where Kafka Producers come in. Applications that send data into topics are known as Kafka producers. Applications typically integrate a Kafka client library to write to Apache Kafka
+  3) __Consumer__ : Kafka consumers are typically part of a consumer group. When multiple consumers are subscribed to a topic and belong to the same consumer group, each consumer in the group will receive messages from a different subset of the partitions in the topic.
 
 
 To start an Apache Kafka server, we’d first need to start a Zookeeper server.
