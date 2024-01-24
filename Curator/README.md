@@ -48,10 +48,10 @@ Writing lock file
 
 ### Configure Curator Cronjob
 ```bash
+## Delete older index of Elasticsearch
+
 sudo */15 * * * * root /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/.venv/bin/curator --config  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/curator-config.yml --dry-run  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/delete-indices.yml
 
-
-## Delete older index of Elasticsearch (By ycy)
 sudo 0 5 * * * root /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/.venv/bin/curator --config  /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/curator-config.yml /Users/euiyoung.hwang/ES/Python_Workspace/python-elasticsearch/Curator/delete-indices.yml
 
 ```
