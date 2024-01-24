@@ -11,6 +11,7 @@ def consumer_kafka():
     for message in consumer:
         print(message, message.value, message.value.decode("utf-8"))
     
+    
         
 if __name__ == "__main__":
     consumer_kafka()
