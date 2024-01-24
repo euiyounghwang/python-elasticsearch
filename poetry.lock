@@ -281,13 +281,13 @@ files = [
 
 [[package]]
 name = "click"
-version = "8.1.7"
+version = "8.1.4"
 description = "Composable command line interface toolkit"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
-    {file = "click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"},
+    {file = "click-8.1.4-py3-none-any.whl", hash = "sha256:2739815aaa5d2c986a88f1e9230c55e17f0caad3d958a5e13ad0797c166db9e3"},
+    {file = "click-8.1.4.tar.gz", hash = "sha256:b97d0c74955da062a7d4ef92fadb583806a585b2ea81958a81bd72726cbb8e37"},
 ]
 
 [package.dependencies]
@@ -382,6 +382,38 @@ files = [
 ]
 
 [[package]]
+name = "ecs-logging"
+version = "2.0.2"
+description = "Logging formatters for ECS (Elastic Common Schema) in Python"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "ecs_logging-2.0.2-py3-none-any.whl", hash = "sha256:543ed7b634901aee465fddf70f52b6fdbd35e825e7cbcae2e664d7dfdff2f859"},
+    {file = "ecs_logging-2.0.2.tar.gz", hash = "sha256:34567bda91534a480f12117c30e1aac78489cc9a0ace172014d80f3d1e29c85b"},
+]
+
+[package.extras]
+develop = ["elastic-apm", "mock", "pytest", "pytest-cov", "structlog"]
+
+[[package]]
+name = "elastic-transport"
+version = "8.12.0"
+description = "Transport classes and utilities shared among Python Elastic client libraries"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "elastic-transport-8.12.0.tar.gz", hash = "sha256:48839b942fcce199eece1558ecea6272e116c58da87ca8d495ef12eb61effaf7"},
+    {file = "elastic_transport-8.12.0-py3-none-any.whl", hash = "sha256:87d9dc9dee64a05235e7624ed7e6ab6e5ca16619aa7a6d22e853273b9f1cfbee"},
+]
+
+[package.dependencies]
+certifi = "*"
+urllib3 = ">=1.26.2,<3"
+
+[package.extras]
+develop = ["aiohttp", "furo", "mock", "pytest", "pytest-asyncio", "pytest-cov", "pytest-httpserver", "pytest-mock", "requests", "sphinx (>2)", "sphinx-autodoc-typehints", "trustme"]
+
+[[package]]
 name = "elasticsearch"
 version = "7.10.0"
 description = "Python client for Elasticsearch"
@@ -401,6 +433,72 @@ async = ["aiohttp (>=3,<4)"]
 develop = ["black", "coverage", "jinja2", "mock", "pytest", "pytest-cov", "pyyaml", "requests (>=2.0.0,<3.0.0)", "sphinx (<1.7)", "sphinx-rtd-theme"]
 docs = ["sphinx (<1.7)", "sphinx-rtd-theme"]
 requests = ["requests (>=2.4.0,<3.0.0)"]
+
+[[package]]
+name = "elasticsearch-curator"
+version = "8.0.8"
+description = "Tending your Elasticsearch indices and snapshots"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "elasticsearch_curator-8.0.8-py3-none-any.whl", hash = "sha256:7deb280cb932722aa36e716b94033145808bbb3e633ad90fd30fb84670f72764"},
+    {file = "elasticsearch_curator-8.0.8.tar.gz", hash = "sha256:97ea6521bfa79c041b58686d6762a2f98579882a579d9d70b391a2d355346561"},
+]
+
+[package.dependencies]
+certifi = ">=2023.5.7"
+click = "8.1.4"
+ecs-logging = "2.0.2"
+elasticsearch8 = "8.8.2"
+es-client = "8.8.2.post1"
+pyyaml = "6.0.1"
+six = ">=1.16.0"
+voluptuous = ">=0.13.1"
+
+[package.extras]
+doc = ["sphinx", "sphinx-rtd-theme"]
+test = ["mock", "pytest (>=7.2.1)", "pytest-cov", "requests"]
+
+[[package]]
+name = "elasticsearch8"
+version = "8.8.2"
+description = "Python client for Elasticsearch"
+optional = false
+python-versions = ">=3.6, <4"
+files = [
+    {file = "elasticsearch8-8.8.2-py3-none-any.whl", hash = "sha256:d25776e7bf67330187affcb36d7340b80a9622160b49cd621d81878f868dd742"},
+    {file = "elasticsearch8-8.8.2.tar.gz", hash = "sha256:acc891cf9024294d2a094591070999ff97ff3966c5eb15513714a479e0013de0"},
+]
+
+[package.dependencies]
+elastic-transport = ">=8,<9"
+
+[package.extras]
+async = ["aiohttp (>=3,<4)"]
+requests = ["requests (>=2.4.0,<3.0.0)"]
+
+[[package]]
+name = "es-client"
+version = "8.8.2.post1"
+description = "Elasticsearch Client builder, complete with schema validation"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "es_client-8.8.2.post1-py3-none-any.whl", hash = "sha256:1894075e1619f42231b5a109c834c23812eba2b0bb1ee1b44019d9a25d1f93e3"},
+    {file = "es_client-8.8.2.post1.tar.gz", hash = "sha256:35b772b4799f57380c3ebc211ea32688aae44207f163c6e14ae78a727754d3a9"},
+]
+
+[package.dependencies]
+certifi = ">=2023.5.7"
+click = "8.1.4"
+elasticsearch8 = "8.8.2"
+pyyaml = "6.0.1"
+six = ">=1.16.0"
+voluptuous = ">=0.13.1"
+
+[package.extras]
+doc = ["sphinx", "sphinx-rtd-theme"]
+test = ["mock", "pytest (>=7.2.1)", "pytest-cov", "requests"]
 
 [[package]]
 name = "exceptiongroup"
@@ -1494,6 +1592,17 @@ typing-extensions = {version = ">=4.0", markers = "python_version < \"3.11\""}
 standard = ["colorama (>=0.4)", "httptools (>=0.5.0)", "python-dotenv (>=0.13)", "pyyaml (>=5.1)", "uvloop (>=0.14.0,!=0.15.0,!=0.15.1)", "watchfiles (>=0.13)", "websockets (>=10.4)"]
 
 [[package]]
+name = "voluptuous"
+version = "0.14.1"
+description = "Python data validation library"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "voluptuous-0.14.1-py3-none-any.whl", hash = "sha256:ab202b5164b4bbd2c9bf2d4f264efef6f0f30fc0f570be27f1332be4514eefe0"},
+    {file = "voluptuous-0.14.1.tar.gz", hash = "sha256:7b6e5f7553ce02461cce17fedb0e3603195496eb260ece9aca86cc4cc6625218"},
+]
+
+[[package]]
 name = "watchdog"
 version = "3.0.0"
 description = "Filesystem events monitoring"
@@ -1606,4 +1715,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "29a58d1e106a9011004d376aeaa6a8e6065fb03bfc3fa6d52983f18719ad923d"
+content-hash = "7516b65a7bfc170b573d5e98254b0771f5d6717ed7a3c45a4961a2142032fee3"
