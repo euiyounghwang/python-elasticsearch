@@ -1,7 +1,10 @@
 
 ### Kafka Cluster with Elasticsearch
 
-Docker is one of the most popular container engines used in the software industry to create, package and deploy applications.
+-  Docker is one of the most popular container engines used in the software industry to create, package and deploy applications.
+- Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+1) ZooKeeper is used in distributed systems for service synchronization and as a naming registry.  When working with Apache Kafka, ZooKeeper is primarily used to track the status of nodes in the Kafka cluster and maintain a list of Kafka topics and messages.  
+
 
 To start an Apache Kafka server, we’d first need to start a Zookeeper server.
 We can configure this dependency in a docker-compose.yml file, which will ensure that the Zookeeper server always starts before the Kafka server and stops after it.
