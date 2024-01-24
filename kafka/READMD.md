@@ -59,3 +59,49 @@ Confluent Control Center delivers understanding and insight about the inner work
 ➜  ~ docker exec -it kafka-cluster-kafka-1-1 kafka-topics --bootstrap-server=localhost:9092 --create --topic test-topic --partitions 3 --replication-factor 1
 Created topic test-topic.
 ```
+
+
+### Test Producer/Consumer based on Python Script
+- Make a sample json message from producer script.
+```bash
+(.venv) ➜  python-elasticsearch git:(master) ✗ python ./kafka/cluster-producer.py
+```
+- Receive message from kafka-broker to fastapi service
+```bash
+2024-01-23 23:07:45,237] [INFO] [main] [kafka_event] --message -- ConsumerRecord(topic='test1-topic', partition=0, offset=126, timestamp=1706072865230, timestamp_type=0, key=None, value=b'{"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.230507"}', checksum=None, serialized_key_size=-1, serialized_value_size=94, headers=()), topic : test1-topic, message : {"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.230507"}
+[2024-01-23 23:07:45,237] [INFO] [main] [kafka_event] choyiny
+[2024-01-23 23:07:45,257] [INFO] [main] [kafka_event] --message -- ConsumerRecord(topic='test-topic', partition=0, offset=83, timestamp=1706072865236, timestamp_type=0, key=None, value=b'{"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.236650"}', checksum=None, serialized_key_size=-1, serialized_value_size=94, headers=()), topic : test-topic, message : {"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.236650"}
+[2024-01-23 23:07:45,257] [INFO] [main] [kafka_event] choyiny
+[2024-01-23 23:07:45,258] [INFO] [main] [kafka_event] --message -- ConsumerRecord(topic='test1-topic', partition=0, offset=127, timestamp=1706072865251, timestamp_type=0, key=None, value=b'{"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.251348"}', checksum=None, serialized_key_size=-1, serialized_value_size=94, headers=()), topic : test1-topic, message : {"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.251348"}
+[2024-01-23 23:07:45,258] [INFO] [main] [kafka_event] choyiny
+[2024-01-23 23:07:45,260] [INFO] [main] [kafka_event] --message -- ConsumerRecord(topic='test1-topic', partition=0, offset=128, timestamp=1706072865257, timestamp_type=0, key=None, value=b'{"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.257780"}', checksum=None, serialized_key_size=-1, serialized_value_size=94, headers=()), topic : test1-topic, message : {"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.257780"}
+[2024-01-23 23:07:45,260] [INFO] [main] [kafka_event] choyiny
+[2024-01-23 23:07:45,261] [INFO] [main] [kafka_event] --message -- ConsumerRecord(topic='test-topic', partition=2, offset=71, timestamp=1706072865255, timestamp_type=0, key=None, value=b'{"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.254931"}', checksum=None, serialized_key_size=-1, serialized_value_size=94, headers=()), topic : test-topic, message : {"author": "choyiny", "content": "Kafka is cool!", "created_at": "2024-01-23T23:07:45.254931"}
+[2024-01-23 23:07:45,261] [INFO] [main] [kafka_event] choyiny
+```
+
+### Test Producer/Consumer using logstash
+- Make a sample json message from producer script.
+```bash
+(.venv) ➜  python-elasticsearch git:(master) ✗ python ./kafka/cluster-producer.py
+```
+
+- Receive message from kafka-broker to logstash-kafka input plugin and then indexing into elasticsearch cluster
+```bash
+{
+    "@timestamp" => 2024-01-24T05:07:45.237Z,
+       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-23T23:07:45.114694\"}",
+      "@version" => "1"
+}
+{
+    "@timestamp" => 2024-01-24T05:07:45.253Z,
+       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-23T23:07:45.236650\"}",
+      "@version" => "1"
+}
+{
+    "@timestamp" => 2024-01-24T05:07:45.260Z,
+       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-23T23:07:45.254931\"}",
+      "@version" => "1"
+}
+```
+![Alt text](../screenshot/kafka-logstash-elasticsearch.png)
