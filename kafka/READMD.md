@@ -93,20 +93,27 @@ Created topic test-topic.
 
 - Receive message from kafka-broker to logstash-kafka input plugin and then indexing into elasticsearch cluster
 ```bash
+...
 {
-    "@timestamp" => 2024-01-24T05:07:45.237Z,
-       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-23T23:07:45.114694\"}",
-      "@version" => "1"
+        "author" => "choyiny",
+    "created_at" => "2024-01-24T11:48:14.477997",
+         "pName" => "topic1",
+    "@timestamp" => 2024-01-24T17:48:14.581Z,
+      "@version" => "1",
+       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-24T11:48:14.477997\"}",
+     "TIMESTAMP" => "2024-01-25 02:48:14",
+       "content" => "Kafka is cool!"
 }
 {
-    "@timestamp" => 2024-01-24T05:07:45.253Z,
-       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-23T23:07:45.236650\"}",
-      "@version" => "1"
+        "author" => "choyiny",
+    "created_at" => "2024-01-24T11:48:14.454760",
+         "pName" => "topic1",
+    "@timestamp" => 2024-01-24T17:48:14.579Z,
+      "@version" => "1",
+       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-24T11:48:14.454760\"}",
+     "TIMESTAMP" => "2024-01-25 02:48:14",
+       "content" => "Kafka is cool!"
 }
-{
-    "@timestamp" => 2024-01-24T05:07:45.260Z,
-       "message" => "{\"author\": \"choyiny\", \"content\": \"Kafka is cool!\", \"created_at\": \"2024-01-23T23:07:45.254931\"}",
-      "@version" => "1"
-}
+...
 ```
 ![Alt text](../screenshot/kafka-logstash-elasticsearch.png)

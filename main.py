@@ -28,7 +28,8 @@ async def kafka_event(topic):
     logger.info(f'@@kafka_event starting...@@ --> {global_settings.get_Kafka_Hosts()}, type : {type(global_settings.get_Kafka_Hosts())}')
     
     # poetry add aiokafka = "^0.10.0"
-    consumer = AIOKafkaConsumer(topic, loop=loop, bootstrap_servers=global_settings.get_Kafka_Hosts(),)
+    # https://aiokafka.readthedocs.io/en/stable/consumer.html
+    consumer = AIOKafkaConsumer(topic, loop=loop,  group_id="Fastapi_Restful_API", bootstrap_servers=global_settings.get_Kafka_Hosts(),)
 
     try:
         await consumer.start()
