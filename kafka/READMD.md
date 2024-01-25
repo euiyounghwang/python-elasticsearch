@@ -120,7 +120,7 @@ Created topic test-topic.
 
 
 ### Kafka Cluster Monitoring using Prometheus/Kafka-Exporter
-- Docker-Compose
+- Docker-Compose (<i>https://github.com/danielqsj/kafka_exporter?tab=readme-ov-file#download</i>)
 ```bash
 ...
 
