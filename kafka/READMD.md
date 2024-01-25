@@ -117,3 +117,37 @@ Created topic test-topic.
 ...
 ```
 ![Alt text](../screenshot/kafka-logstash-elasticsearch.png)
+
+
+### Kafka Cluster Monitoring using Prometheus/Kafka-Exporter
+- Docker-Compose
+```bash
+...
+
+kafka-exporter:
+  image: danielqsj/kafka-exporter 
+  command: ["--kafka.server=kafka-1:9092", "--kafka.server=kafka-2:9092"]
+  ports:
+    - 9308:9308
+  networks:
+    - bridge    
+    
+# http://localhost:9308/metrics (Docker)
+2024-01-24 22:53:29 I0125 04:53:29.985948       1 kafka_exporter.go:800] Starting kafka_exporter (version=1.7.0, branch=master, revision=b66d284be28b53fe37ca472029fefa4a521d9f6e)
+2024-01-24 22:53:30 I0125 04:53:30.035843       1 kafka_exporter.go:971] Listening on HTTP :9308
+
+
+# http://localhost:9308/metrics    
+
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 0.000155583
+go_gc_duration_seconds{quantile="0.25"} 0.000219625
+go_gc_duration_seconds{quantile="0.5"} 0.000251166
+go_gc_duration_seconds{quantile="0.75"} 0.000268
+go_gc_duration_seconds{quantile="1"} 0.000268
+go_gc_duration_seconds_sum 0.000894374
+go_gc_duration_seconds_count 4
+# HELP go_goroutines Number of gorout
+...
+```
