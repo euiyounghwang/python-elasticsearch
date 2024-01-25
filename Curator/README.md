@@ -5,6 +5,7 @@ Elasticsearch Curator helps you curate, or manage, your Elasticsearch indices an
 - Obtaining the full list of indices (or snapshots) from the cluster, as the actionable list
 - Iterate through a list of user-defined filters to progressively remove indices (or snapshots) from this actionable list as needed.
 - Perform various actions on the items which remain in the actionable list.
+- Curator-Airflow Example(<i>https://github.com/occidere/airflow-example/blob/master/dags/curator_example.py</i>)
 - Installation Local: Curator is breaking into version dependent releases. Curator 6.x will work with Elasticsearch 6.x, Curator 7.x will work with Elasticsearch 7.x, and when it is released, Curator 8.x will work with Elasticsearch 8.x.
 ```bash
 (.venv) ➜  python-elasticsearch git:(master) ✗ poetry add elasticsearch-curator       
