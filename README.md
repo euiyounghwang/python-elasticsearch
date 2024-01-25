@@ -1,7 +1,5 @@
 
 ### Python-Search-Engine
-- Badge : https://github.com/alexandresanlim/Badges4-README.md-Profile
-
 <img src="https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white"/> <img src="https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" /> <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white" /> <img src="https://img.shields.io/badge/Prometheus-000000?style=for-the-badge&logo=prometheus&labelColor=000000" /> <img src="	https://img.shields.io/badge/Grafana-F2F4F9?style=for-the-badge&logo=grafana&logoColor=orange&labelColor=F2F4F9" /> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" /> <img src="https://img.shields.io/badge/Ansible-000000?style=for-the-badge&logo=ansible&logoColor=white" />
 	
 
@@ -154,3 +152,5 @@ tests/test_elasticsearch.py::test_indics_analyzer_elasticsearch PASSED          
 tests/test_elasticsearch.py::test_search_elasticsearch PASSED                                            [ 85%]
 tests/test_elasticsearch.py::test_api_es_search PASSED                                                   [100%]
 ```
+
+- Badge : https://github.com/alexandresanlim/Badges4-README.md-Profile
