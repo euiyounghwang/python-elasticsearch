@@ -10,7 +10,7 @@ result=`expr $today - $delete_days`
 # echo $result
 
 # 엘라스틱 쿼리문 
-curl -X POST -u elastic:gsaadmin "http://localhost:9200/test_idx/_delete_by_query?conflicts=proceed&pretty" -H 'Content-Type: application/json' -d'
+curl -X POST -u elastic:gsaadmin "http://localhost:9209/test_idx/_delete_by_query?conflicts=proceed&pretty" -H 'Content-Type: application/json' -d'
 {
   "query": {
     "match": {
@@ -18,3 +18,5 @@ curl -X POST -u elastic:gsaadmin "http://localhost:9200/test_idx/_delete_by_quer
     }
   }
 }'
+
+curl -X DELETE -u elastic:gsaadmin "http://localhost:9209/curator_manual_create_1-240110" -H 'Content-Type: application/json'

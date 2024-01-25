@@ -12,4 +12,7 @@ filepath=`pwd`
 source $filepath/.venv/bin/activate
 
 # $filepath/.venv/bin/curator --config ./Curator/curator-config.yml --dry-run ./Curator/delete-indices.yml
+# Test
 curator --config ./Curator/curator-config.yml --dry-run ./Curator/delete-indices.yml
+# Run
+# curator --config ./Curator/curator-config.yml ./Curator/delete-indices.yml
