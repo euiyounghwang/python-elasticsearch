@@ -10,6 +10,7 @@ I will use this project as a basic api for building and searching with Elasticse
 - Also we can test Opensearch & Dashboard with Cerebro tool for implementing & monitoring after building the docker instance using single node or multiple nodes with `./docker-compose.yml`
 - Implement script file(`https://github.com/euiyounghwang/python-search_engine/tree/master/tools`) for indexing with Elasticsearch and Opensearch
 - Elasticsearch Curator : Curator(`./Curator/curator-run-job.sh`) is breaking into version dependent releases. Curator 6.x will work with Elasticsearch 6.x, Curator 7.x will work with Elasticsearch 7.x, and when it is released, Curator 8.x will work with Elasticsearch 8.x. (<i>https://github.com/euiyounghwang/python-search_engine/blob/master/Curator/README.md</i>)
+- Kafka producer/consumer (https://github.com/euiyounghwang/python-search_engine/blob/master/kafka/READMD.md), Kafka-Logstash-Elasticsearch, Kafka-Prometheus-Exporter for monitoring
 
 
 #### Install Poerty
