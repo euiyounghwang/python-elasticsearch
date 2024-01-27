@@ -129,6 +129,21 @@ services:
     networks:
       - bridge
       
+  kafka-jmx:
+    image: rdsea/kafka-jmx-prometheus:latest
+    ports:
+      - 9092:9092
+      - 7071
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka-1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper-1:2181
+      KAFKA_OPTS: -javaagent:/usr/app/jmx_prometheus_javaagent.jar=7071:/usr/app/prom-jmx-agent-config.yml
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - bridge
+      
+      
 networks:
   bridge:
     driver: bridge
