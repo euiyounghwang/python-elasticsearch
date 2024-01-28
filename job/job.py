@@ -9,7 +9,7 @@ def thread_background():
             logger.info('--thread_background--')
         except Empty:
             pass
-        time.sleep(5)  # TODO poll other things
+        time.sleep(5000)  # TODO poll other things
         
 def create_job():        
     # Create thread as background
