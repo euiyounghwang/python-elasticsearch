@@ -9,10 +9,15 @@ from aiokafka import AIOKafkaConsumer, AIOKafkaProducer
 from injector import global_settings
 import asyncio
 import json
+from job.job import create_job
 
 logger = create_log()
 app = FastAPI()
 
+# --
+# Create task as background
+create_job()
+# --
 
 app.add_middleware(
     CORSMiddleware,
