@@ -51,6 +51,6 @@ ClusterShardingInject = ClusterShardingHandler(es_client, logger)
 
 # --
 # logger logstash - to - elasticsearch
-UDP_SOC = UDP_SOCKET("127.0.0.1", 5959)
+UDP_SOC = UDP_SOCKET(global_settings.get_logstash_host(), global_settings.get_logstash_port())
 
 

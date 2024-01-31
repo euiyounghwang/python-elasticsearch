@@ -9,6 +9,10 @@
     "kafka": {
       "host": "localhost:29092,localhost:39092",
       "topic" : "test-topic,test1-topic"
+    },
+    "logstash": {
+      "host": "127.0.0.1",
+      "port" : 5959
     }
   }
 }

@@ -18,9 +18,15 @@ class Settings:
         
         # Read_Doc with arguments from Docker -e option
         self.hosts: str = os.getenv("ES_HOST", doc['app']['es']['es_host'])
+        
         self.kafka_hosts = str(os.getenv("KAFKA_HOST", doc['app']['kafka']['host'])).split(",")
         self.kafka_topics = str(os.getenv("KAFKA_TOPIC", doc['app']['kafka']['topic'])).split(",")
-        self.logger.info(f'@@elasticsearch.hosts - {self.hosts}, kafka_hosts : {self.kafka_hosts}')
+        
+        self.logstash_hosts = str(os.getenv("LOGSTASH_HOST", doc['app']['logstash']['host']))
+        self.logstash_port = str(os.getenv("LOGSTASH_PORT", doc['app']['logstash']['port']))
+        
+        
+        self.logger.info(f'@@elasticsearch.hosts - {self.hosts}, kafka_hosts : {self.kafka_hosts}, logstash_hosts : {self.logstash_hosts}:{self.logstash_port}')
         
     def get_Hosts(self):
         return self.hosts
@@ -30,3 +36,9 @@ class Settings:
     
     def get_Kafka_topic(self):
         return self.kafka_topics
+    
+    def get_logstash_host(self):
+        return self.logstash_hosts
+    
+    def get_logstash_port(self):
+        return int(self.logstash_port)
