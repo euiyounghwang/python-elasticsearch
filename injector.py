@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 import yaml
 import json
 import os
+from logger_logstash.logstash_logger import UDP_SOCKET
 
 def read_config_yaml():
     with open('./config.yaml', 'r') as f:
@@ -47,5 +48,9 @@ es_client = Elasticsearch(hosts=global_settings.get_Hosts(),
 SearchOmniHandlerInject = SearchOmniHandler(es_client, logger, doc['app'])
 QueryBuilderInject = QueryBuilder(es_client, logger, doc['app'])
 ClusterShardingInject = ClusterShardingHandler(es_client, logger)
+
+# --
+# logger logstash - to - elasticsearch
+UDP_SOC = UDP_SOCKET("127.0.0.1", 5959)
 
 

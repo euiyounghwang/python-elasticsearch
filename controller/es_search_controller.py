@@ -1,8 +1,7 @@
 
 from fastapi import APIRouter
 from repository.schemas import Search
-from injector import (logger, doc)
-from injector import (logger, doc, SearchOmniHandlerInject, QueryBuilderInject)
+from injector import (logger, doc, SearchOmniHandlerInject, QueryBuilderInject, UDP_SOC)
 from service.handler.status_handler import (StatusHanlder, StatusException)
 import json
 import datetime
@@ -37,5 +36,11 @@ async def Elasticsearch_Search(request: Search):
         return StatusException.raise_exception(e)
     
     finally:
+        UDP_SOC.socket_logstash_handler(request.to_json())
+        
         Delay_Time = str((EndTime - StartTime).seconds) + '.' + str((EndTime - StartTime).microseconds).zfill(6)[:2]
         logger.info('Metrics : {}'.format(Delay_Time))
+        
+     
+
+    
