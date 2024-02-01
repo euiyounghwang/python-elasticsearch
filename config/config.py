@@ -18,6 +18,7 @@ class Settings:
         
         # Read_Doc with arguments from Docker -e option
         self.hosts: str = os.getenv("ES_HOST", doc['app']['es']['es_host'])
+        self.index: str = os.getenv("ES_LOGGER_INDEX", doc['app']['es']['index']['index'])
         
         self.kafka_hosts = str(os.getenv("KAFKA_HOST", doc['app']['kafka']['host'])).split(",")
         self.kafka_topics = str(os.getenv("KAFKA_TOPIC", doc['app']['kafka']['topic'])).split(",")
@@ -30,6 +31,9 @@ class Settings:
         
     def get_Hosts(self):
         return self.hosts
+    
+    def get_es_index(self):
+        return self.index
     
     def get_Kafka_Hosts(self):
         return self.kafka_hosts

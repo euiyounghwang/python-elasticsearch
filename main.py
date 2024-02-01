@@ -10,6 +10,7 @@ from injector import global_settings
 import asyncio
 import json
 from job.job import create_job
+from job.es_job import create_logger
 
 logger = create_log()
 app = FastAPI()
@@ -42,6 +43,9 @@ async def kafka_event(topic):
             logger.info(f"--message -- {msg}, topic : {msg.topic}, message : {msg.value.decode('utf-8')}")
             # logger.info(f"{json.loads(msg.value.decode('utf-8'))['author']}")
             # await kafka_actions[msg.topic](msg)
+            # --
+            # ES logger
+            create_logger(msg.value.decode('utf-8'))
 
     except Exception as e:
         logger.error(e)
