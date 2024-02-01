@@ -40,9 +40,7 @@ async def kafka_event(topic):
     try:
         await consumer.start()
         async for msg in consumer:
-            logger.info(f"--message -- {msg}, topic : {msg.topic}, message : {msg.value.decode('utf-8')}")
-            # logger.info(f"{json.loads(msg.value.decode('utf-8'))['author']}")
-            # await kafka_actions[msg.topic](msg)
+            # logger.info(f"--message -- {msg}, topic : {msg.topic}, message : {msg.value.decode('utf-8')}")
             # --
             # ES logger
             create_logger(msg.value.decode('utf-8'))
