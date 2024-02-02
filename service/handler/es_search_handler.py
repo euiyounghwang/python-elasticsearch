@@ -12,6 +12,10 @@ class SearchOmniHandler(object):
         self.OMNI_INDEX_ALIAS = self.config["es"]["index"]["alias"]
         self.search_after = None
         
+    
+    async def get_es_health(self):
+        return self.es_client.cluster.health()
+        
         
     async def search(self, query_builder, oas_query=None):
         ''' Search with QuerBuilder '''

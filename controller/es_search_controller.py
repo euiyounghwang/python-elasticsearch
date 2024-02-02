@@ -10,6 +10,17 @@ app = APIRouter(
     prefix="/es",
 )
 
+
+@app.post("/health", 
+          status_code=StatusHanlder.HTTP_STATUS_200,
+          description="Search to ES", 
+          summary="Search to ES")
+async def Elasticsearch_Search():
+    response = SearchOmniHandlerInject.get_es_health()
+    logger.info('SearchOmniHandler:get_es_info - {}'.format(response))
+    return await response
+
+
 @app.post("/search", 
           status_code=StatusHanlder.HTTP_STATUS_200,
           description="Search to ES", 
