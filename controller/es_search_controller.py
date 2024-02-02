@@ -11,7 +11,7 @@ app = APIRouter(
 )
 
 
-@app.post("/health", 
+@app.get("/health", 
           status_code=StatusHanlder.HTTP_STATUS_200,
           description="Search to ES", 
           summary="Search to ES")
