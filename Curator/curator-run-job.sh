@@ -13,7 +13,10 @@ source $filepath/.venv/bin/activate
 
 # $filepath/.venv/bin/curator --config ./Curator/curator-config.yml --dry-run ./Curator/delete-indices.yml
 # Test
-# curator --config ./Curator/curator-config.yml --dry-run ./Curator/delete-indices.yml
 curator --config $SCRIPTDIR/curator-config.yml --dry-run $SCRIPTDIR/delete-indices.yml
+# -- snapshot
+# curator --config $SCRIPTDIR/curator-config.yml --dry-run $SCRIPTDIR/action_snapshot.yml
+# curator --config $SCRIPTDIR/curator-config.yml --dry-run $SCRIPTDIR/restore_snapshot.yml
 # Run
 # curator --config ./Curator/curator-config.yml ./Curator/delete-indices.yml
+# curator --config $SCRIPTDIR/curator-config.yml $SCRIPTDIR/delete-indices.yml
