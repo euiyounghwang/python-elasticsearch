@@ -3,15 +3,15 @@ version: '3'
 name: python-elasticsearch-api
 services:
   
-  fluentd:
-    build: ./fluentd
-    volumes:
-      - ./fluentd/conf:/fluentd/etc
-    links:
-      - "elasticsearch"
-    ports:
-      - "24224:24224"
-      - "24224:24224/udp"
+  # fluentd:
+  #   build: ./fluentd
+  #   volumes:
+  #     - ./fluentd/conf:/fluentd/etc
+  #   links:
+  #     - "elasticsearch"
+  #   ports:
+  #     - "24224:24224"
+  #     - "24224:24224/udp"
       
   cerebro:
     image: lmenezes/cerebro:0.9.4
@@ -94,17 +94,17 @@ services:
       - bridge
       
   # Single Cluster
-  single_node:
+  single_node_v_7:
     #image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
     build:
       context: ./Docker/elasticsearch
       dockerfile: Dockerfile
-    container_name: es-docker-node
+    container_name: single_node_v_7
     environment:
       - node.name=es01
        - node.master=true
        - node.data=true
-      #- node.roles=master
+      # - node.roles=[data, master]
       - cluster.name=es-docker-a-cluster
       - discovery.seed_hosts=es01
       - cluster.initial_master_nodes=es01
@@ -134,16 +134,18 @@ services:
     networks:
       - bridge
       
-  single_node_kibana:
+  single_node_kibana_v_7:
     image: docker.elastic.co/kibana/kibana:7.10.0
-    depends_on: {"single_node": {"condition": "service_healthy"}}
+    depends_on: {"single_node_v_7": {"condition": "service_healthy"}}
     restart: unless-stopped
     ports:
-      - 5601:5601
+      - 25601:5601
+    networks:
+      - bridge
     environment:
-      SERVERNAME: localhost
-      ELASTICSEARCH_URL: http://single_node:9221
-      ELASTICSEARCH_HOSTS: http://single_node:9221
+      # SERVERNAME: localhost
+      # ELASTICSEARCH_URL: http://single_node_v_7:9200
+      ELASTICSEARCH_HOSTS: http://single_node_v_7:9200
           
   # docker-compose -f ./create-certs.yml run --rm create_certs
   # docker-compose up -d
