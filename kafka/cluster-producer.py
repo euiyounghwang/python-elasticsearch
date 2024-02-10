@@ -3,6 +3,10 @@ from datetime import datetime
 import json
 from kafka_schema_registry import prepare_producer
 
+import logging
+
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+
 # poetry add kafka-schema-registry
 SAMPLE_SCHEMA = {
     "type": "record",
@@ -35,7 +39,8 @@ def produce_kafka():
             # )
             producer.send(each_topic, {'author': 'choyiny', 'content': 'Kafka is cool!', 'created_at': datetime.now().isoformat()})
             producer.flush()
-    
+            
+    logging.info('--#$Send..#$--')
     
 if __name__ == "__main__":
     produce_kafka()
