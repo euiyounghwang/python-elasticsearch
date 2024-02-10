@@ -3,7 +3,7 @@
     "es": {
       "es_host": "http://localhost:9209",
       "index" : {
-          "alias" : "metrics_search",
+          "alias" : "test_performance_metrics_v1",
           "index" : "fastapi_kafka_indexing"
       }
     },
