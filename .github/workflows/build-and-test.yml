@@ -1,5 +1,5 @@
 
-name: Build and Test
+name: Python Elasticsearch CI
 
 # on:
 #   workflow_call:
@@ -197,7 +197,7 @@ jobs:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
           channel: '#alert'
-          message: GitHub Ropository - ${{ github.event.repository.name }}
+          # message: GitHub Ropository - ${{ github.event.repository.name }}
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         if: always()
