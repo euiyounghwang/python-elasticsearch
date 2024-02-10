@@ -11,4 +11,4 @@ source .venv/bin/activate
 
 # py.test -v tests
 # poetry run py.test -v --junitxml=test-reports/junit/pytest.xml --cov-report html --cov tests/
-poetry run py.test -v --cov tests/
+poetry run py.test -v --cov ./tests
