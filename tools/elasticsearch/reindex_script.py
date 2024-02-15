@@ -138,7 +138,8 @@ def work_scroll_api(src_es, dest_es, src_idx, dest_idx):
         "size" : 0
     }'
     
-    '''    
+    '''
+    dest_es.indices.refresh(index=dest_idx)    
     rs = dest_es.search(index=[dest_idx],
         body=body
     )
