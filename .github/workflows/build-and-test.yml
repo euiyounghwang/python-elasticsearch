@@ -24,7 +24,7 @@ jobs:
       elasticsearch_version: '7.13.0'
       # It's not working to run as daemon
       # elasticsearch_version: '8.8.0'
-      elasticsearch_port: 9209
+      elasticsearch_port: 9203
     services:
       postgres:
         image: postgres:latest
