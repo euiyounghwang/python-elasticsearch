@@ -374,7 +374,7 @@ services:
       - ${PROJECTS_DIR}/python-elasticsearch:/app/FN-Basic-Services
     restart: unless-stopped
     environment:
-      - ES_HOST=http://host.docker.internal:9209
+      - ES_HOST=http://host.docker.internal:9203
       - KAFKA_HOST=host.docker.internal:29092,host.docker.internal:39092
       - KAFKA_TOPIC=test-topic,test1-topic
     networks:
@@ -393,7 +393,7 @@ services:
       - ${PROJECTS_DIR}/python-elasticsearch:/app/FN-Basic-Services
     # restart: unless-stopped
     environment:
-      - ES_HOST=http://host.docker.internal:9209
+      - ES_HOST=http://host.docker.internal:9203
       - KAFKA_HOST=host.docker.internal:29092,host.docker.internal:39092
       - KAFKA_TOPIC=test-topic,test1-topic
     networks:
